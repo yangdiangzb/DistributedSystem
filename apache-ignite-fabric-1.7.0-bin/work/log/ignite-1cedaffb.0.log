@@ -1,0 +1,75 @@
+[16:47:00,952][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[16:47:00,953][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[16:47:00,953][INFO][main][IgniteKernal] Daemon mode: off
+[16:47:00,953][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[16:47:00,953][INFO][main][IgniteKernal] OS user: s1626297
+[16:47:00,954][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[16:47:00,954][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[16:47:00,956][INFO][main][IgniteKernal] VM total memory: 0.48GB
+[16:47:00,956][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[16:47:00,956][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[16:47:00,956][INFO][main][IgniteKernal] VM arguments: [-Xms512m, -Xmx512m, -DIGNITE_QUIET=false, -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true]
+[16:47:00,957][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[16:47:00,957][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[16:47:00,974][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[16:47:01,062][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.2.60, fe80:0:0:0:ea39:35ff:fe48:4d89%em1
+[16:47:01,063][INFO][main][IgniteKernal] Enabled local MACs: E83935484D89
+[16:47:01,091][INFO][main][IgnitePluginProcessor] Configured plugins:
+[16:47:01,091][INFO][main][IgnitePluginProcessor]   ^-- None
+[16:47:01,091][INFO][main][IgnitePluginProcessor] 
+[16:47:01,373][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48104, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/1cedaffb-041c-4d68-b11b-e60ae44b17d5-10291]
+[16:47:01,373][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48104, locHost=0.0.0.0/0.0.0.0]
+[16:47:01,448][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47104, locHost=0.0.0.0/0.0.0.0]
+[16:47:01,557][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[16:47:01,615][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[16:47:01,624][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[16:47:01,633][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[16:47:02,176][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[16:47:02,367][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11216]
+[16:47:03,426][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[16:47:03,455][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[16:47:03,510][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[16:47:04,036][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[16:47:04,050][INFO][main][IgniteKernal] 
+[16:47:04,051][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 0.5GB
+>>> VM name: 10291@joly.inf.ed.ac.uk
+>>> Local node [ID=1CEDAFFB-041C-4D68-B11B-E60AE44B17D5, order=5, clientMode=true]
+>>> Local node addresses: [joly.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.2.60]
+>>> Local ports: TCP:11216 TCP:47104 TCP:48104 
+
+[16:47:04,061][INFO][main][GridDiscoveryManager] Topology snapshot [ver=5, servers=1, clients=4, CPUs=4, heap=3.0GB]
+[16:47:04,171][INFO][exchange-worker-#45%null%][GridCacheProcessor] Started cache [name=partB, mode=PARTITIONED]
+[16:47:04,519][INFO][main][GridDeploymentLocalStore] Class locally deployed: class partB.StreamWords$1
+[16:47:13,036][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[16:47:59,400][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=a1aa0243-6a35-433d-bf89-5d1e64952286, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=3, intOrder=3, lastExchangeTime=1479314822872, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[16:47:59,401][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=6, servers=1, clients=3, CPUs=4, heap=2.5GB]
+[16:48:04,035][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=1cedaffb, name=null, uptime=00:01:00:003]
+    ^-- H/N/C [hosts=1, nodes=4, CPUs=4]
+    ^-- CPU [cur=2.07%, avg=3.4%, GC=0.47%]
+    ^-- Heap [used=162MB, free=67.62%, comm=502MB]
+    ^-- Non heap [used=41MB, free=-1%, comm=43MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[16:48:06,677][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=cb1dad42-879e-4eb7-8503-1b4595a9b187, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=2, intOrder=2, lastExchangeTime=1479314822872, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[16:48:06,677][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=7, servers=1, clients=2, CPUs=4, heap=2.0GB]

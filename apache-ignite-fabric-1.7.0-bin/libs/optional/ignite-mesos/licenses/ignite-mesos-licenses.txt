@@ -1,0 +1,14 @@
+// ------------------------------------------------------------------
+// List of ignite-mesos module's dependencies provided as a part of this distribution
+// which licenses differ from Apache Software License.
+// ------------------------------------------------------------------
+
+==============================================================================
+For Jetty :: Server Core (http://www.eclipse.org/jetty) org.eclipse.jetty:jetty-server:jar:9.2.11.v20150529
+==============================================================================
+This product bundles Jetty :: Server Core which is available under a:
+Apache Software License - Version 2.0. For details, see http://www.apache.org/licenses/LICENSE-2.0.
+Eclipse Public License - Version 1.0. For details, see http://www.eclipse.org/org/documents/epl-v10.php.
+
+
+

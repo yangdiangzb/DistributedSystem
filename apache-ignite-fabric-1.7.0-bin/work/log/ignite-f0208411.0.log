@@ -1,0 +1,196 @@
+[22:22:49,218][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[22:22:49,219][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[22:22:49,219][INFO][main][IgniteKernal] Daemon mode: off
+[22:22:49,220][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[22:22:49,220][INFO][main][IgniteKernal] OS user: s1626297
+[22:22:49,220][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[22:22:49,220][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[22:22:49,221][INFO][main][IgniteKernal] VM total memory: 1.7GB
+[22:22:49,222][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[22:22:49,222][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[22:22:49,222][INFO][main][IgniteKernal] VM arguments: []
+[22:22:49,222][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[22:22:49,222][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[22:22:49,225][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[22:22:49,227][WARNING][pub-#26%null%][GridDiagnostic] Initial heap size is 124MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[22:22:49,267][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.2.234, fe80:0:0:0:8edc:d4ff:fe57:28d5%em1
+[22:22:49,267][INFO][main][IgniteKernal] Enabled local MACs: 8CDCD45728D5
+[22:22:49,283][INFO][main][IgnitePluginProcessor] Configured plugins:
+[22:22:49,283][INFO][main][IgnitePluginProcessor]   ^-- None
+[22:22:49,283][INFO][main][IgnitePluginProcessor] 
+[22:22:49,422][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48100, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/f0208411-1f9e-491e-8ced-ef2d93a5ae52-17286]
+[22:22:49,422][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48100, locHost=0.0.0.0/0.0.0.0]
+[22:22:49,445][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0]
+[22:22:49,492][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[22:22:49,524][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[22:22:49,527][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[22:22:49,529][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[22:22:49,780][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[22:22:49,870][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11211]
+[22:22:49,961][WARNING][tcp-client-disco-msg-worker-#4%null%][TcpDiscoverySpi] Failed to connect to any address from IP finder (will retry to join topology every 2 secs): [/127.0.0.1:47500, /127.0.0.1:47501, /127.0.0.1:47502, /127.0.0.1:47503, /127.0.0.1:47504, /127.0.0.1:47505, /127.0.0.1:47506, /127.0.0.1:47507, /127.0.0.1:47508, /127.0.0.1:47509]
+[22:22:52,283][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=265984fc-52b9-485d-af87-084675494cb9, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=3, intOrder=3, lastExchangeTime=1479248572263, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[22:22:52,284][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=3, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[22:22:52,398][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[22:22:52,409][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[22:22:52,423][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[22:22:52,648][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[22:22:52,648][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[22:22:52,648][INFO][main][IgniteKernal]   ^-- Disable peer class loading (set 'peerClassLoadingEnabled' to false)
+[22:22:52,648][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[22:22:52,648][INFO][main][IgniteKernal] 
+[22:22:52,648][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[22:22:52,649][INFO][main][IgniteKernal] 
+[22:22:52,649][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 1.7GB
+>>> VM name: 17286@donners.inf.ed.ac.uk
+>>> Local node [ID=F0208411-1F9E-491E-8CED-EF2D93A5AE52, order=2, clientMode=true]
+>>> Local node addresses: [donners.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.2.234]
+>>> Local ports: TCP:11211 TCP:47100 TCP:48100 
+
+[22:22:52,650][INFO][main][GridDiscoveryManager] Topology snapshot [ver=3, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[22:22:52,699][INFO][exchange-worker-#45%null%][GridCacheProcessor] Started cache [name=partA, mode=PARTITIONED]
+[22:23:02,122][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[22:23:52,654][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=f0208411, name=null, uptime=00:01:00:001]
+    ^-- H/N/C [hosts=1, nodes=3, CPUs=4]
+    ^-- CPU [cur=0.17%, avg=0.16%, GC=0%]
+    ^-- Heap [used=69MB, free=96.01%, comm=158MB]
+    ^-- Non heap [used=39MB, free=-1%, comm=40MB]
+    ^-- Public thread pool [active=0, idle=6, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[22:24:52,652][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=f0208411, name=null, uptime=00:02:00:006]
+    ^-- H/N/C [hosts=1, nodes=3, CPUs=4]
+    ^-- CPU [cur=0.33%, avg=0.16%, GC=0.1%]
+    ^-- Heap [used=29MB, free=98.34%, comm=189MB]
+    ^-- Non heap [used=38MB, free=-1%, comm=40MB]
+    ^-- Public thread pool [active=0, idle=6, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[22:25:14,286][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=265984fc-52b9-485d-af87-084675494cb9, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=3, intOrder=3, lastExchangeTime=1479248572263, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[22:25:14,287][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=4, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[22:25:15,484][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridH2QueryRequest [reqId=15, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridH2QueryRequest [reqId=15, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], policy=2]]
+[22:25:15,485][WARNING][main][TcpCommunicationSpi] Failed to connect shared memory endpoint to port (is shared memory server endpoint up and running?): 48102
+[22:25:15,490][WARNING][main][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/0:0:0:0:0:0:0:1%lo:47102, failureDetectionTimeout=10000]
+[22:25:15,490][WARNING][main][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/127.0.0.1:47102, failureDetectionTimeout=10000]
+[22:25:15,491][WARNING][main][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=donners.inf.ed.ac.uk/129.215.2.234:47102, failureDetectionTimeout=10000]
+[22:25:15,491][WARNING][main][TcpCommunicationSpi] Failed to connect to a remote node (make sure that destination node is alive and operating system firewall is disabled on local and remote hosts) [addrs=[/0:0:0:0:0:0:0:1%lo:47102, /127.0.0.1:47102, donners.inf.ed.ac.uk/129.215.2.234:47102]]
+[22:25:15,492][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridQueryCancelRequest [qryReqId=15], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridQueryCancelRequest [qryReqId=15], policy=2]]
+[22:25:15,503][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridH2QueryRequest [reqId=16, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridH2QueryRequest [reqId=16, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], policy=2]]
+[22:25:15,504][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridQueryCancelRequest [qryReqId=16], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridQueryCancelRequest [qryReqId=16], policy=2]]
+[22:25:15,526][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridH2QueryRequest [reqId=17, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridH2QueryRequest [reqId=17, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], policy=2]]
+[22:25:15,528][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridQueryCancelRequest [qryReqId=17], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridQueryCancelRequest [qryReqId=17], policy=2]]
+[22:25:15,560][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridH2QueryRequest [reqId=18, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridH2QueryRequest [reqId=18, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], policy=2]]
+[22:25:15,561][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridQueryCancelRequest [qryReqId=18], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridQueryCancelRequest [qryReqId=18], policy=2]]
+[22:25:15,603][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridH2QueryRequest [reqId=19, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridH2QueryRequest [reqId=19, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], policy=2]]
+[22:25:15,604][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridQueryCancelRequest [qryReqId=19], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridQueryCancelRequest [qryReqId=19], policy=2]]
+[22:25:15,656][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridH2QueryRequest [reqId=20, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridH2QueryRequest [reqId=20, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], policy=2]]
+[22:25:15,657][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridQueryCancelRequest [qryReqId=20], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridQueryCancelRequest [qryReqId=20], policy=2]]
+[22:25:15,719][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridH2QueryRequest [reqId=21, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridH2QueryRequest [reqId=21, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], policy=2]]
+[22:25:15,720][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridQueryCancelRequest [qryReqId=21], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridQueryCancelRequest [qryReqId=21], policy=2]]
+[22:25:15,792][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridH2QueryRequest [reqId=22, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridH2QueryRequest [reqId=22, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], policy=2]]
+[22:25:15,793][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridQueryCancelRequest [qryReqId=22], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridQueryCancelRequest [qryReqId=22], policy=2]]
+[22:25:15,875][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridH2QueryRequest [reqId=23, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridH2QueryRequest [reqId=23, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], policy=2]]
+[22:25:15,876][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridQueryCancelRequest [qryReqId=23], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridQueryCancelRequest [qryReqId=23], policy=2]]
+[22:25:15,968][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridH2QueryRequest [reqId=24, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridH2QueryRequest [reqId=24, caches=[106437294], topVer=AffinityTopologyVersion [topVer=4, minorTopVer=0], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_VAL __C0,
+_KEY __C1
+FROM "partA".LONG
+ORDER BY 1 DESC LIMIT 10, params=[], paramIdxs=[], paramsSize=0, cols={__C0=GridSqlType [type=5, scale=0, precision=19, displaySize=20, sql=BIGINT], __C1=GridSqlType [type=13, scale=0, precision=2147483647, displaySize=2147483647, sql=VARCHAR]}, alias=null]], flags=0, tbls=null], policy=2]]
+[22:25:15,969][WARNING][main][IgniteH2Indexing] Failed to send message [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], msg=GridQueryCancelRequest [qryReqId=24], errMsg=Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=01ffb137-a114-45d1-9260-55653b26735c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479248572058, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], topic=TOPIC_QUERY, msg=GridQueryCancelRequest [qryReqId=24], policy=2]]

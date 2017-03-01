@@ -1,0 +1,93 @@
+[22:10:46,188][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[22:10:46,189][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[22:10:46,189][INFO][main][IgniteKernal] Daemon mode: off
+[22:10:46,189][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[22:10:46,189][INFO][main][IgniteKernal] OS user: s1626297
+[22:10:46,190][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[22:10:46,190][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[22:10:46,191][INFO][main][IgniteKernal] VM total memory: 1.7GB
+[22:10:46,191][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[22:10:46,191][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[22:10:46,192][INFO][main][IgniteKernal] VM arguments: []
+[22:10:46,192][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[22:10:46,192][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[22:10:46,198][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[22:10:46,206][WARNING][pub-#26%null%][GridDiagnostic] Initial heap size is 124MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[22:10:46,254][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.2.234, fe80:0:0:0:8edc:d4ff:fe57:28d5%em1
+[22:10:46,254][INFO][main][IgniteKernal] Enabled local MACs: 8CDCD45728D5
+[22:10:46,271][INFO][main][IgnitePluginProcessor] Configured plugins:
+[22:10:46,271][INFO][main][IgnitePluginProcessor]   ^-- None
+[22:10:46,271][INFO][main][IgnitePluginProcessor] 
+[22:10:46,391][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48100, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/87de3296-9a86-4cd3-86e4-6be10ac7b294-14590]
+[22:10:46,392][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48100, locHost=0.0.0.0/0.0.0.0]
+[22:10:46,407][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0]
+[22:10:46,480][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[22:10:46,537][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[22:10:46,540][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[22:10:46,542][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[22:10:46,824][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[22:10:46,882][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11211]
+[22:10:46,955][WARNING][tcp-client-disco-msg-worker-#4%null%][TcpDiscoverySpi] Failed to connect to any address from IP finder (will retry to join topology every 2 secs): [/127.0.0.1:47500, /127.0.0.1:47501, /127.0.0.1:47502, /127.0.0.1:47503, /127.0.0.1:47504, /127.0.0.1:47505, /127.0.0.1:47506, /127.0.0.1:47507, /127.0.0.1:47508, /127.0.0.1:47509]
+[22:10:49,224][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=6570edb4-917c-45f2-a1d0-d53845ee5a70, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=3, intOrder=3, lastExchangeTime=1479247849197, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[22:10:49,225][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=3, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[22:10:49,324][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[22:10:49,333][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[22:10:49,347][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[22:10:49,527][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[22:10:49,527][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[22:10:49,527][INFO][main][IgniteKernal]   ^-- Disable peer class loading (set 'peerClassLoadingEnabled' to false)
+[22:10:49,527][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[22:10:49,527][INFO][main][IgniteKernal] 
+[22:10:49,528][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[22:10:49,528][INFO][main][IgniteKernal] 
+[22:10:49,529][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 1.7GB
+>>> VM name: 14590@donners.inf.ed.ac.uk
+>>> Local node [ID=87DE3296-9A86-4CD3-86E4-6BE10AC7B294, order=2, clientMode=true]
+>>> Local node addresses: [donners.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.2.234]
+>>> Local ports: TCP:11211 TCP:47100 TCP:48100 
+
+[22:10:49,529][INFO][main][GridDiscoveryManager] Topology snapshot [ver=3, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[22:10:49,586][INFO][exchange-worker-#45%null%][GridCacheProcessor] Started cache [name=partA, mode=PARTITIONED]
+[22:10:49,838][INFO][main][GridDeploymentLocalStore] Class locally deployed: class wordcount.StreamWords$1
+[22:10:59,063][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[22:11:49,533][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=87de3296, name=null, uptime=00:01:00:004]
+    ^-- H/N/C [hosts=1, nodes=3, CPUs=4]
+    ^-- CPU [cur=7.83%, avg=8.45%, GC=0.2%]
+    ^-- Heap [used=111MB, free=93.65%, comm=714MB]
+    ^-- Non heap [used=42MB, free=-1%, comm=43MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[22:12:49,537][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=87de3296, name=null, uptime=00:02:00:012]
+    ^-- H/N/C [hosts=1, nodes=3, CPUs=4]
+    ^-- CPU [cur=8.83%, avg=8.23%, GC=0.17%]
+    ^-- Heap [used=406MB, free=76.81%, comm=621MB]
+    ^-- Non heap [used=42MB, free=-1%, comm=43MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[22:13:36,719][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=6570edb4-917c-45f2-a1d0-d53845ee5a70, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=3, intOrder=3, lastExchangeTime=1479247849197, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[22:13:36,720][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=4, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[22:13:37,675][INFO][Thread-4][G] Invoking shutdown hook...

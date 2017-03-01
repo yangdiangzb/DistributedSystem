@@ -1,0 +1,99 @@
+[14:24:11,345][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[14:24:11,346][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[14:24:11,346][INFO][main][IgniteKernal] Daemon mode: off
+[14:24:11,347][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[14:24:11,347][INFO][main][IgniteKernal] OS user: s1626297
+[14:24:11,347][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[14:24:11,347][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[14:24:11,349][INFO][main][IgniteKernal] VM total memory: 0.96GB
+[14:24:11,349][INFO][main][IgniteKernal] Remote Management [restart: on, REST: on, JMX (remote: on, port: 49123, auth: off, ssl: off)]
+[14:24:11,349][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[14:24:11,349][INFO][main][IgniteKernal] VM arguments: [-Xms1g, -Xmx1g, -XX:+AggressiveOpts, -XX:MaxMetaspaceSize=256m, -DIGNITE_QUIET=true, -DIGNITE_SUCCESS_FILE=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ignite_success_8a120899-29ad-4a52-956e-fb2c5fd3e94a, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.port=49123, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -DIGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin, -DIGNITE_PROG_NAME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/bin/ignite.sh]
+[14:24:11,349][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[14:24:11,349][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[14:24:11,352][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[14:24:11,399][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.2.60, fe80:0:0:0:ea39:35ff:fe48:4d89%em1
+[14:24:11,399][INFO][main][IgniteKernal] Enabled local MACs: E83935484D89
+[14:24:11,413][INFO][main][IgnitePluginProcessor] Configured plugins:
+[14:24:11,413][INFO][main][IgnitePluginProcessor]   ^-- None
+[14:24:11,414][INFO][main][IgnitePluginProcessor] 
+[14:24:11,522][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48100, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/7b0f20ec-3ad8-4fea-ac3a-c05fe5d1068e-14169]
+[14:24:11,522][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48100, locHost=0.0.0.0/0.0.0.0]
+[14:24:11,543][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0]
+[14:24:11,582][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[14:24:11,606][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[14:24:11,609][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[14:24:11,611][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[14:24:11,842][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[14:24:11,900][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11211]
+[14:24:11,977][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47500, localHost=0.0.0.0/0.0.0.0]
+[14:24:12,243][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[14:24:12,254][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[14:24:12,270][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[14:24:12,326][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=0], evt=NODE_JOINED, node=7b0f20ec-3ad8-4fea-ac3a-c05fe5d1068e]
+[14:24:12,365][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[14:24:12,365][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[14:24:12,365][INFO][main][IgniteKernal]   ^-- Disable peer class loading (set 'peerClassLoadingEnabled' to false)
+[14:24:12,365][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[14:24:12,365][INFO][main][IgniteKernal] 
+[14:24:12,365][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[14:24:12,366][INFO][main][IgniteKernal] 
+[14:24:12,366][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 1.0GB
+>>> VM name: 14169@joly.inf.ed.ac.uk
+>>> Local node [ID=7B0F20EC-3AD8-4FEA-AC3A-C05FE5D1068E, order=1, clientMode=false]
+>>> Local node addresses: [joly.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.2.60]
+>>> Local ports: TCP:11211 TCP:47100 TCP:47500 TCP:48100 
+
+[14:24:12,367][INFO][main][GridDiscoveryManager] Topology snapshot [ver=1, servers=1, clients=0, CPUs=4, heap=1.0GB]
+[14:24:20,380][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=b540537a-2f16-446c-83b5-03cc45dda841, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=2, intOrder=2, lastExchangeTime=1479306260237, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[14:24:20,399][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=2, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[14:24:20,417][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=2, minorTopVer=0], evt=NODE_JOINED, node=b540537a-2f16-446c-83b5-03cc45dda841]
+[14:24:20,433][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=e2f7de13-8899-4f56-8d46-cf022fd12be6, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=3, intOrder=3, lastExchangeTime=1479306260215, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[14:24:20,434][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=3, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[14:24:20,440][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=3, minorTopVer=0], evt=NODE_JOINED, node=e2f7de13-8899-4f56-8d46-cf022fd12be6]
+[14:24:20,599][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=2dedf06d-2dae-4506-b85a-c3fb1c57503a, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=4, intOrder=4, lastExchangeTime=1479306260568, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[14:24:20,600][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=4, servers=1, clients=3, CPUs=4, heap=6.1GB]
+[14:24:20,605][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=4, minorTopVer=0], evt=NODE_JOINED, node=2dedf06d-2dae-4506-b85a-c3fb1c57503a]
+[14:24:20,919][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=9f875641-27e6-469d-81c8-9276702e7b0b, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=5, intOrder=5, lastExchangeTime=1479306260876, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[14:24:20,920][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=5, servers=1, clients=4, CPUs=4, heap=7.8GB]
+[14:24:20,927][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=5, minorTopVer=0], evt=NODE_JOINED, node=9f875641-27e6-469d-81c8-9276702e7b0b]
+[14:24:21,796][INFO][exchange-worker-#55%null%][GridCacheProcessor] Started cache [name=partC, mode=PARTITIONED]
+[14:24:21,885][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=5, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=b540537a-2f16-446c-83b5-03cc45dda841]
+[14:24:21,920][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=5, minorTopVer=2], evt=DISCOVERY_CUSTOM_EVT, node=2dedf06d-2dae-4506-b85a-c3fb1c57503a]
+[14:24:21,969][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=5, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, node=e2f7de13-8899-4f56-8d46-cf022fd12be6]
+[14:24:22,032][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[14:24:22,203][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=5, minorTopVer=4], evt=DISCOVERY_CUSTOM_EVT, node=9f875641-27e6-469d-81c8-9276702e7b0b]
+[14:24:22,576][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=5, minorTopVer=5], evt=DISCOVERY_CUSTOM_EVT, node=9f875641-27e6-469d-81c8-9276702e7b0b]
+[14:24:22,627][INFO][exchange-worker-#55%null%][GridCacheProcessor] Stopped cache: partC
+[14:24:22,674][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=9f875641-27e6-469d-81c8-9276702e7b0b, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=5, intOrder=5, lastExchangeTime=1479306260876, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[14:24:22,675][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=6, servers=1, clients=3, CPUs=4, heap=6.1GB]
+[14:24:22,733][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=5, minorTopVer=6], evt=DISCOVERY_CUSTOM_EVT, node=9f875641-27e6-469d-81c8-9276702e7b0b]
+[14:24:22,738][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=6, minorTopVer=0], evt=NODE_LEFT, node=9f875641-27e6-469d-81c8-9276702e7b0b]
+[14:24:26,763][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=2dedf06d-2dae-4506-b85a-c3fb1c57503a, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=4, intOrder=4, lastExchangeTime=1479306260568, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[14:24:26,763][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=7, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[14:24:26,769][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=7, minorTopVer=0], evt=NODE_LEFT, node=2dedf06d-2dae-4506-b85a-c3fb1c57503a]
+[14:24:27,494][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=e2f7de13-8899-4f56-8d46-cf022fd12be6, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=3, intOrder=3, lastExchangeTime=1479306260215, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[14:24:27,495][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=8, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[14:24:27,499][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=8, minorTopVer=0], evt=NODE_LEFT, node=e2f7de13-8899-4f56-8d46-cf022fd12be6]
+[14:24:28,391][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=b540537a-2f16-446c-83b5-03cc45dda841, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=2, intOrder=2, lastExchangeTime=1479306260237, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[14:24:28,391][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=9, servers=1, clients=0, CPUs=4, heap=1.0GB]
+[14:24:28,399][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=9, minorTopVer=0], evt=NODE_LEFT, node=b540537a-2f16-446c-83b5-03cc45dda841]
+[14:24:30,731][INFO][Thread-2][G] Invoking shutdown hook...

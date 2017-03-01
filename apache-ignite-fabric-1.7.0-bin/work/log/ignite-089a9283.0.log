@@ -1,0 +1,83 @@
+[22:51:07,745][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[22:51:07,747][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/config/default-config.xml
+[22:51:07,747][INFO][main][IgniteKernal] Daemon mode: off
+[22:51:07,748][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[22:51:07,748][INFO][main][IgniteKernal] OS user: s1626297
+[22:51:07,748][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[22:51:07,748][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[22:51:07,749][INFO][main][IgniteKernal] VM total memory: 1.7GB
+[22:51:07,749][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[22:51:07,750][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[22:51:07,750][INFO][main][IgniteKernal] VM arguments: []
+[22:51:07,750][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[22:51:07,753][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[22:51:07,788][WARNING][pub-#26%null%][GridDiagnostic] Initial heap size is 124MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[22:51:07,827][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.2.234, fe80:0:0:0:8edc:d4ff:fe57:28d5%em1
+[22:51:07,827][INFO][main][IgniteKernal] Enabled local MACs: 8CDCD45728D5
+[22:51:07,841][INFO][main][IgnitePluginProcessor] Configured plugins:
+[22:51:07,841][INFO][main][IgnitePluginProcessor]   ^-- None
+[22:51:07,841][INFO][main][IgnitePluginProcessor] 
+[22:51:08,002][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48104, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/089a9283-76d3-4f5a-b88d-6849d7e4434a-23197]
+[22:51:08,003][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48104, locHost=0.0.0.0/0.0.0.0]
+[22:51:08,022][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47104, locHost=0.0.0.0/0.0.0.0]
+[22:51:08,060][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[22:51:08,084][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[22:51:08,087][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[22:51:08,088][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[22:51:08,365][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11215]
+[22:51:08,428][WARNING][main][TcpDiscoveryMulticastIpFinder] TcpDiscoveryMulticastIpFinder has no pre-configured addresses (it is recommended in production to specify at least one address in TcpDiscoveryMulticastIpFinder.getAddresses() configuration property)
+[22:51:10,150][SEVERE][main][IgniteKernal] Failed to start manager: GridManagerAdapter [enabled=true, name=o.a.i.i.managers.discovery.GridDiscoveryManager]
+class org.apache.ignite.IgniteCheckedException: Remote node has peer class loading enabled flag different from local [locId8=089a9283, locPeerClassLoading=false, rmtId8=dbbdc017, rmtPeerClassLoading=true, rmtAddrs=[wideopen.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.3.50]]
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.checkAttributes(GridDiscoveryManager.java:1082)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:701)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1571)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:901)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:1739)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1589)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1042)
+	at org.apache.ignite.internal.IgnitionEx.startConfigurations(IgnitionEx.java:964)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:850)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:749)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:499)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:479)
+	at org.apache.ignite.Ignition.start(Ignition.java:304)
+	at wordcount.QueryWords.main(QueryWords.java:16)
+[22:51:10,151][SEVERE][main][IgniteKernal] Got exception while starting (will rollback startup routine).
+class org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1576)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:901)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:1739)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1589)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1042)
+	at org.apache.ignite.internal.IgnitionEx.startConfigurations(IgnitionEx.java:964)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:850)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:749)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:499)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:479)
+	at org.apache.ignite.Ignition.start(Ignition.java:304)
+	at wordcount.QueryWords.main(QueryWords.java:16)
+Caused by: class org.apache.ignite.IgniteCheckedException: Remote node has peer class loading enabled flag different from local [locId8=089a9283, locPeerClassLoading=false, rmtId8=dbbdc017, rmtPeerClassLoading=true, rmtAddrs=[wideopen.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.3.50]]
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.checkAttributes(GridDiscoveryManager.java:1082)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:701)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1571)
+	... 11 more
+[22:51:10,153][INFO][main][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[22:51:10,297][INFO][main][IgniteKernal] 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2 stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Grid uptime: 00:00:03:074
+
+

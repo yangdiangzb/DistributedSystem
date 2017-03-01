@@ -1,0 +1,31 @@
+[22:08:33,547][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[22:08:33,549][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[22:08:33,549][INFO][main][IgniteKernal] Daemon mode: off
+[22:08:33,549][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[22:08:33,549][INFO][main][IgniteKernal] OS user: s1626297
+[22:08:33,549][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[22:08:33,549][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[22:08:33,551][INFO][main][IgniteKernal] VM total memory: 1.7GB
+[22:08:33,551][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[22:08:33,551][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[22:08:33,551][INFO][main][IgniteKernal] VM arguments: []
+[22:08:33,551][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[22:08:33,551][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[22:08:33,562][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[22:08:33,565][WARNING][pub-#26%null%][GridDiagnostic] Initial heap size is 124MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[22:08:33,606][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.2.234, fe80:0:0:0:8edc:d4ff:fe57:28d5%em1
+[22:08:33,606][INFO][main][IgniteKernal] Enabled local MACs: 8CDCD45728D5
+[22:08:33,621][INFO][main][IgnitePluginProcessor] Configured plugins:
+[22:08:33,621][INFO][main][IgnitePluginProcessor]   ^-- None
+[22:08:33,621][INFO][main][IgnitePluginProcessor] 

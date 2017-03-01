@@ -1,0 +1,13 @@
+// ------------------------------------------------------------------
+// List of ignite-spark_2.10 module's dependencies provided as a part of this distribution
+// which licenses differ from Apache Software License.
+// ------------------------------------------------------------------
+
+==============================================================================
+For Scala Library (http://www.scala-lang.org/) org.scala-lang:scala-library:jar:2.10.4
+==============================================================================
+This product bundles Scala Library which is available under a:
+BSD-like. For details, see http://www.scala-lang.org/downloads/license.html.
+
+
+

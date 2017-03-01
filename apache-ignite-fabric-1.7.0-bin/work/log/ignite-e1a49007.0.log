@@ -1,0 +1,359 @@
+[19:04:12,030][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[19:04:12,032][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[19:04:12,032][INFO][main][IgniteKernal] Daemon mode: off
+[19:04:12,032][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[19:04:12,032][INFO][main][IgniteKernal] OS user: s1626297
+[19:04:12,032][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[19:04:12,032][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[19:04:12,034][INFO][main][IgniteKernal] VM total memory: 1.7GB
+[19:04:12,034][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[19:04:12,034][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[19:04:12,034][INFO][main][IgniteKernal] VM arguments: [-DIGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin, -Didea.launcher.port=7539, -Didea.launcher.bin.path=/opt/idea-ce/bin, -Dfile.encoding=UTF-8]
+[19:04:12,034][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[19:04:12,034][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[19:04:12,045][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[19:04:12,047][WARNING][pub-#26%null%][GridDiagnostic] Initial heap size is 124MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[19:04:12,112][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.3.32, fe80:0:0:0:a2d3:c1ff:fe0f:8a89%em1
+[19:04:12,112][INFO][main][IgniteKernal] Enabled local MACs: A0D3C10F8A89
+[19:04:12,128][INFO][main][IgnitePluginProcessor] Configured plugins:
+[19:04:12,128][INFO][main][IgnitePluginProcessor]   ^-- None
+[19:04:12,128][INFO][main][IgnitePluginProcessor] 
+[19:04:12,223][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48101, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/e1a49007-7ed5-40dc-b3d2-d5ca92b2126a-14943]
+[19:04:12,224][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48101, locHost=0.0.0.0/0.0.0.0]
+[19:04:12,248][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0]
+[19:04:12,299][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[19:04:12,330][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[19:04:12,332][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[19:04:12,333][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[19:04:12,539][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[19:04:12,589][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+[19:04:12,951][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[19:04:12,960][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[19:04:12,974][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[19:04:13,147][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[19:04:13,148][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[19:04:13,148][INFO][main][IgniteKernal]   ^-- Disable peer class loading (set 'peerClassLoadingEnabled' to false)
+[19:04:13,148][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[19:04:13,148][INFO][main][IgniteKernal] 
+[19:04:13,148][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[19:04:13,148][INFO][main][IgniteKernal] 
+[19:04:13,149][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 1.7GB
+>>> VM name: 14943@lodi.inf.ed.ac.uk
+>>> Local node [ID=E1A49007-7ED5-40DC-B3D2-D5CA92B2126A, order=16, clientMode=true]
+>>> Local node addresses: [lodi.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.3.32]
+>>> Local ports: TCP:11212 TCP:47101 TCP:48101 
+
+[19:04:13,150][INFO][main][GridDiscoveryManager] Topology snapshot [ver=16, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[19:04:13,184][INFO][exchange-worker-#45%null%][GridCacheProcessor] Started cache [name=words, mode=PARTITIONED]
+[19:04:13,308][INFO][main][GridDeploymentLocalStore] Class locally deployed: class partB.StreamOne$StreamingExampleCacheEntryProcessor
+[19:04:20,120][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=c85f5d0c-6ba3-4897-9c42-b16fb209fe6f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.3.32], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lodi.inf.ed.ac.uk/129.215.3.32:0], discPort=0, order=17, intOrder=10, lastExchangeTime=1478804660093, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[19:04:20,121][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=17, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[19:04:21,815][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=c85f5d0c-6ba3-4897-9c42-b16fb209fe6f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.3.32], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lodi.inf.ed.ac.uk/129.215.3.32:0], discPort=0, order=17, intOrder=10, lastExchangeTime=1478804660093, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[19:04:21,815][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=18, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[19:04:22,762][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[19:05:13,148][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:01:00:005]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=8.17%, avg=7.9%, GC=0.17%]
+    ^-- Heap [used=140MB, free=91.99%, comm=707MB]
+    ^-- Non heap [used=42MB, free=-1%, comm=44MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:06:13,155][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:02:00:012]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=7.17%, avg=7.64%, GC=0.27%]
+    ^-- Heap [used=276MB, free=84.25%, comm=706MB]
+    ^-- Non heap [used=41MB, free=-1%, comm=44MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:07:13,156][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:03:00:015]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=6.93%, avg=7.73%, GC=0.23%]
+    ^-- Heap [used=374MB, free=78.66%, comm=497MB]
+    ^-- Non heap [used=41MB, free=-1%, comm=44MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:07:51,996][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=b5fb1c1f-6b52-460f-8d7e-fd48b5977ac8, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.3.32], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lodi.inf.ed.ac.uk/129.215.3.32:0], discPort=0, order=19, intOrder=11, lastExchangeTime=1478804871991, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[19:07:51,996][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=19, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[19:08:02,266][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=b52559b6-9503-458c-a0c1-029648f1c914, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.3.32], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lodi.inf.ed.ac.uk/129.215.3.32:0], discPort=0, order=20, intOrder=12, lastExchangeTime=1478804882237, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[19:08:02,266][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=20, servers=1, clients=3, CPUs=4, heap=6.1GB]
+[19:08:04,635][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=b52559b6-9503-458c-a0c1-029648f1c914, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.3.32], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lodi.inf.ed.ac.uk/129.215.3.32:0], discPort=0, order=20, intOrder=12, lastExchangeTime=1478804882237, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[19:08:04,635][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=21, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[19:08:13,166][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:04:00:016]
+    ^-- H/N/C [hosts=1, nodes=3, CPUs=4]
+    ^-- CPU [cur=4.43%, avg=7.42%, GC=0.23%]
+    ^-- Heap [used=521MB, free=70.29%, comm=590MB]
+    ^-- Non heap [used=42MB, free=-1%, comm=44MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:09:13,167][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:05:00:017]
+    ^-- H/N/C [hosts=1, nodes=3, CPUs=4]
+    ^-- CPU [cur=3.67%, avg=6.8%, GC=0.3%]
+    ^-- Heap [used=347MB, free=80.24%, comm=651MB]
+    ^-- Non heap [used=42MB, free=-1%, comm=44MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:09:53,175][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=b5fb1c1f-6b52-460f-8d7e-fd48b5977ac8, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.3.32], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lodi.inf.ed.ac.uk/129.215.3.32:0], discPort=0, order=19, intOrder=11, lastExchangeTime=1478804871991, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[19:09:53,176][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=22, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[19:10:13,167][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:06:00:023]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=8.33%, avg=6.46%, GC=0.2%]
+    ^-- Heap [used=644MB, free=63.28%, comm=739MB]
+    ^-- Non heap [used=42MB, free=-1%, comm=44MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:11:13,173][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:07:00:031]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=7.93%, avg=6.6%, GC=0.17%]
+    ^-- Heap [used=399MB, free=77.28%, comm=743MB]
+    ^-- Non heap [used=42MB, free=-1%, comm=44MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:12:13,180][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:08:00:031]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=8.33%, avg=6.65%, GC=0.17%]
+    ^-- Heap [used=531MB, free=69.73%, comm=743MB]
+    ^-- Non heap [used=42MB, free=-1%, comm=44MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:13:13,175][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:09:00:031]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=6.17%, avg=6.69%, GC=0.13%]
+    ^-- Heap [used=544MB, free=68.99%, comm=741MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=44MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:14:13,182][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:10:00:033]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=7.83%, avg=6.78%, GC=0.07%]
+    ^-- Heap [used=316MB, free=82%, comm=742MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:15:13,184][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:11:00:035]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=6.23%, avg=6.83%, GC=0.13%]
+    ^-- Heap [used=110MB, free=93.71%, comm=740MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:16:13,185][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:12:00:040]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=7.83%, avg=6.89%, GC=0.17%]
+    ^-- Heap [used=229MB, free=86.92%, comm=742MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:17:13,193][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:13:00:046]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=6.57%, avg=6.92%, GC=0.07%]
+    ^-- Heap [used=598MB, free=65.91%, comm=741MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:18:13,198][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:14:00:047]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=7.17%, avg=6.95%, GC=0.1%]
+    ^-- Heap [used=675MB, free=61.57%, comm=742MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:19:13,191][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:15:00:047]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=6.43%, avg=6.98%, GC=0.07%]
+    ^-- Heap [used=218MB, free=87.54%, comm=742MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:20:13,197][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:16:00:052]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=8.07%, avg=7.02%, GC=0.2%]
+    ^-- Heap [used=155MB, free=91.12%, comm=741MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:21:13,201][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:17:00:059]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=7.73%, avg=7.06%, GC=0.07%]
+    ^-- Heap [used=485MB, free=72.36%, comm=743MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:22:13,210][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:18:00:068]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=6.9%, avg=7.09%, GC=0.17%]
+    ^-- Heap [used=652MB, free=62.83%, comm=742MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:23:13,218][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:19:00:076]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=8%, avg=7.12%, GC=0.13%]
+    ^-- Heap [used=584MB, free=66.73%, comm=742MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:24:13,226][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:20:00:084]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=7.17%, avg=7.14%, GC=0.07%]
+    ^-- Heap [used=681MB, free=61.21%, comm=743MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:25:13,231][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:21:00:089]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=6.5%, avg=7.16%, GC=0%]
+    ^-- Heap [used=211MB, free=87.94%, comm=744MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:26:13,241][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:22:00:097]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=8.17%, avg=7.18%, GC=0.1%]
+    ^-- Heap [used=112MB, free=93.62%, comm=741MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:27:13,248][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:23:00:103]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=8.67%, avg=7.19%, GC=0.47%]
+    ^-- Heap [used=525MB, free=70.09%, comm=743MB]
+    ^-- Non heap [used=43MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:28:13,248][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:24:00:103]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=6.93%, avg=7.2%, GC=0.17%]
+    ^-- Heap [used=183MB, free=89.57%, comm=743MB]
+    ^-- Non heap [used=44MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:29:13,256][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:25:00:111]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=6.67%, avg=7.19%, GC=0.2%]
+    ^-- Heap [used=467MB, free=73.41%, comm=742MB]
+    ^-- Non heap [used=44MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:30:13,262][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:26:00:114]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=7.5%, avg=7.19%, GC=0.1%]
+    ^-- Heap [used=315MB, free=82.04%, comm=743MB]
+    ^-- Non heap [used=44MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:31:13,264][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:27:00:122]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=7.07%, avg=7.2%, GC=0.07%]
+    ^-- Heap [used=350MB, free=80.03%, comm=744MB]
+    ^-- Non heap [used=44MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[19:32:13,273][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=e1a49007, name=null, uptime=00:28:00:131]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=8.4%, avg=7.2%, GC=0.17%]
+    ^-- Heap [used=519MB, free=70.43%, comm=740MB]
+    ^-- Non heap [used=44MB, free=-1%, comm=45MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]

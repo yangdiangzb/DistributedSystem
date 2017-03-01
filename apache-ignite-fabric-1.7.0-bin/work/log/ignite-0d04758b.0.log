@@ -1,0 +1,73 @@
+[16:57:15,709][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[16:57:15,711][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[16:57:15,711][INFO][main][IgniteKernal] Daemon mode: off
+[16:57:15,711][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[16:57:15,711][INFO][main][IgniteKernal] OS user: s1626297
+[16:57:15,712][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[16:57:15,712][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[16:57:15,713][INFO][main][IgniteKernal] VM total memory: 0.48GB
+[16:57:15,713][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[16:57:15,714][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[16:57:15,714][INFO][main][IgniteKernal] VM arguments: [-Xms512m, -Xmx512m, -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true]
+[16:57:15,714][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[16:57:15,714][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[16:57:15,720][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[16:57:15,777][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.2.60, fe80:0:0:0:ea39:35ff:fe48:4d89%em1
+[16:57:15,777][INFO][main][IgniteKernal] Enabled local MACs: E83935484D89
+[16:57:15,794][INFO][main][IgnitePluginProcessor] Configured plugins:
+[16:57:15,794][INFO][main][IgnitePluginProcessor]   ^-- None
+[16:57:15,794][INFO][main][IgnitePluginProcessor] 
+[16:57:16,000][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48105, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/0d04758b-f5b4-4cc4-b6e4-1dccb815360a-13947]
+[16:57:16,000][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48105, locHost=0.0.0.0/0.0.0.0]
+[16:57:16,055][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47105, locHost=0.0.0.0/0.0.0.0]
+[16:57:16,177][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[16:57:16,256][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[16:57:16,273][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[16:57:16,280][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[16:57:16,716][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[16:57:16,857][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11216]
+[16:57:18,055][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[16:57:18,068][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[16:57:18,146][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[16:57:18,619][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[16:57:18,619][INFO][main][IgniteKernal] 
+[16:57:18,620][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 0.5GB
+>>> VM name: 13947@joly.inf.ed.ac.uk
+>>> Local node [ID=0D04758B-F5B4-4CC4-B6E4-1DCCB815360A, order=5, clientMode=true]
+>>> Local node addresses: [joly.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.2.60]
+>>> Local ports: TCP:11216 TCP:47105 TCP:48105 
+
+[16:57:18,627][INFO][main][GridDiscoveryManager] Topology snapshot [ver=5, servers=1, clients=4, CPUs=4, heap=3.0GB]
+[16:57:18,748][INFO][exchange-worker-#45%null%][GridCacheProcessor] Started cache [name=partB, mode=PARTITIONED]
+[16:57:19,097][INFO][main][GridDeploymentLocalStore] Class locally deployed: class partB.StreamWords$1
+[16:57:27,482][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[16:58:18,618][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=0d04758b, name=null, uptime=00:01:00:017]
+    ^-- H/N/C [hosts=1, nodes=5, CPUs=4]
+    ^-- CPU [cur=3.23%, avg=3.23%, GC=0.6%]
+    ^-- Heap [used=58MB, free=88.33%, comm=502MB]
+    ^-- Non heap [used=41MB, free=-1%, comm=43MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[16:58:42,968][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=90f8c491-7f61-4710-8b09-8991039445c2, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=4, intOrder=4, lastExchangeTime=1479315437330, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[16:58:42,969][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=6, servers=1, clients=3, CPUs=4, heap=2.5GB]

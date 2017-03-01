@@ -1,0 +1,86 @@
+[21:18:43,173][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[21:18:43,174][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[21:18:43,174][INFO][main][IgniteKernal] Daemon mode: off
+[21:18:43,175][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[21:18:43,175][INFO][main][IgniteKernal] OS user: s1626297
+[21:18:43,175][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[21:18:43,175][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[21:18:43,176][INFO][main][IgniteKernal] VM total memory: 1.7GB
+[21:18:43,176][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[21:18:43,177][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[21:18:43,177][INFO][main][IgniteKernal] VM arguments: [-DIGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin, -Didea.launcher.port=7532, -Didea.launcher.bin.path=/opt/idea-ce/bin, -Dfile.encoding=UTF-8]
+[21:18:43,177][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[21:18:43,177][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[21:18:43,189][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[21:18:43,191][WARNING][pub-#26%null%][GridDiagnostic] Initial heap size is 124MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[21:18:43,254][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.3.32, fe80:0:0:0:a2d3:c1ff:fe0f:8a89%em1
+[21:18:43,254][INFO][main][IgniteKernal] Enabled local MACs: A0D3C10F8A89
+[21:18:43,271][INFO][main][IgnitePluginProcessor] Configured plugins:
+[21:18:43,271][INFO][main][IgnitePluginProcessor]   ^-- None
+[21:18:43,272][INFO][main][IgnitePluginProcessor] 
+[21:18:43,415][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48101, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/c5c1dd74-394c-4692-a70e-af2a192f038f-792]
+[21:18:43,415][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48101, locHost=0.0.0.0/0.0.0.0]
+[21:18:43,443][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0]
+[21:18:43,485][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[21:18:43,509][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[21:18:43,512][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[21:18:43,513][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[21:18:43,727][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[21:18:43,776][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+[21:18:44,164][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[21:18:44,174][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[21:18:44,188][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[21:18:44,358][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[21:18:44,358][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[21:18:44,358][INFO][main][IgniteKernal]   ^-- Disable peer class loading (set 'peerClassLoadingEnabled' to false)
+[21:18:44,359][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[21:18:44,359][INFO][main][IgniteKernal] 
+[21:18:44,359][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[21:18:44,359][INFO][main][IgniteKernal] 
+[21:18:44,360][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 1.7GB
+>>> VM name: 792@lodi.inf.ed.ac.uk
+>>> Local node [ID=C5C1DD74-394C-4692-A70E-AF2A192F038F, order=20, clientMode=true]
+>>> Local node addresses: [lodi.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.3.32]
+>>> Local ports: TCP:11212 TCP:47101 TCP:48101 
+
+[21:18:44,360][INFO][main][GridDiscoveryManager] Topology snapshot [ver=20, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[21:18:44,395][INFO][exchange-worker-#45%null%][GridCacheProcessor] Started cache [name=words, mode=PARTITIONED]
+[21:18:44,528][INFO][main][GridDeploymentLocalStore] Class locally deployed: class wordcount.StreamWords$StreamingExampleCacheEntryProcessor
+[21:18:53,964][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[21:19:24,307][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=ba627e41-1b4a-4a6d-a991-657e32360d9a, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.3.32], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lodi.inf.ed.ac.uk/129.215.3.32:0], discPort=0, order=21, intOrder=12, lastExchangeTime=1478812764295, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:19:24,307][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=21, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[21:19:44,352][INFO][grid-timeout-worker-#27%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c5c1dd74, name=null, uptime=00:01:00:001]
+    ^-- H/N/C [hosts=1, nodes=3, CPUs=4]
+    ^-- CPU [cur=0.17%, avg=0.25%, GC=0%]
+    ^-- Heap [used=503MB, free=71.31%, comm=633MB]
+    ^-- Non heap [used=41MB, free=-1%, comm=43MB]
+    ^-- Public thread pool [active=16, idle=0, qSize=16]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:19:44,362][WARNING][grid-timeout-worker-#27%null%][IgniteKernal] Possible thread pool starvation detected (no task completed in last 30000ms, is executorService pool size large enough?)
+[21:19:50,745][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=78a607d7-a480-4c78-a36f-f025222f94cf, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.3.32], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lodi.inf.ed.ac.uk/129.215.3.32:0], discPort=0, order=22, intOrder=13, lastExchangeTime=1478812790737, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:19:50,746][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=22, servers=1, clients=3, CPUs=4, heap=6.1GB]
+[21:19:54,184][WARNING][disco-event-worker-#42%null%][GridDiscoveryManager] Node FAILED: TcpDiscoveryNode [id=ba627e41-1b4a-4a6d-a991-657e32360d9a, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.3.32], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lodi.inf.ed.ac.uk/129.215.3.32:0], discPort=0, order=21, intOrder=12, lastExchangeTime=1478812764295, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:19:54,185][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=23, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[21:20:07,621][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=b51ef01c-82dd-47a4-8271-4538bc3c04eb, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.3.32], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lodi.inf.ed.ac.uk/129.215.3.32:0], discPort=0, order=24, intOrder=14, lastExchangeTime=1478812807610, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:20:07,622][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=24, servers=1, clients=3, CPUs=4, heap=6.1GB]

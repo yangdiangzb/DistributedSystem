@@ -1,0 +1,80 @@
+[18:37:11,218][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[18:37:11,220][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[18:37:11,220][INFO][main][IgniteKernal] Daemon mode: off
+[18:37:11,220][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[18:37:11,220][INFO][main][IgniteKernal] OS user: s1626297
+[18:37:11,221][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[18:37:11,221][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[18:37:11,222][INFO][main][IgniteKernal] VM total memory: 0.48GB
+[18:37:11,223][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[18:37:11,223][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[18:37:11,223][INFO][main][IgniteKernal] VM arguments: [-Xms512m, -Xmx512m, -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true]
+[18:37:11,223][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[18:37:11,223][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[18:37:11,251][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[18:37:11,322][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.2.60, fe80:0:0:0:ea39:35ff:fe48:4d89%em1
+[18:37:11,323][INFO][main][IgniteKernal] Enabled local MACs: E83935484D89
+[18:37:11,351][INFO][main][IgnitePluginProcessor] Configured plugins:
+[18:37:11,351][INFO][main][IgnitePluginProcessor]   ^-- None
+[18:37:11,351][INFO][main][IgnitePluginProcessor] 
+[18:37:11,506][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48103, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/a8e7c5dd-bcd1-492d-b366-226290b523d5-1930]
+[18:37:11,506][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48103, locHost=0.0.0.0/0.0.0.0]
+[18:37:11,541][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47103, locHost=0.0.0.0/0.0.0.0]
+[18:37:11,597][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[18:37:11,640][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[18:37:11,645][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[18:37:11,647][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[18:37:12,025][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[18:37:12,126][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11214]
+[18:37:12,589][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=cc17bea9-f188-488a-b05a-dbe5985ee8f4, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=4, intOrder=4, lastExchangeTime=1479321432526, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[18:37:12,591][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=4, servers=1, clients=3, CPUs=4, heap=2.5GB]
+[18:37:12,888][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[18:37:12,902][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[18:37:12,921][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[18:37:13,248][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[18:37:13,248][INFO][main][IgniteKernal] 
+[18:37:13,249][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 0.5GB
+>>> VM name: 1930@joly.inf.ed.ac.uk
+>>> Local node [ID=A8E7C5DD-BCD1-492D-B366-226290B523D5, order=3, clientMode=true]
+>>> Local node addresses: [joly.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.2.60]
+>>> Local ports: TCP:11214 TCP:47103 TCP:48103 
+
+[18:37:13,249][INFO][main][GridDiscoveryManager] Topology snapshot [ver=4, servers=1, clients=3, CPUs=4, heap=2.5GB]
+[18:37:13,384][INFO][exchange-worker-#45%null%][GridCacheProcessor] Started cache [name=partC, mode=PARTITIONED]
+[18:37:14,471][INFO][main][GridDeploymentLocalStore] Class locally deployed: class partC.StreamWords$1
+[18:37:19,347][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=cc17bea9-f188-488a-b05a-dbe5985ee8f4, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=4, intOrder=4, lastExchangeTime=1479321432526, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[18:37:19,348][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=5, servers=1, clients=2, CPUs=4, heap=2.0GB]
+[18:37:19,544][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=849eee6c-a934-4f4c-9120-639a8b458551, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.60], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, joly.inf.ed.ac.uk/129.215.2.60:0], discPort=0, order=2, intOrder=2, lastExchangeTime=1479321432355, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[18:37:19,545][INFO][disco-event-worker-#42%null%][GridDiscoveryManager] Topology snapshot [ver=6, servers=1, clients=1, CPUs=4, heap=1.5GB]
+[18:37:19,598][INFO][main][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[18:37:19,613][INFO][main][GridCacheProcessor] Stopped cache: ignite-marshaller-sys-cache
+[18:37:19,614][INFO][main][GridCacheProcessor] Stopped cache: ignite-sys-cache
+[18:37:19,614][INFO][main][GridCacheProcessor] Stopped cache: ignite-atomics-sys-cache
+[18:37:19,614][INFO][main][GridCacheProcessor] Stopped cache: partC
+[18:37:19,619][INFO][main][GridDeploymentLocalStore] Removed undeployed class: GridDeployment [ts=1479321433097, depMode=SHARED, clsLdr=sun.misc.Launcher$AppClassLoader@73d16e93, clsLdrId=418ad6e6851-a8e7c5dd-bcd1-492d-b366-226290b523d5, userVer=0, loc=true, sampleClsName=org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionFullMap, pendingUndeploy=false, undeployed=true, usage=0]
+[18:37:19,648][INFO][main][IgniteKernal] 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2 stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Grid uptime: 00:00:06:401
+
+

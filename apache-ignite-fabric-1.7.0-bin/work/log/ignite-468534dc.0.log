@@ -1,0 +1,290 @@
+[01:20:04,205][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[01:20:04,206][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[01:20:04,206][INFO][main][IgniteKernal] Daemon mode: off
+[01:20:04,206][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[01:20:04,206][INFO][main][IgniteKernal] OS user: s1626297
+[01:20:04,207][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[01:20:04,207][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[01:20:04,208][INFO][main][IgniteKernal] VM total memory: 0.96GB
+[01:20:04,208][INFO][main][IgniteKernal] Remote Management [restart: on, REST: on, JMX (remote: on, port: 49159, auth: off, ssl: off)]
+[01:20:04,208][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[01:20:04,208][INFO][main][IgniteKernal] VM arguments: [-Xms1g, -Xmx1g, -XX:+AggressiveOpts, -XX:MaxMetaspaceSize=256m, -DIGNITE_QUIET=true, -DIGNITE_SUCCESS_FILE=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ignite_success_fc261c2a-22fd-41bb-aac0-b3e8d8436aaa, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.port=49159, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -DIGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin, -DIGNITE_PROG_NAME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/bin/ignite.sh]
+[01:20:04,209][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[01:20:04,209][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[01:20:04,214][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[01:20:04,311][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.2.234, fe80:0:0:0:8edc:d4ff:fe57:28d5%em1
+[01:20:04,312][INFO][main][IgniteKernal] Enabled local MACs: 8CDCD45728D5
+[01:20:04,324][INFO][main][IgnitePluginProcessor] Configured plugins:
+[01:20:04,324][INFO][main][IgnitePluginProcessor]   ^-- None
+[01:20:04,324][INFO][main][IgnitePluginProcessor] 
+[01:20:04,506][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48104, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/468534dc-82e2-4fb6-9f0d-7239951fd53d-17455]
+[01:20:04,507][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48104, locHost=0.0.0.0/0.0.0.0]
+[01:20:04,547][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47104, locHost=0.0.0.0/0.0.0.0]
+[01:20:04,652][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[01:20:04,709][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[01:20:04,714][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[01:20:04,717][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[01:20:05,006][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[01:20:05,074][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11215]
+[01:20:05,153][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47500, localHost=0.0.0.0/0.0.0.0]
+[01:20:05,297][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=e34bb133-7eda-4e74-b2ff-10a61a202448, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=2, intOrder=2, lastExchangeTime=1479259205224, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:20:05,313][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=2, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[01:20:05,509][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[01:20:05,522][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[01:20:05,538][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[01:20:05,616][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=0], evt=NODE_JOINED, node=468534dc-82e2-4fb6-9f0d-7239951fd53d]
+[01:20:05,629][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=2, minorTopVer=0], evt=NODE_JOINED, node=e34bb133-7eda-4e74-b2ff-10a61a202448]
+[01:20:05,656][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[01:20:05,656][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[01:20:05,656][INFO][main][IgniteKernal]   ^-- Disable peer class loading (set 'peerClassLoadingEnabled' to false)
+[01:20:05,656][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[01:20:05,656][INFO][main][IgniteKernal] 
+[01:20:05,656][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[01:20:05,657][INFO][main][IgniteKernal] 
+[01:20:05,657][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 1.0GB
+>>> VM name: 17455@donners.inf.ed.ac.uk
+>>> Local node [ID=468534DC-82E2-4FB6-9F0D-7239951FD53D, order=1, clientMode=false]
+>>> Local node addresses: [donners.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.2.234]
+>>> Local ports: TCP:11215 TCP:47104 TCP:47500 TCP:48104 
+
+[01:20:05,658][INFO][main][GridDiscoveryManager] Topology snapshot [ver=2, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[01:20:05,865][INFO][exchange-worker-#55%null%][GridCacheProcessor] Started cache [name=partC, mode=PARTITIONED]
+[01:20:05,887][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=2, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=e34bb133-7eda-4e74-b2ff-10a61a202448]
+[01:20:05,960][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=2, minorTopVer=2], evt=DISCOVERY_CUSTOM_EVT, node=e34bb133-7eda-4e74-b2ff-10a61a202448]
+[01:20:05,974][INFO][exchange-worker-#55%null%][GridCacheProcessor] Stopped cache: partC
+[01:20:05,978][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=2, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, node=e34bb133-7eda-4e74-b2ff-10a61a202448]
+[01:20:05,996][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=e34bb133-7eda-4e74-b2ff-10a61a202448, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=2, intOrder=2, lastExchangeTime=1479259205224, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:20:05,997][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=3, servers=1, clients=0, CPUs=4, heap=1.0GB]
+[01:20:06,023][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=3, minorTopVer=0], evt=NODE_LEFT, node=e34bb133-7eda-4e74-b2ff-10a61a202448]
+[01:20:06,816][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=fecd8d33-8ea5-488f-a77d-0dce0fa3b154, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=4, intOrder=3, lastExchangeTime=1479259206799, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:20:06,817][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=4, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[01:20:06,821][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=4, minorTopVer=0], evt=NODE_JOINED, node=fecd8d33-8ea5-488f-a77d-0dce0fa3b154]
+[01:20:07,083][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=6903ee82-9ce8-45ff-8ed3-a2f01ad619e2, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=5, intOrder=4, lastExchangeTime=1479259207065, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:20:07,084][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=5, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[01:20:07,087][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=5, minorTopVer=0], evt=NODE_JOINED, node=6903ee82-9ce8-45ff-8ed3-a2f01ad619e2]
+[01:20:07,234][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=d3c4023f-3d30-4ad7-924d-f82bdcebb827, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=6, intOrder=5, lastExchangeTime=1479259207190, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:20:07,234][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=6, servers=1, clients=3, CPUs=4, heap=6.1GB]
+[01:20:07,238][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=6, minorTopVer=0], evt=NODE_JOINED, node=d3c4023f-3d30-4ad7-924d-f82bdcebb827]
+[01:20:07,556][INFO][exchange-worker-#55%null%][GridCacheProcessor] Started cache [name=partC, mode=PARTITIONED]
+[01:20:07,574][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=6, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=fecd8d33-8ea5-488f-a77d-0dce0fa3b154]
+[01:20:08,013][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=6, minorTopVer=2], evt=DISCOVERY_CUSTOM_EVT, node=6903ee82-9ce8-45ff-8ed3-a2f01ad619e2]
+[01:20:08,133][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=6, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, node=d3c4023f-3d30-4ad7-924d-f82bdcebb827]
+[01:20:08,585][INFO][pub-#9%null%][GridDeploymentPerVersionStore] Class was deployed in SHARED or CONTINUOUS mode: class partC.StreamWords$1
+[01:20:12,766][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=6903ee82-9ce8-45ff-8ed3-a2f01ad619e2, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=5, intOrder=4, lastExchangeTime=1479259207065, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:20:12,767][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=7, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[01:20:12,793][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=7, minorTopVer=0], evt=NODE_LEFT, node=6903ee82-9ce8-45ff-8ed3-a2f01ad619e2]
+[01:20:13,040][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=fecd8d33-8ea5-488f-a77d-0dce0fa3b154, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=4, intOrder=3, lastExchangeTime=1479259206799, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:20:13,040][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=8, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[01:20:13,046][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=8, minorTopVer=0], evt=NODE_LEFT, node=fecd8d33-8ea5-488f-a77d-0dce0fa3b154]
+[01:20:13,381][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=d3c4023f-3d30-4ad7-924d-f82bdcebb827, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=6, intOrder=5, lastExchangeTime=1479259207190, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:20:13,382][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=9, servers=1, clients=0, CPUs=4, heap=1.0GB]
+[01:20:13,383][INFO][disco-event-worker-#52%null%][GridDeploymentPerVersionStore] Class was undeployed in SHARED or CONTINUOUS mode [cls=class partC.StreamWords$1, alias=partC.StreamWords$1]
+[01:20:13,392][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=9, minorTopVer=0], evt=NODE_LEFT, node=d3c4023f-3d30-4ad7-924d-f82bdcebb827]
+[01:20:15,223][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[01:21:05,659][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=468534dc, name=null, uptime=00:01:00:008]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=0.33%, avg=2.53%, GC=0%]
+    ^-- Heap [used=248MB, free=74.72%, comm=981MB]
+    ^-- Non heap [used=45MB, free=96.99%, comm=46MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[01:22:05,660][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=468534dc, name=null, uptime=00:02:00:010]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=0.27%, avg=1.4%, GC=0%]
+    ^-- Heap [used=251MB, free=74.42%, comm=981MB]
+    ^-- Non heap [used=44MB, free=97.06%, comm=46MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[01:22:39,396][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=540b5e80-90fb-42b0-824a-d83eadc71a84, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=10, intOrder=6, lastExchangeTime=1479259359341, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:22:39,397][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=10, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[01:22:39,402][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=10, minorTopVer=0], evt=NODE_JOINED, node=540b5e80-90fb-42b0-824a-d83eadc71a84]
+[01:22:39,626][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=e0e2129f-c627-4363-9417-caf7b0a1da33, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=11, intOrder=7, lastExchangeTime=1479259359598, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:22:39,626][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=11, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[01:22:39,644][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=11, minorTopVer=0], evt=NODE_JOINED, node=e0e2129f-c627-4363-9417-caf7b0a1da33]
+[01:22:40,270][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=87432327-3793-4c5e-8343-d4bf43374f83, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47501, /0:0:0:0:0:0:0:1%lo:47501, /127.0.0.1:47501], discPort=47501, order=12, intOrder=8, lastExchangeTime=1479259360000, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[01:22:40,271][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=12, servers=2, clients=2, CPUs=4, heap=5.4GB]
+[01:22:40,320][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=3a3e9770-fc15-4016-b765-e20e4bd95191, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=13, intOrder=9, lastExchangeTime=1479259359990, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:22:40,320][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=13, servers=2, clients=3, CPUs=4, heap=7.1GB]
+[01:22:40,361][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=63c8ed99-a73f-473d-8281-9a8246c4002c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=14, intOrder=10, lastExchangeTime=1479259360160, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:22:40,362][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=14, servers=2, clients=4, CPUs=4, heap=8.9GB]
+[01:22:41,286][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=12, minorTopVer=0], evt=NODE_JOINED, node=87432327-3793-4c5e-8343-d4bf43374f83]
+[01:22:41,319][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=13, minorTopVer=0], evt=NODE_JOINED, node=3a3e9770-fc15-4016-b765-e20e4bd95191]
+[01:22:41,346][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=14, minorTopVer=0], evt=NODE_JOINED, node=63c8ed99-a73f-473d-8281-9a8246c4002c]
+[01:22:41,364][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=14, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=540b5e80-90fb-42b0-824a-d83eadc71a84]
+[01:22:41,395][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=14, minorTopVer=2], evt=DISCOVERY_CUSTOM_EVT, node=e0e2129f-c627-4363-9417-caf7b0a1da33]
+[01:22:41,731][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=14, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, node=3a3e9770-fc15-4016-b765-e20e4bd95191]
+[01:22:42,060][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=14, minorTopVer=4], evt=DISCOVERY_CUSTOM_EVT, node=63c8ed99-a73f-473d-8281-9a8246c4002c]
+[01:22:42,092][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=14, minorTopVer=5], evt=DISCOVERY_CUSTOM_EVT, node=540b5e80-90fb-42b0-824a-d83eadc71a84]
+[01:22:42,185][INFO][sys-#19%null%][GridCacheProcessor] Stopped cache: partC
+[01:22:42,187][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=14, minorTopVer=6], evt=DISCOVERY_CUSTOM_EVT, node=540b5e80-90fb-42b0-824a-d83eadc71a84]
+[01:22:42,211][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=540b5e80-90fb-42b0-824a-d83eadc71a84, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=10, intOrder=6, lastExchangeTime=1479259359341, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:22:42,212][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=15, servers=2, clients=3, CPUs=4, heap=7.1GB]
+[01:22:42,211][WARNING][aff-#58%null%][msg] Received message without registered handler (will ignore) [msg=GridDhtAffinityAssignmentRequest [topVer=AffinityTopologyVersion [topVer=14, minorTopVer=4]], node=63c8ed99-a73f-473d-8281-9a8246c4002c, locTopVer=AffinityTopologyVersion [topVer=14, minorTopVer=6], msgTopVer=AffinityTopologyVersion [topVer=14, minorTopVer=4], cacheDesc=null]
+[01:22:42,236][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=15, minorTopVer=0], evt=NODE_LEFT, node=540b5e80-90fb-42b0-824a-d83eadc71a84]
+[01:22:43,304][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=15, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=468534dc-82e2-4fb6-9f0d-7239951fd53d]
+[01:22:45,951][INFO][pub-#11%null%][GridDeploymentPerVersionStore] Class was deployed in SHARED or CONTINUOUS mode: class partC.StreamWords$1
+[01:22:45,952][SEVERE][pub-#11%null%][DataStreamProcessor] Failed to finish update job.
+java.lang.IllegalArgumentException: Cache is not configured: partC
+	at org.apache.ignite.internal.processors.cache.GridCacheProcessor.jcache(GridCacheProcessor.java:3315)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:100)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor.processRequest(DataStreamProcessor.java:305)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor.access$000(DataStreamProcessor.java:50)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor$1.onMessage(DataStreamProcessor.java:80)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[01:22:45,980][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=e0e2129f-c627-4363-9417-caf7b0a1da33, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=11, intOrder=7, lastExchangeTime=1479259359598, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:22:45,981][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=16, servers=2, clients=2, CPUs=4, heap=5.4GB]
+[01:22:45,981][INFO][disco-event-worker-#52%null%][GridDeploymentPerVersionStore] Class was undeployed in SHARED or CONTINUOUS mode [cls=class partC.StreamWords$1, alias=partC.StreamWords$1]
+[01:22:45,994][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=16, minorTopVer=0], evt=NODE_LEFT, node=e0e2129f-c627-4363-9417-caf7b0a1da33]
+[01:22:46,344][INFO][pub-#13%null%][GridDeploymentPerVersionStore] Class was deployed in SHARED or CONTINUOUS mode: class partC.StreamWords$1
+[01:22:46,345][SEVERE][pub-#13%null%][DataStreamProcessor] Failed to finish update job.
+java.lang.IllegalArgumentException: Cache is not configured: partC
+	at org.apache.ignite.internal.processors.cache.GridCacheProcessor.jcache(GridCacheProcessor.java:3315)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:100)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor.processRequest(DataStreamProcessor.java:305)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor.access$000(DataStreamProcessor.java:50)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor$1.onMessage(DataStreamProcessor.java:80)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[01:22:46,361][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=3a3e9770-fc15-4016-b765-e20e4bd95191, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=13, intOrder=9, lastExchangeTime=1479259359990, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:22:46,362][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=17, servers=2, clients=1, CPUs=4, heap=3.7GB]
+[01:22:46,362][INFO][disco-event-worker-#52%null%][GridDeploymentPerVersionStore] Class was undeployed in SHARED or CONTINUOUS mode [cls=class partC.StreamWords$1, alias=partC.StreamWords$1]
+[01:22:46,376][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=17, minorTopVer=0], evt=NODE_LEFT, node=3a3e9770-fc15-4016-b765-e20e4bd95191]
+[01:22:52,089][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=63c8ed99-a73f-473d-8281-9a8246c4002c, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=14, intOrder=10, lastExchangeTime=1479259360160, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:22:52,089][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=18, servers=2, clients=0, CPUs=4, heap=2.0GB]
+[01:22:52,091][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=18, minorTopVer=0], evt=NODE_LEFT, node=63c8ed99-a73f-473d-8281-9a8246c4002c]
+[01:22:56,712][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=87432327-3793-4c5e-8343-d4bf43374f83, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47501, /0:0:0:0:0:0:0:1%lo:47501, /127.0.0.1:47501], discPort=47501, order=12, intOrder=8, lastExchangeTime=1479259360000, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[01:22:56,712][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=19, servers=1, clients=0, CPUs=4, heap=1.0GB]
+[01:22:56,743][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=19, minorTopVer=0], evt=NODE_LEFT, node=87432327-3793-4c5e-8343-d4bf43374f83]
+[01:23:05,666][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=468534dc, name=null, uptime=00:03:00:012]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=0.4%, avg=1.47%, GC=0%]
+    ^-- Heap [used=169MB, free=82.77%, comm=981MB]
+    ^-- Non heap [used=47MB, free=96.9%, comm=48MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[01:23:20,205][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=e740e701-02c8-4d94-8495-3f08053b1bb8, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=20, intOrder=11, lastExchangeTime=1479259400162, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:23:20,205][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=20, servers=1, clients=1, CPUs=4, heap=2.7GB]
+[01:23:20,208][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=20, minorTopVer=0], evt=NODE_JOINED, node=e740e701-02c8-4d94-8495-3f08053b1bb8]
+[01:23:20,367][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=2fd55430-006d-4106-a44d-3d75037c7f77, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=21, intOrder=12, lastExchangeTime=1479259400348, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:23:20,367][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=21, servers=1, clients=2, CPUs=4, heap=4.4GB]
+[01:23:20,370][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=21, minorTopVer=0], evt=NODE_JOINED, node=2fd55430-006d-4106-a44d-3d75037c7f77]
+[01:23:20,584][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=6b0f25a8-5c5a-492b-b2aa-728f834745fc, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=22, intOrder=13, lastExchangeTime=1479259400568, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:23:20,585][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=22, servers=1, clients=3, CPUs=4, heap=6.1GB]
+[01:23:20,588][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=22, minorTopVer=0], evt=NODE_JOINED, node=6b0f25a8-5c5a-492b-b2aa-728f834745fc]
+[01:23:21,091][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=05451b61-aad7-4bed-9688-79819d86238a, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47501, /0:0:0:0:0:0:0:1%lo:47501, /127.0.0.1:47501], discPort=47501, order=23, intOrder=14, lastExchangeTime=1479259400815, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[01:23:21,091][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=23, servers=2, clients=3, CPUs=4, heap=7.1GB]
+[01:23:21,127][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=3d6505c7-d8f6-4acf-b990-a5b018319f49, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=24, intOrder=15, lastExchangeTime=1479259400907, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:23:21,127][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=24, servers=2, clients=4, CPUs=4, heap=8.9GB]
+[01:23:21,911][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=23, minorTopVer=0], evt=NODE_JOINED, node=05451b61-aad7-4bed-9688-79819d86238a]
+[01:23:21,915][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=24, minorTopVer=0], evt=NODE_JOINED, node=3d6505c7-d8f6-4acf-b990-a5b018319f49]
+[01:23:21,917][INFO][exchange-worker-#55%null%][GridCacheProcessor] Started cache [name=partC, mode=PARTITIONED]
+[01:23:22,099][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=24, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=e740e701-02c8-4d94-8495-3f08053b1bb8]
+[01:23:22,103][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=24, minorTopVer=2], evt=DISCOVERY_CUSTOM_EVT, node=2fd55430-006d-4106-a44d-3d75037c7f77]
+[01:23:22,110][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=24, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, node=6b0f25a8-5c5a-492b-b2aa-728f834745fc]
+[01:23:22,353][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=24, minorTopVer=4], evt=DISCOVERY_CUSTOM_EVT, node=3d6505c7-d8f6-4acf-b990-a5b018319f49]
+[01:23:22,773][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=24, minorTopVer=5], evt=DISCOVERY_CUSTOM_EVT, node=6b0f25a8-5c5a-492b-b2aa-728f834745fc]
+[01:23:22,837][INFO][sys-#21%null%][GridCacheProcessor] Stopped cache: partC
+[01:23:22,838][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=24, minorTopVer=6], evt=DISCOVERY_CUSTOM_EVT, node=6b0f25a8-5c5a-492b-b2aa-728f834745fc]
+[01:23:22,885][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=6b0f25a8-5c5a-492b-b2aa-728f834745fc, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=22, intOrder=13, lastExchangeTime=1479259400568, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:23:22,886][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=25, servers=2, clients=3, CPUs=4, heap=7.1GB]
+[01:23:22,889][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=25, minorTopVer=0], evt=NODE_LEFT, node=6b0f25a8-5c5a-492b-b2aa-728f834745fc]
+[01:23:23,853][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=25, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=468534dc-82e2-4fb6-9f0d-7239951fd53d]
+[01:23:28,168][INFO][pub-#6%null%][GridDeploymentPerVersionStore] Class was deployed in SHARED or CONTINUOUS mode: class partC.StreamWords$1
+[01:23:28,169][SEVERE][pub-#6%null%][DataStreamProcessor] Failed to finish update job.
+java.lang.IllegalArgumentException: Cache is not configured: partC
+	at org.apache.ignite.internal.processors.cache.GridCacheProcessor.jcache(GridCacheProcessor.java:3315)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:100)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor.processRequest(DataStreamProcessor.java:305)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor.access$000(DataStreamProcessor.java:50)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor$1.onMessage(DataStreamProcessor.java:80)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[01:23:28,213][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=2fd55430-006d-4106-a44d-3d75037c7f77, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=21, intOrder=12, lastExchangeTime=1479259400348, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:23:28,213][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=26, servers=2, clients=2, CPUs=4, heap=5.4GB]
+[01:23:28,214][INFO][disco-event-worker-#52%null%][GridDeploymentPerVersionStore] Class was undeployed in SHARED or CONTINUOUS mode [cls=class partC.StreamWords$1, alias=partC.StreamWords$1]
+[01:23:28,216][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=26, minorTopVer=0], evt=NODE_LEFT, node=2fd55430-006d-4106-a44d-3d75037c7f77]
+[01:23:28,332][INFO][pub-#9%null%][GridDeploymentPerVersionStore] Class was deployed in SHARED or CONTINUOUS mode: class partC.StreamWords$1
+[01:23:28,332][SEVERE][pub-#9%null%][DataStreamProcessor] Failed to finish update job.
+java.lang.IllegalArgumentException: Cache is not configured: partC
+	at org.apache.ignite.internal.processors.cache.GridCacheProcessor.jcache(GridCacheProcessor.java:3315)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:100)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor.processRequest(DataStreamProcessor.java:305)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor.access$000(DataStreamProcessor.java:50)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor$1.onMessage(DataStreamProcessor.java:80)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[01:23:28,395][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=e740e701-02c8-4d94-8495-3f08053b1bb8, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=20, intOrder=11, lastExchangeTime=1479259400162, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:23:28,399][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=27, servers=2, clients=1, CPUs=4, heap=3.7GB]
+[01:23:28,409][INFO][disco-event-worker-#52%null%][GridDeploymentPerVersionStore] Class was undeployed in SHARED or CONTINUOUS mode [cls=class partC.StreamWords$1, alias=partC.StreamWords$1]
+[01:23:28,411][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=27, minorTopVer=0], evt=NODE_LEFT, node=e740e701-02c8-4d94-8495-3f08053b1bb8]
+[01:23:28,444][INFO][pub-#11%null%][GridDeploymentPerVersionStore] Class was deployed in SHARED or CONTINUOUS mode: class partC.StreamWords$1
+[01:23:28,444][SEVERE][pub-#11%null%][DataStreamProcessor] Failed to finish update job.
+java.lang.IllegalArgumentException: Cache is not configured: partC
+	at org.apache.ignite.internal.processors.cache.GridCacheProcessor.jcache(GridCacheProcessor.java:3315)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:100)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor.processRequest(DataStreamProcessor.java:305)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor.access$000(DataStreamProcessor.java:50)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor$1.onMessage(DataStreamProcessor.java:80)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[01:23:28,491][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=3d6505c7-d8f6-4acf-b990-a5b018319f49, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0], discPort=0, order=24, intOrder=15, lastExchangeTime=1479259400907, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[01:23:28,491][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=28, servers=2, clients=0, CPUs=4, heap=2.0GB]
+[01:23:28,491][INFO][disco-event-worker-#52%null%][GridDeploymentPerVersionStore] Class was undeployed in SHARED or CONTINUOUS mode [cls=class partC.StreamWords$1, alias=partC.StreamWords$1]
+[01:23:28,494][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=28, minorTopVer=0], evt=NODE_LEFT, node=3d6505c7-d8f6-4acf-b990-a5b018319f49]
+[01:24:00,484][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=05451b61-aad7-4bed-9688-79819d86238a, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47501, /0:0:0:0:0:0:0:1%lo:47501, /127.0.0.1:47501], discPort=47501, order=23, intOrder=14, lastExchangeTime=1479259400815, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[01:24:00,484][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=29, servers=1, clients=0, CPUs=4, heap=1.0GB]
+[01:24:00,499][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=29, minorTopVer=0], evt=NODE_LEFT, node=05451b61-aad7-4bed-9688-79819d86238a]
+[01:24:05,534][INFO][Thread-3][G] Invoking shutdown hook...

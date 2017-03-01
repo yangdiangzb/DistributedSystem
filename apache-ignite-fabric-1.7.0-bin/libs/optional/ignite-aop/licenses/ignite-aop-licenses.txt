@@ -1,0 +1,25 @@
+// ------------------------------------------------------------------
+// List of ignite-aop module's dependencies provided as a part of this distribution
+// which licenses differ from Apache Software License.
+// ------------------------------------------------------------------
+
+==============================================================================
+For AOP alliance (http://aopalliance.sourceforge.net) aopalliance:aopalliance:jar:1.0
+==============================================================================
+This product bundles AOP alliance which is available under a:
+Public Domain. 
+
+==============================================================================
+For AspectJ runtime (http://www.aspectj.org) org.aspectj:aspectjrt:jar:1.7.2
+==============================================================================
+This product bundles AspectJ runtime which is available under a:
+Eclipse Public License - v 1.0. For details, see http://www.eclipse.org/legal/epl-v10.html.
+
+==============================================================================
+For AspectJ weaver (http://www.aspectj.org) org.aspectj:aspectjweaver:jar:1.7.2
+==============================================================================
+This product bundles AspectJ weaver which is available under a:
+Eclipse Public License - v 1.0. For details, see http://www.eclipse.org/legal/epl-v10.html.
+
+
+

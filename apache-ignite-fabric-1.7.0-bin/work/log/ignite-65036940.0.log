@@ -1,0 +1,41 @@
+[13:11:41,171][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[13:11:41,172][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[13:11:41,172][INFO][main][IgniteKernal] Daemon mode: off
+[13:11:41,173][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[13:11:41,173][INFO][main][IgniteKernal] OS user: s1626297
+[13:11:41,173][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[13:11:41,173][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[13:11:41,174][INFO][main][IgniteKernal] VM total memory: 0.96GB
+[13:11:41,175][INFO][main][IgniteKernal] Remote Management [restart: on, REST: on, JMX (remote: on, port: 49117, auth: off, ssl: off)]
+[13:11:41,175][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[13:11:41,175][INFO][main][IgniteKernal] VM arguments: [-Xms1g, -Xmx1g, -XX:+AggressiveOpts, -XX:MaxMetaspaceSize=256m, -DIGNITE_QUIET=true, -DIGNITE_SUCCESS_FILE=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ignite_success_2cf8a86b-7e71-4a3e-9521-0e79ebae60c4, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.port=49117, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -DIGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin, -DIGNITE_PROG_NAME=bin/ignite.sh]
+[13:11:41,175][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[13:11:41,175][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[13:11:41,177][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[13:11:41,218][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.3.62, fe80:0:0:0:8a51:fbff:fe55:4f8e%em1
+[13:11:41,218][INFO][main][IgniteKernal] Enabled local MACs: 8851FB554F8E
+[13:11:41,230][INFO][main][IgnitePluginProcessor] Configured plugins:
+[13:11:41,230][INFO][main][IgnitePluginProcessor]   ^-- None
+[13:11:41,230][INFO][main][IgnitePluginProcessor] 
+[13:11:41,325][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48100, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/65036940-b9b0-48e9-8034-306195a483e8-9193]
+[13:11:41,326][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48100, locHost=0.0.0.0/0.0.0.0]
+[13:11:41,340][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0]
+[13:11:41,373][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[13:11:41,393][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[13:11:41,396][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[13:11:41,397][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[13:11:41,601][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[13:11:41,653][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11211]
+[13:11:41,717][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47501, localHost=0.0.0.0/0.0.0.0]
+[13:11:46,777][WARNING][main][TcpDiscoverySpi] Node has not been connected to topology and will repeat join process. Check remote nodes logs for possible error messages. Note that large topology may require significant time to start. Increase 'TcpDiscoverySpi.networkTimeout' configuration property if getting this message on the starting nodes [networkTimeout=5000]

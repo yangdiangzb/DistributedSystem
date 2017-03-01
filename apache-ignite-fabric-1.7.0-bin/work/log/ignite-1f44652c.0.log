@@ -1,0 +1,224 @@
+[18:31:01,597][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[18:31:01,607][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[18:31:01,607][INFO][main][IgniteKernal] Daemon mode: off
+[18:31:01,608][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[18:31:01,608][INFO][main][IgniteKernal] OS user: s1626297
+[18:31:01,608][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[18:31:01,609][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[18:31:01,611][INFO][main][IgniteKernal] VM total memory: 0.96GB
+[18:31:01,611][INFO][main][IgniteKernal] Remote Management [restart: on, REST: on, JMX (remote: on, port: 49166, auth: off, ssl: off)]
+[18:31:01,611][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[18:31:01,612][INFO][main][IgniteKernal] VM arguments: [-Xms1g, -Xmx1g, -XX:+AggressiveOpts, -XX:MaxMetaspaceSize=256m, -DIGNITE_QUIET=true, -DIGNITE_SUCCESS_FILE=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ignite_success_8abe7007-509f-484a-a925-4c468e2eec85, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.port=49166, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -DIGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin, -DIGNITE_PROG_NAME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/bin/ignite.sh]
+[18:31:01,613][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[18:31:01,614][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[18:31:01,631][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[18:31:01,800][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.2.16, fe80:0:0:0:4a0f:cfff:fe5c:a96f%em1
+[18:31:01,800][INFO][main][IgniteKernal] Enabled local MACs: 480FCF5CA96F
+[18:31:01,843][INFO][main][IgnitePluginProcessor] Configured plugins:
+[18:31:01,843][INFO][main][IgnitePluginProcessor]   ^-- None
+[18:31:01,843][INFO][main][IgnitePluginProcessor] 
+[18:31:02,146][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48103, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/1f44652c-1e74-4c39-b0f8-d55a239a5255-9579]
+[18:31:02,149][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48103, locHost=0.0.0.0/0.0.0.0]
+[18:31:02,211][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47103, locHost=0.0.0.0/0.0.0.0]
+[18:31:02,307][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[18:31:02,353][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[18:31:02,360][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[18:31:02,362][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[18:31:02,720][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[18:31:02,810][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11214]
+[18:31:02,931][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47500, localHost=0.0.0.0/0.0.0.0]
+[18:31:03,315][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[18:31:03,328][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[18:31:03,350][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[18:31:03,410][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=0], evt=NODE_JOINED, node=1f44652c-1e74-4c39-b0f8-d55a239a5255]
+[18:31:03,459][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[18:31:03,459][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[18:31:03,459][INFO][main][IgniteKernal]   ^-- Disable peer class loading (set 'peerClassLoadingEnabled' to false)
+[18:31:03,459][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[18:31:03,460][INFO][main][IgniteKernal] 
+[18:31:03,460][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[18:31:03,460][INFO][main][IgniteKernal] 
+[18:31:03,460][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 1.0GB
+>>> VM name: 9579@lloyd.inf.ed.ac.uk
+>>> Local node [ID=1F44652C-1E74-4C39-B0F8-D55A239A5255, order=1, clientMode=false]
+>>> Local node addresses: [lloyd.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.2.16]
+>>> Local ports: TCP:11214 TCP:47103 TCP:47500 TCP:48103 
+
+[18:31:03,462][INFO][main][GridDiscoveryManager] Topology snapshot [ver=1, servers=1, clients=0, CPUs=4, heap=1.0GB]
+[18:31:04,091][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=0085cf67-9e68-4182-9871-4b743b518930, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lloyd.inf.ed.ac.uk/129.215.2.16:0], discPort=0, order=2, intOrder=2, lastExchangeTime=1479061864042, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[18:31:04,103][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=2, servers=1, clients=1, CPUs=4, heap=4.5GB]
+[18:31:04,120][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=2, minorTopVer=0], evt=NODE_JOINED, node=0085cf67-9e68-4182-9871-4b743b518930]
+[18:31:04,419][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=9e24ca6e-4881-46e3-919d-284dce0aa90f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lloyd.inf.ed.ac.uk/129.215.2.16:0], discPort=0, order=3, intOrder=3, lastExchangeTime=1479061864395, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[18:31:04,419][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=3, servers=1, clients=2, CPUs=4, heap=7.9GB]
+[18:31:04,424][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=3, minorTopVer=0], evt=NODE_JOINED, node=9e24ca6e-4881-46e3-919d-284dce0aa90f]
+[18:31:04,649][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=9dc31b5d-278d-4c4c-bd5c-c88420d14da7, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lloyd.inf.ed.ac.uk/129.215.2.16:0], discPort=0, order=4, intOrder=4, lastExchangeTime=1479061864623, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[18:31:04,650][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=4, servers=1, clients=3, CPUs=4, heap=11.0GB]
+[18:31:04,654][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=4, minorTopVer=0], evt=NODE_JOINED, node=9dc31b5d-278d-4c4c-bd5c-c88420d14da7]
+[18:31:05,271][INFO][exchange-worker-#55%null%][GridCacheProcessor] Started cache [name=partC, mode=PARTITIONED]
+[18:31:05,292][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=4, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=0085cf67-9e68-4182-9871-4b743b518930]
+[18:31:05,619][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=4, minorTopVer=2], evt=DISCOVERY_CUSTOM_EVT, node=9e24ca6e-4881-46e3-919d-284dce0aa90f]
+[18:31:05,943][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=4, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, node=9dc31b5d-278d-4c4c-bd5c-c88420d14da7]
+[18:31:05,956][INFO][pub-#8%null%][GridDeploymentPerVersionStore] Class was deployed in SHARED or CONTINUOUS mode: class partC.StreamWords$1
+[18:31:13,010][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[18:32:06,503][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=1f44652c, name=null, uptime=00:01:00:268]
+    ^-- H/N/C [hosts=1, nodes=4, CPUs=4]
+    ^-- CPU [cur=100%, avg=71.74%, GC=48.5%]
+    ^-- Heap [used=796MB, free=14.03%, comm=926MB]
+    ^-- Non heap [used=45MB, free=97.01%, comm=47MB]
+    ^-- Public thread pool [active=16, idle=0, qSize=33]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[18:32:49,472][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=9e24ca6e-4881-46e3-919d-284dce0aa90f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lloyd.inf.ed.ac.uk/129.215.2.16:0], discPort=0, order=3, intOrder=3, lastExchangeTime=1479061864395, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[18:32:49,472][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=5, servers=1, clients=2, CPUs=4, heap=7.9GB]
+[18:32:55,936][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=5, minorTopVer=0], evt=NODE_LEFT, node=9e24ca6e-4881-46e3-919d-284dce0aa90f]
+[18:33:08,995][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=1f44652c, name=null, uptime=00:02:02:828]
+    ^-- H/N/C [hosts=1, nodes=3, CPUs=4]
+    ^-- CPU [cur=100%, avg=82.37%, GC=75.9%]
+    ^-- Heap [used=829MB, free=10.44%, comm=926MB]
+    ^-- Non heap [used=45MB, free=96.99%, comm=48MB]
+    ^-- Public thread pool [active=16, idle=0, qSize=24]
+    ^-- System thread pool [active=0, idle=16, qSize=1]
+    ^-- Outbound messages queue [size=0]
+[18:33:13,489][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=9dc31b5d-278d-4c4c-bd5c-c88420d14da7, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lloyd.inf.ed.ac.uk/129.215.2.16:0], discPort=0, order=4, intOrder=4, lastExchangeTime=1479061864623, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[18:33:15,054][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=6, servers=1, clients=1, CPUs=4, heap=4.5GB]
+[18:33:17,223][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=0085cf67-9e68-4182-9871-4b743b518930, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lloyd.inf.ed.ac.uk/129.215.2.16:0], discPort=0, order=2, intOrder=2, lastExchangeTime=1479061864042, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[18:33:17,223][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=7, servers=1, clients=0, CPUs=4, heap=1.0GB]
+[18:33:17,224][INFO][disco-event-worker-#52%null%][GridDeploymentPerVersionStore] Class was undeployed in SHARED or CONTINUOUS mode [cls=class partC.StreamWords$1, alias=partC.StreamWords$1]
+[18:33:21,685][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=6, minorTopVer=0], evt=NODE_LEFT, node=9dc31b5d-278d-4c4c-bd5c-c88420d14da7]
+[18:33:23,757][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=7, minorTopVer=0], evt=NODE_LEFT, node=0085cf67-9e68-4182-9871-4b743b518930]
+[18:33:49,316][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=faf4f720-3159-48e8-acbe-3d4976560836, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lloyd.inf.ed.ac.uk/129.215.2.16:0], discPort=0, order=8, intOrder=5, lastExchangeTime=1479062027517, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[18:33:49,317][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=8, servers=1, clients=1, CPUs=4, heap=4.5GB]
+[18:33:49,322][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=8, minorTopVer=0], evt=NODE_JOINED, node=faf4f720-3159-48e8-acbe-3d4976560836]
+[18:33:50,092][INFO][exchange-worker-#55%null%][GridCacheProcessor] Started cache [name=partB, mode=PARTITIONED]
+[18:46:44,501][SEVERE][tcp-disco-sock-reader-#17%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=128, name=tcp-disco-sock-reader-#17%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:47:14,769][SEVERE][tcp-disco-client-message-worker-#11%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: IgniteSpiThread [name=tcp-disco-client-message-worker-#11%null%]
+java.lang.OutOfMemoryError: Java heap space
+	at java.io.ObjectOutputStream$BlockDataOutputStream.<init>(ObjectOutputStream.java:1750)
+	at java.io.ObjectOutputStream.<init>(ObjectOutputStream.java:242)
+	at org.apache.ignite.marshaller.jdk.JdkMarshallerObjectOutputStream.<init>(JdkMarshallerObjectOutputStream.java:35)
+	at org.apache.ignite.marshaller.jdk.JdkMarshaller.marshal(JdkMarshaller.java:74)
+	at org.apache.ignite.marshaller.AbstractMarshaller.marshal(AbstractMarshaller.java:62)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl$ClientMessageWorker.processMessage(ServerImpl.java:5948)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl$ClientMessageWorker.processMessage(ServerImpl.java:5865)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl$MessageWorkerAdapter.body(ServerImpl.java:6123)
+	at org.apache.ignite.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+[18:47:14,769][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=1f44652c, name=null, uptime=00:16:03:375]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=100%, avg=72.22%, GC=169.13%]
+    ^-- Heap [used=832MB, free=10.18%, comm=926MB]
+    ^-- Non heap [used=46MB, free=96.94%, comm=48MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[18:47:08,711][SEVERE][tcp-disco-sock-reader-#32%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=143, name=tcp-disco-sock-reader-#32%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:47:12,899][SEVERE][tcp-disco-sock-reader-#29%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=140, name=tcp-disco-sock-reader-#29%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:47:10,897][SEVERE][tcp-disco-sock-reader-#31%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=142, name=tcp-disco-sock-reader-#31%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:47:06,829][SEVERE][tcp-disco-sock-reader-#24%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=135, name=tcp-disco-sock-reader-#24%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:47:04,583][SEVERE][tcp-disco-sock-reader-#21%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=132, name=tcp-disco-sock-reader-#21%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:47:01,992][SEVERE][tcp-disco-sock-reader-#22%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=133, name=tcp-disco-sock-reader-#22%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:47:01,291][SEVERE][tcp-disco-sock-reader-#18%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=129, name=tcp-disco-sock-reader-#18%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:46:56,911][SEVERE][tcp-disco-sock-reader-#20%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=131, name=tcp-disco-sock-reader-#20%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:47:00,584][SEVERE][tcp-disco-sock-reader-#19%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=130, name=tcp-disco-sock-reader-#19%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:46:42,143][SEVERE][tcp-disco-msg-worker-#2%null%][TcpDiscoverySpi] TcpDiscoverSpi's message worker thread failed abnormally. Stopping the node in order to prevent cluster wide instability.
+java.lang.OutOfMemoryError: Java heap space
+[18:46:10,586][INFO][Thread-2][G] Invoking shutdown hook...
+[18:46:55,299][SEVERE][tcp-disco-sock-reader-#23%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=134, name=tcp-disco-sock-reader-#23%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:46:52,082][SEVERE][tcp-disco-sock-reader-#25%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=136, name=tcp-disco-sock-reader-#25%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:46:50,669][SEVERE][tcp-disco-sock-reader-#26%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=137, name=tcp-disco-sock-reader-#26%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:46:49,118][SEVERE][tcp-disco-sock-reader-#27%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=138, name=tcp-disco-sock-reader-#27%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:49:34,105][SEVERE][tcp-disco-sock-reader-#44%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=155, name=tcp-disco-sock-reader-#44%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:49:30,817][SEVERE][tcp-disco-sock-reader-#43%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=154, name=tcp-disco-sock-reader-#43%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:49:19,217][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=1f44652c, name=null, uptime=00:18:01:210]
+    ^-- H/N/C [hosts=1, nodes=2, CPUs=4]
+    ^-- CPU [cur=100%, avg=72.8%, GC=370.27%]
+    ^-- Heap [used=832MB, free=10.15%, comm=926MB]
+    ^-- Non heap [used=45MB, free=96.99%, comm=48MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[18:50:33,401][INFO][Thread-2][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[18:49:10,214][SEVERE][tcp-disco-sock-reader-#33%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=144, name=tcp-disco-sock-reader-#33%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:49:04,665][SEVERE][tcp-disco-sock-reader-#37%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=148, name=tcp-disco-sock-reader-#37%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:49:00,563][SEVERE][tcp-disco-sock-reader-#36%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=147, name=tcp-disco-sock-reader-#36%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:48:55,404][SEVERE][tcp-disco-sock-reader-#38%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=149, name=tcp-disco-sock-reader-#38%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:48:48,415][SEVERE][tcp-disco-sock-reader-#39%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=150, name=tcp-disco-sock-reader-#39%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:48:40,802][SEVERE][tcp-disco-sock-reader-#40%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=151, name=tcp-disco-sock-reader-#40%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:48:31,700][SEVERE][tcp-disco-sock-reader-#41%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=152, name=tcp-disco-sock-reader-#41%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:48:28,082][SEVERE][tcp-disco-sock-reader-#34%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=145, name=tcp-disco-sock-reader-#34%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:48:26,629][SEVERE][tcp-disco-sock-reader-#35%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=146, name=tcp-disco-sock-reader-#35%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:46:45,195][SEVERE][tcp-disco-sock-reader-#14%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=125, name=tcp-disco-sock-reader-#14%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:43:51,351][SEVERE][tcp-disco-sock-reader-#13%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=121, name=tcp-disco-sock-reader-#13%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+	at java.io.BufferedInputStream.<init>(BufferedInputStream.java:203)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl$SocketReader.body(ServerImpl.java:5253)
+	at org.apache.ignite.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+[18:47:25,722][SEVERE][exchange-worker-#55%null%][GridDhtPartitionsExchangeFuture] Failed to reinitialize local partitions (preloading will be stopped): GridDhtPartitionExchangeId [topVer=AffinityTopologyVersion [topVer=8, minorTopVer=1], nodeId=faf4f720, evt=DISCOVERY_CUSTOM_EVT]
+java.lang.OutOfMemoryError: Java heap space
+[18:47:23,232][SEVERE][tcp-disco-sock-reader-#30%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=141, name=tcp-disco-sock-reader-#30%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:47:21,795][SEVERE][tcp-disco-sock-reader-#28%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=139, name=tcp-disco-sock-reader-#28%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:50:55,090][SEVERE][tcp-disco-sock-reader-#45%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=156, name=tcp-disco-sock-reader-#45%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:50:55,090][SEVERE][tcp-disco-sock-reader-#49%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=160, name=tcp-disco-sock-reader-#49%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:50:52,405][SEVERE][tcp-disco-sock-reader-#46%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=157, name=tcp-disco-sock-reader-#46%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:50:52,405][SEVERE][tcp-disco-sock-reader-#47%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=158, name=tcp-disco-sock-reader-#47%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:50:39,262][SEVERE][tcp-disco-sock-reader-#48%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=159, name=tcp-disco-sock-reader-#48%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space
+[18:50:32,691][SEVERE][tcp-disco-sock-reader-#42%null%][TcpDiscoverySpi] Runtime error caught during grid runnable execution: Socket reader [id=153, name=tcp-disco-sock-reader-#42%null%, nodeId=null]
+java.lang.OutOfMemoryError: Java heap space

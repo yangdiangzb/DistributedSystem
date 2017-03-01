@@ -1,0 +1,13 @@
+// ------------------------------------------------------------------
+// List of ignite-osgi module's dependencies provided as a part of this distribution
+// which licenses differ from Apache Software License.
+// ------------------------------------------------------------------
+
+==============================================================================
+For osgi.core (http://www.osgi.org) org.osgi:org.osgi.core:jar:5.0.0
+==============================================================================
+This product bundles osgi.core which is available under a:
+Apache License, Version 2.0. For details, see http://opensource.org/licenses/apache2.0.php.
+
+
+

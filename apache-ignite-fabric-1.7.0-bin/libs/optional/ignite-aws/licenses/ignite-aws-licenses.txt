@@ -1,0 +1,25 @@
+// ------------------------------------------------------------------
+// List of ignite-aws module's dependencies provided as a part of this distribution
+// which licenses differ from Apache Software License.
+// ------------------------------------------------------------------
+
+==============================================================================
+For AWS SDK for Java - Core (https://aws.amazon.com/sdkforjava) com.amazonaws:aws-java-sdk-core:jar:1.10.29
+==============================================================================
+This product bundles AWS SDK for Java - Core which is available under a:
+Apache License, Version 2.0. For details, see https://aws.amazon.com/apache2.0.
+
+==============================================================================
+For AWS Java SDK for AWS KMS (https://aws.amazon.com/sdkforjava) com.amazonaws:aws-java-sdk-kms:jar:1.10.29
+==============================================================================
+This product bundles AWS Java SDK for AWS KMS which is available under a:
+Apache License, Version 2.0. For details, see https://aws.amazon.com/apache2.0.
+
+==============================================================================
+For AWS Java SDK for Amazon S3 (https://aws.amazon.com/sdkforjava) com.amazonaws:aws-java-sdk-s3:jar:1.10.29
+==============================================================================
+This product bundles AWS Java SDK for Amazon S3 which is available under a:
+Apache License, Version 2.0. For details, see https://aws.amazon.com/apache2.0.
+
+
+

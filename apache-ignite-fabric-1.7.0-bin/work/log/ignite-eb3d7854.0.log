@@ -1,0 +1,85 @@
+[19:49:04,194][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[19:49:04,196][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/config/default-config.xml
+[19:49:04,196][INFO][main][IgniteKernal] Daemon mode: off
+[19:49:04,196][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[19:49:04,196][INFO][main][IgniteKernal] OS user: s1626297
+[19:49:04,197][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[19:49:04,197][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[19:49:04,198][INFO][main][IgniteKernal] VM total memory: 0.96GB
+[19:49:04,198][INFO][main][IgniteKernal] Remote Management [restart: on, REST: on, JMX (remote: on, port: 49123, auth: off, ssl: off)]
+[19:49:04,198][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[19:49:04,198][INFO][main][IgniteKernal] VM arguments: [-Xms1g, -Xmx1g, -XX:+AggressiveOpts, -XX:MaxMetaspaceSize=256m, -DIGNITE_QUIET=true, -DIGNITE_SUCCESS_FILE=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ignite_success_f956b04a-f13b-4357-b392-297982d760cd, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.port=49123, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -DIGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin, -DIGNITE_PROG_NAME=bin/ignite.sh]
+[19:49:04,199][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[19:49:04,201][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[19:49:04,243][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.3.62, fe80:0:0:0:8a51:fbff:fe55:4f8e%em1
+[19:49:04,243][INFO][main][IgniteKernal] Enabled local MACs: 8851FB554F8E
+[19:49:04,256][INFO][main][IgnitePluginProcessor] Configured plugins:
+[19:49:04,256][INFO][main][IgnitePluginProcessor]   ^-- None
+[19:49:04,256][INFO][main][IgnitePluginProcessor] 
+[19:49:04,356][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48100, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/eb3d7854-1d90-463a-9014-54279aff3715-27723]
+[19:49:04,356][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48100, locHost=0.0.0.0/0.0.0.0]
+[19:49:04,371][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0]
+[19:49:04,412][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[19:49:04,434][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[19:49:04,437][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[19:49:04,438][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[19:49:04,693][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11211]
+[19:49:04,756][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47500, localHost=0.0.0.0/0.0.0.0]
+[19:49:04,761][WARNING][main][TcpDiscoveryMulticastIpFinder] TcpDiscoveryMulticastIpFinder has no pre-configured addresses (it is recommended in production to specify at least one address in TcpDiscoveryMulticastIpFinder.getAddresses() configuration property)
+[19:49:05,527][WARNING][main][GridDiscoveryManager] Local java version is different from remote [loc=8, rmt=7]
+[19:49:05,528][SEVERE][main][IgniteKernal] Failed to start manager: GridManagerAdapter [enabled=true, name=o.a.i.i.managers.discovery.GridDiscoveryManager]
+class org.apache.ignite.IgniteCheckedException: Remote node has peer class loading enabled flag different from local [locId8=eb3d7854, locPeerClassLoading=false, rmtId8=344ac595, rmtPeerClassLoading=true, rmtAddrs=[pollenzo.inf.ed.ac.uk/0:0:0:0:0:0:0:1%1, /127.0.0.1, /129.215.3.40]]
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.checkAttributes(GridDiscoveryManager.java:1082)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:701)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1571)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:901)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:1739)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1589)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1042)
+	at org.apache.ignite.internal.IgnitionEx.startConfigurations(IgnitionEx.java:964)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:850)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:749)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:619)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:589)
+	at org.apache.ignite.Ignition.start(Ignition.java:347)
+	at org.apache.ignite.startup.cmdline.CommandLineStartup.main(CommandLineStartup.java:302)
+[19:49:05,529][SEVERE][main][IgniteKernal] Got exception while starting (will rollback startup routine).
+class org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1576)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:901)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:1739)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1589)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1042)
+	at org.apache.ignite.internal.IgnitionEx.startConfigurations(IgnitionEx.java:964)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:850)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:749)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:619)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:589)
+	at org.apache.ignite.Ignition.start(Ignition.java:347)
+	at org.apache.ignite.startup.cmdline.CommandLineStartup.main(CommandLineStartup.java:302)
+Caused by: class org.apache.ignite.IgniteCheckedException: Remote node has peer class loading enabled flag different from local [locId8=eb3d7854, locPeerClassLoading=false, rmtId8=344ac595, rmtPeerClassLoading=true, rmtAddrs=[pollenzo.inf.ed.ac.uk/0:0:0:0:0:0:0:1%1, /127.0.0.1, /129.215.3.40]]
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.checkAttributes(GridDiscoveryManager.java:1082)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:701)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1571)
+	... 11 more
+[19:49:05,532][INFO][main][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[19:49:05,535][WARNING][main][GridCacheIoManager] Failed to unregister ordered cache communication handler because it was not found for topic: T6 [topic=TOPIC_CACHE, id1=83e8ca36-2305-3266-8e65-1463be879baa, id2=0]
+[19:49:05,649][INFO][main][IgniteKernal] 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2 stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Grid uptime: 00:00:01:826
+
+

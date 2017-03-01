@@ -1,0 +1,258 @@
+[20:48:22,540][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[20:48:22,541][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite.xml
+[20:48:22,542][INFO][main][IgniteKernal] Daemon mode: off
+[20:48:22,542][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[20:48:22,542][INFO][main][IgniteKernal] OS user: s1626297
+[20:48:22,542][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.7
+[20:48:22,542][INFO][main][IgniteKernal] VM information: OpenJDK Runtime Environment 1.7.0_111-mockbuild_2016_07_27_06_39-b00 Oracle Corporation OpenJDK 64-Bit Server VM 24.111-b01
+[20:48:22,544][INFO][main][IgniteKernal] VM total memory: 1.7GB
+[20:48:22,544][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[20:48:22,544][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[20:48:22,544][INFO][main][IgniteKernal] VM arguments: [-DIGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin, -Didea.launcher.port=7534, -Didea.launcher.bin.path=/opt/idea-ce/bin, -Dfile.encoding=UTF-8]
+[20:48:22,544][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[20:48:22,544][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[20:48:22,548][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[20:48:22,550][WARNING][pub-#6%null%][GridDiagnostic] Initial heap size is 122MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[20:48:22,616][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.3.62, fe80:0:0:0:8a51:fbff:fe55:4f8e%2
+[20:48:22,616][INFO][main][IgniteKernal] Enabled local MACs: 8851FB554F8E
+[20:48:22,634][INFO][main][IgnitePluginProcessor] Configured plugins:
+[20:48:22,634][INFO][main][IgnitePluginProcessor]   ^-- None
+[20:48:22,634][INFO][main][IgnitePluginProcessor] 
+[20:48:22,705][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48101, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/2923536f-3848-4e8d-974a-86459ac592da-3691]
+[20:48:22,705][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48101, locHost=0.0.0.0/0.0.0.0]
+[20:48:22,725][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0]
+[20:48:22,765][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[20:48:22,794][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[20:48:22,798][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[20:48:22,800][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[20:48:23,013][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[20:48:23,071][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+[20:48:23,147][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47501, localHost=0.0.0.0/0.0.0.0]
+[20:48:24,108][WARNING][main][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[20:48:24,344][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[20:48:24,372][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[20:48:24,405][INFO][main][GridCacheProcessor] Started cache [name=words, mode=PARTITIONED]
+[20:48:24,407][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[20:48:24,418][INFO][main][GridCacheProcessor] Started cache [name=default, mode=PARTITIONED]
+[20:48:24,857][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=ignite-sys-cache, waitList=[]]
+[20:48:24,857][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=ignite-marshaller-sys-cache, waitList=[]]
+[20:48:24,857][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=ignite-atomics-sys-cache, waitList=[ignite-sys-cache, ignite-marshaller-sys-cache]]
+[20:48:24,857][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=null, waitList=[ignite-sys-cache, ignite-marshaller-sys-cache, ignite-atomics-sys-cache]]
+[20:48:24,857][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=words, waitList=[ignite-sys-cache, ignite-marshaller-sys-cache, ignite-atomics-sys-cache]]
+[20:48:24,858][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Rebalancing required [top=AffinityTopologyVersion [topVer=145, minorTopVer=0], evt=NODE_JOINED, node=2923536f-3848-4e8d-974a-86459ac592da]
+[20:48:24,858][INFO][exchange-worker-#54%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Starting rebalancing [cache=ignite-marshaller-sys-cache, mode=SYNC, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, partitionsCount=7, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:24,954][INFO][exchange-worker-#54%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Starting rebalancing [cache=ignite-marshaller-sys-cache, mode=SYNC, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, partitionsCount=9, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:24,954][INFO][exchange-worker-#54%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Starting rebalancing [cache=ignite-marshaller-sys-cache, mode=SYNC, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, partitionsCount=4, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:24,960][INFO][sys-#19%null%][GridDhtPartitionDemander] <ignite-sys-cache> Starting rebalancing [cache=ignite-sys-cache, mode=SYNC, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, partitionsCount=30, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:24,961][INFO][sys-#19%null%][GridDhtPartitionDemander] <ignite-sys-cache> Starting rebalancing [cache=ignite-sys-cache, mode=SYNC, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, partitionsCount=38, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:24,961][INFO][sys-#19%null%][GridDhtPartitionDemander] <ignite-sys-cache> Starting rebalancing [cache=ignite-sys-cache, mode=SYNC, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, partitionsCount=32, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:24,983][INFO][marshaller-cache-#58%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Completed rebalancing [cache=ignite-marshaller-sys-cache, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=121 ms]
+[20:48:24,985][INFO][marshaller-cache-#59%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Completed rebalancing [cache=ignite-marshaller-sys-cache, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=121 ms]
+[20:48:24,988][INFO][marshaller-cache-#58%null%][GridDhtPartitionDemander] <ignite-sys-cache> Completed rebalancing [cache=ignite-sys-cache, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=30 ms]
+[20:48:24,989][INFO][marshaller-cache-#59%null%][GridDhtPartitionDemander] <ignite-sys-cache> Completed rebalancing [cache=ignite-sys-cache, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=30 ms]
+[20:48:25,051][INFO][marshaller-cache-#63%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Completed (final) rebalancing [cache=ignite-marshaller-sys-cache, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=192 ms]
+[20:48:25,053][INFO][marshaller-cache-#63%null%][GridDhtPartitionDemander] <ignite-sys-cache> Completed (final) rebalancing [cache=ignite-sys-cache, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=91 ms]
+[20:48:25,054][INFO][sys-#19%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Starting rebalancing [cache=ignite-atomics-sys-cache, mode=SYNC, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, partitionsCount=76, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:25,054][INFO][sys-#19%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Starting rebalancing [cache=ignite-atomics-sys-cache, mode=SYNC, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, partitionsCount=76, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:25,054][INFO][sys-#19%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Starting rebalancing [cache=ignite-atomics-sys-cache, mode=SYNC, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, partitionsCount=87, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:25,061][INFO][sys-#21%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Completed rebalancing [cache=ignite-atomics-sys-cache, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=10 ms]
+[20:48:25,068][INFO][sys-#22%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Completed rebalancing [cache=ignite-atomics-sys-cache, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=20 ms]
+[20:48:25,069][INFO][sys-#20%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Completed (final) rebalancing [cache=ignite-atomics-sys-cache, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=20 ms]
+[20:48:25,069][INFO][sys-#19%null%][GridDhtPartitionDemander] <default> Starting rebalancing [cache=null, mode=ASYNC, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, partitionsCount=76, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:25,070][INFO][sys-#19%null%][GridDhtPartitionDemander] <default> Starting rebalancing [cache=null, mode=ASYNC, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, partitionsCount=76, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:25,070][INFO][sys-#19%null%][GridDhtPartitionDemander] <default> Starting rebalancing [cache=null, mode=ASYNC, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, partitionsCount=87, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:25,070][INFO][sys-#19%null%][GridDhtPartitionDemander] <words> Starting rebalancing [cache=words, mode=ASYNC, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, partitionsCount=76, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:25,071][INFO][sys-#19%null%][GridDhtPartitionDemander] <words> Starting rebalancing [cache=words, mode=ASYNC, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, partitionsCount=76, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:25,071][INFO][sys-#19%null%][GridDhtPartitionDemander] <words> Starting rebalancing [cache=words, mode=ASYNC, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, partitionsCount=87, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], updateSeq=1]
+[20:48:25,081][INFO][sys-#24%null%][GridDhtPartitionDemander] <default> Completed rebalancing [cache=null, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=10 ms]
+[20:48:25,082][INFO][sys-#25%null%][GridDhtPartitionDemander] <default> Completed rebalancing [cache=null, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=10 ms]
+[20:48:25,085][INFO][sys-#23%null%][GridDhtPartitionDemander] <default> Completed (final) rebalancing [cache=null, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=10 ms]
+[20:48:25,090][INFO][sys-#23%null%][GridDhtPartitionDemander] <words> Completed rebalancing [cache=words, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=20 ms]
+[20:48:25,093][INFO][sys-#25%null%][GridDhtPartitionDemander] <words> Completed rebalancing [cache=words, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=20 ms]
+[20:48:25,095][INFO][sys-#24%null%][GridDhtPartitionDemander] <words> Completed (final) rebalancing [cache=words, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, topology=AffinityTopologyVersion [topVer=145, minorTopVer=0], time=20 ms]
+[20:48:25,135][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[20:48:25,135][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[20:48:25,136][INFO][main][IgniteKernal]   ^-- Disable peer class loading (set 'peerClassLoadingEnabled' to false)
+[20:48:25,136][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[20:48:25,136][INFO][main][IgniteKernal] 
+[20:48:25,136][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[20:48:25,136][INFO][main][IgniteKernal] 
+[20:48:25,137][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 1.7GB
+>>> VM name: 3691@parrot.inf.ed.ac.uk
+>>> Local node [ID=2923536F-3848-4E8D-974A-86459AC592DA, order=145, clientMode=false]
+>>> Local node addresses: [parrot.inf.ed.ac.uk/0:0:0:0:0:0:0:1%1, /127.0.0.1, /129.215.3.62]
+>>> Local ports: TCP:11212 TCP:47101 UDP:47400 TCP:47501 TCP:48101 
+
+[20:48:25,138][INFO][main][GridDiscoveryManager] Topology snapshot [ver=145, servers=4, clients=1, CPUs=12, heap=7.8GB]
+[20:48:25,143][INFO][main][GridDeploymentLocalStore] Class locally deployed: class example.hello.HelloWorld$1
+[20:48:25,278][WARNING][main][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/127.0.0.1:47106, failureDetectionTimeout=10000]
+[20:48:25,279][WARNING][main][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/0:0:0:0:0:0:0:1%lo:47106, failureDetectionTimeout=10000]
+[20:48:25,279][WARNING][main][TcpCommunicationSpi] Failed to connect to a remote node (make sure that destination node is alive and operating system firewall is disabled on local and remote hosts) [addrs=[donners.inf.ed.ac.uk/129.215.2.234:47106, /127.0.0.1:47106, /0:0:0:0:0:0:0:1%lo:47106]]
+[20:48:25,292][SEVERE][main][GridTaskWorker] Failed to send job request: GridJobExecuteRequest [subjId=2923536f-3848-4e8d-974a-86459ac592da, sesId=2298c804851-2923536f-3848-4e8d-974a-86459ac592da, jobId=5298c804851-2923536f-3848-4e8d-974a-86459ac592da, startTaskTime=1478551705138, timeout=9223372036854775807, taskName=example.hello.HelloWorld$1, userVer=0, taskClsName=example.hello.HelloWorld$1, ldrParticipants=null, cpSpi=null, createTime=1478551705269, clsLdrId=6198c804851-2923536f-3848-4e8d-974a-86459ac592da, depMode=SHARED, dynamicSiblings=false, forceLocDep=false, sesFullSup=false, internal=false]
+class org.apache.ignite.IgniteCheckedException: Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=140, intOrder=72, lastExchangeTime=1478551704018, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true], topic=TOPIC_JOB, msg=GridJobExecuteRequest [subjId=2923536f-3848-4e8d-974a-86459ac592da, sesId=2298c804851-2923536f-3848-4e8d-974a-86459ac592da, jobId=5298c804851-2923536f-3848-4e8d-974a-86459ac592da, startTaskTime=1478551705138, timeout=9223372036854775807, taskName=example.hello.HelloWorld$1, userVer=0, taskClsName=example.hello.HelloWorld$1, ldrParticipants=null, cpSpi=null, createTime=1478551705269, clsLdrId=6198c804851-2923536f-3848-4e8d-974a-86459ac592da, depMode=SHARED, dynamicSiblings=false, forceLocDep=false, sesFullSup=false, internal=false], policy=0]
+	at org.apache.ignite.internal.managers.communication.GridIoManager.send(GridIoManager.java:1309)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.send(GridIoManager.java:1373)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.sendRequest(GridTaskWorker.java:1281)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.processMappedJobs(GridTaskWorker.java:612)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.body(GridTaskWorker.java:504)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:110)
+	at org.apache.ignite.internal.processors.task.GridTaskProcessor.startTask(GridTaskProcessor.java:678)
+	at org.apache.ignite.internal.processors.task.GridTaskProcessor.execute(GridTaskProcessor.java:403)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor.runAsync(GridClosureProcessor.java:226)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor.runAsync(GridClosureProcessor.java:200)
+	at org.apache.ignite.internal.IgniteComputeImpl.broadcast(IgniteComputeImpl.java:250)
+	at example.hello.HelloWorld.main(HelloWorld.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Failed to send message to remote node: TcpDiscoveryNode [id=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=140, intOrder=72, lastExchangeTime=1478551704018, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage0(TcpCommunicationSpi.java:1996)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage(TcpCommunicationSpi.java:1936)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.send(GridIoManager.java:1304)
+	... 16 more
+Caused by: class org.apache.ignite.IgniteCheckedException: Failed to connect to node (is node still alive?). Make sure that each ComputeTask and cache Transaction has a timeout set in order to prevent parties from waiting forever in case of network issues [nodeId=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[donners.inf.ed.ac.uk/129.215.2.234:47106, /127.0.0.1:47106, /0:0:0:0:0:0:0:1%lo:47106]]
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2499)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createNioClient(TcpCommunicationSpi.java:2140)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.reserveClient(TcpCommunicationSpi.java:2034)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage0(TcpCommunicationSpi.java:1970)
+	... 18 more
+	Suppressed: class org.apache.ignite.IgniteCheckedException: Failed to connect to address: donners.inf.ed.ac.uk/129.215.2.234:47106
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2504)
+		... 21 more
+	Caused by: class org.apache.ignite.IgniteCheckedException: Failed to read remote node recovery handshake (connection closed).
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.safeHandshake(TcpCommunicationSpi.java:2709)
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2371)
+		... 21 more
+	Suppressed: class org.apache.ignite.IgniteCheckedException: Failed to connect to address: /127.0.0.1:47106
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2504)
+		... 21 more
+	Caused by: java.net.ConnectException: Connection refused
+		at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+		at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+		at sun.nio.ch.SocketAdaptor.connect(SocketAdaptor.java:117)
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2363)
+		... 21 more
+	Suppressed: class org.apache.ignite.IgniteCheckedException: Failed to connect to address: /0:0:0:0:0:0:0:1%lo:47106
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2504)
+		... 21 more
+	Caused by: java.net.ConnectException: Connection refused
+		at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+		at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+		at sun.nio.ch.SocketAdaptor.connect(SocketAdaptor.java:117)
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2363)
+		... 21 more
+[20:48:25,303][SEVERE][main][GridTaskWorker] Failed to obtain remote job result policy for result from ComputeTask.result(..) method (will fail the whole task): GridJobResultImpl [job=C4V2 [r=example.hello.HelloWorld$1@7778463a], sib=GridJobSiblingImpl [sesId=2298c804851-2923536f-3848-4e8d-974a-86459ac592da, jobId=5298c804851-2923536f-3848-4e8d-974a-86459ac592da, nodeId=c6692c5f-fc2a-419b-93d9-007e687f9435, isJobDone=false], jobCtx=GridJobContextImpl [jobId=5298c804851-2923536f-3848-4e8d-974a-86459ac592da, timeoutObj=null, attrs={}], node=TcpDiscoveryNode [id=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=140, intOrder=72, lastExchangeTime=1478551704018, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true], ex=class o.a.i.spi.IgniteSpiException: Failed to send message to remote node: TcpDiscoveryNode [id=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=140, intOrder=72, lastExchangeTime=1478551704018, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true], hasRes=true, isCancelled=false, isOccupied=true]
+class org.apache.ignite.IgniteException: Remote job threw user exception (override or implement ComputeTask.result(..) method if you would like to have automatic failover for this exception).
+	at org.apache.ignite.compute.ComputeTaskAdapter.result(ComputeTaskAdapter.java:101)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker$4.apply(GridTaskWorker.java:946)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker$4.apply(GridTaskWorker.java:939)
+	at org.apache.ignite.internal.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6553)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.result(GridTaskWorker.java:939)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.onResponse(GridTaskWorker.java:810)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.processDelayedResponses(GridTaskWorker.java:659)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.body(GridTaskWorker.java:510)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:110)
+	at org.apache.ignite.internal.processors.task.GridTaskProcessor.startTask(GridTaskProcessor.java:678)
+	at org.apache.ignite.internal.processors.task.GridTaskProcessor.execute(GridTaskProcessor.java:403)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor.runAsync(GridClosureProcessor.java:226)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor.runAsync(GridClosureProcessor.java:200)
+	at org.apache.ignite.internal.IgniteComputeImpl.broadcast(IgniteComputeImpl.java:250)
+	at example.hello.HelloWorld.main(HelloWorld.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Failed to send message to remote node: TcpDiscoveryNode [id=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=140, intOrder=72, lastExchangeTime=1478551704018, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage0(TcpCommunicationSpi.java:1996)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage(TcpCommunicationSpi.java:1936)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.send(GridIoManager.java:1304)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.send(GridIoManager.java:1373)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.sendRequest(GridTaskWorker.java:1281)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.processMappedJobs(GridTaskWorker.java:612)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.body(GridTaskWorker.java:504)
+	... 12 more
+Caused by: class org.apache.ignite.IgniteCheckedException: Failed to connect to node (is node still alive?). Make sure that each ComputeTask and cache Transaction has a timeout set in order to prevent parties from waiting forever in case of network issues [nodeId=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[donners.inf.ed.ac.uk/129.215.2.234:47106, /127.0.0.1:47106, /0:0:0:0:0:0:0:1%lo:47106]]
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2499)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createNioClient(TcpCommunicationSpi.java:2140)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.reserveClient(TcpCommunicationSpi.java:2034)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage0(TcpCommunicationSpi.java:1970)
+	... 18 more
+	Suppressed: class org.apache.ignite.IgniteCheckedException: Failed to connect to address: donners.inf.ed.ac.uk/129.215.2.234:47106
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2504)
+		... 21 more
+	Caused by: class org.apache.ignite.IgniteCheckedException: Failed to read remote node recovery handshake (connection closed).
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.safeHandshake(TcpCommunicationSpi.java:2709)
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2371)
+		... 21 more
+	Suppressed: class org.apache.ignite.IgniteCheckedException: Failed to connect to address: /127.0.0.1:47106
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2504)
+		... 21 more
+	Caused by: java.net.ConnectException: Connection refused
+		at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+		at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+		at sun.nio.ch.SocketAdaptor.connect(SocketAdaptor.java:117)
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2363)
+		... 21 more
+	Suppressed: class org.apache.ignite.IgniteCheckedException: Failed to connect to address: /0:0:0:0:0:0:0:1%lo:47106
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2504)
+		... 21 more
+	Caused by: java.net.ConnectException: Connection refused
+		at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+		at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+		at sun.nio.ch.SocketAdaptor.connect(SocketAdaptor.java:117)
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2363)
+		... 21 more
+[20:48:26,681][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=145, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=77bb1900-9704-4505-8ed4-2e818a96b33b]
+[20:48:34,124][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[20:49:25,138][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=2923536f, name=null, uptime=00:01:00:009]
+    ^-- H/N/C [hosts=3, nodes=5, CPUs=12]
+    ^-- CPU [cur=0.5%, avg=0.45%, GC=0%]
+    ^-- Heap [used=81MB, free=95.36%, comm=148MB]
+    ^-- Non heap [used=32MB, free=84.96%, comm=33MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[20:50:25,147][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=2923536f, name=null, uptime=00:02:00:017]
+    ^-- H/N/C [hosts=3, nodes=5, CPUs=12]
+    ^-- CPU [cur=0.33%, avg=0.39%, GC=0%]
+    ^-- Heap [used=88MB, free=94.93%, comm=148MB]
+    ^-- Non heap [used=32MB, free=84.92%, comm=33MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[20:51:25,153][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=2923536f, name=null, uptime=00:03:00:024]
+    ^-- H/N/C [hosts=3, nodes=5, CPUs=12]
+    ^-- CPU [cur=0.43%, avg=0.36%, GC=0%]
+    ^-- Heap [used=96MB, free=94.5%, comm=148MB]
+    ^-- Non heap [used=32MB, free=84.9%, comm=33MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[20:51:49,600][INFO][Thread-3][G] Invoking shutdown hook...

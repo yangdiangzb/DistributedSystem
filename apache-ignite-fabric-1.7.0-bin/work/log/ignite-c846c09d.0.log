@@ -1,0 +1,1506 @@
+[20:51:55,678][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[20:51:55,680][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite.xml
+[20:51:55,680][INFO][main][IgniteKernal] Daemon mode: off
+[20:51:55,680][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[20:51:55,680][INFO][main][IgniteKernal] OS user: s1626297
+[20:51:55,680][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.7
+[20:51:55,680][INFO][main][IgniteKernal] VM information: OpenJDK Runtime Environment 1.7.0_111-mockbuild_2016_07_27_06_39-b00 Oracle Corporation OpenJDK 64-Bit Server VM 24.111-b01
+[20:51:55,682][INFO][main][IgniteKernal] VM total memory: 1.7GB
+[20:51:55,682][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[20:51:55,682][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[20:51:55,682][INFO][main][IgniteKernal] VM arguments: [-DIGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin, -Didea.launcher.port=7535, -Didea.launcher.bin.path=/opt/idea-ce/bin, -Dfile.encoding=UTF-8]
+[20:51:55,682][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[20:51:55,682][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[20:51:55,685][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[20:51:55,687][WARNING][pub-#6%null%][GridDiagnostic] Initial heap size is 122MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[20:51:55,756][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.3.62, fe80:0:0:0:8a51:fbff:fe55:4f8e%2
+[20:51:55,756][INFO][main][IgniteKernal] Enabled local MACs: 8851FB554F8E
+[20:51:55,773][INFO][main][IgnitePluginProcessor] Configured plugins:
+[20:51:55,773][INFO][main][IgnitePluginProcessor]   ^-- None
+[20:51:55,773][INFO][main][IgnitePluginProcessor] 
+[20:51:55,843][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48101, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/c846c09d-3292-47a0-a172-7fbb567244ee-4308]
+[20:51:55,843][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48101, locHost=0.0.0.0/0.0.0.0]
+[20:51:55,863][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0]
+[20:51:55,906][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[20:51:55,937][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[20:51:55,941][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[20:51:55,943][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[20:51:56,153][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[20:51:56,213][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+[20:51:56,291][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47501, localHost=0.0.0.0/0.0.0.0]
+[20:51:57,195][WARNING][main][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[20:51:57,428][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[20:51:57,470][INFO][main][GridCacheProcessor] Started cache [name=default, mode=PARTITIONED]
+[20:51:57,489][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[20:51:57,500][INFO][main][GridCacheProcessor] Started cache [name=words, mode=PARTITIONED]
+[20:51:57,502][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[20:51:57,954][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=ignite-sys-cache, waitList=[]]
+[20:51:57,954][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=ignite-marshaller-sys-cache, waitList=[]]
+[20:51:57,954][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=ignite-atomics-sys-cache, waitList=[ignite-sys-cache, ignite-marshaller-sys-cache]]
+[20:51:57,955][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=null, waitList=[ignite-sys-cache, ignite-marshaller-sys-cache, ignite-atomics-sys-cache]]
+[20:51:57,955][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=words, waitList=[ignite-sys-cache, ignite-marshaller-sys-cache, ignite-atomics-sys-cache]]
+[20:51:57,955][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Rebalancing required [top=AffinityTopologyVersion [topVer=147, minorTopVer=0], evt=NODE_JOINED, node=c846c09d-3292-47a0-a172-7fbb567244ee]
+[20:51:57,956][INFO][exchange-worker-#54%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Starting rebalancing [cache=ignite-marshaller-sys-cache, mode=SYNC, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, partitionsCount=8, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,046][INFO][exchange-worker-#54%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Starting rebalancing [cache=ignite-marshaller-sys-cache, mode=SYNC, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, partitionsCount=6, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,046][INFO][exchange-worker-#54%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Starting rebalancing [cache=ignite-marshaller-sys-cache, mode=SYNC, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, partitionsCount=6, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,052][INFO][sys-#19%null%][GridDhtPartitionDemander] <ignite-sys-cache> Starting rebalancing [cache=ignite-sys-cache, mode=SYNC, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, partitionsCount=31, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,053][INFO][sys-#19%null%][GridDhtPartitionDemander] <ignite-sys-cache> Starting rebalancing [cache=ignite-sys-cache, mode=SYNC, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, partitionsCount=40, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,053][INFO][sys-#19%null%][GridDhtPartitionDemander] <ignite-sys-cache> Starting rebalancing [cache=ignite-sys-cache, mode=SYNC, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, partitionsCount=29, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,069][INFO][marshaller-cache-#58%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Completed rebalancing [cache=ignite-marshaller-sys-cache, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=121 ms]
+[20:51:58,072][INFO][marshaller-cache-#58%null%][GridDhtPartitionDemander] <ignite-sys-cache> Completed rebalancing [cache=ignite-sys-cache, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=20 ms]
+[20:51:58,078][INFO][marshaller-cache-#59%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Completed rebalancing [cache=ignite-marshaller-sys-cache, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=131 ms]
+[20:51:58,083][INFO][marshaller-cache-#59%null%][GridDhtPartitionDemander] <ignite-sys-cache> Completed rebalancing [cache=ignite-sys-cache, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=30 ms]
+[20:51:58,141][INFO][marshaller-cache-#63%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Completed (final) rebalancing [cache=ignite-marshaller-sys-cache, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=192 ms]
+[20:51:58,145][INFO][marshaller-cache-#63%null%][GridDhtPartitionDemander] <ignite-sys-cache> Completed (final) rebalancing [cache=ignite-sys-cache, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=91 ms]
+[20:51:58,146][INFO][sys-#19%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Starting rebalancing [cache=ignite-atomics-sys-cache, mode=SYNC, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, partitionsCount=76, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,147][INFO][sys-#19%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Starting rebalancing [cache=ignite-atomics-sys-cache, mode=SYNC, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, partitionsCount=76, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,147][INFO][sys-#19%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Starting rebalancing [cache=ignite-atomics-sys-cache, mode=SYNC, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, partitionsCount=87, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,162][INFO][sys-#20%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Completed rebalancing [cache=ignite-atomics-sys-cache, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=20 ms]
+[20:51:58,167][INFO][sys-#22%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Completed rebalancing [cache=ignite-atomics-sys-cache, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=20 ms]
+[20:51:58,168][INFO][sys-#21%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Completed (final) rebalancing [cache=ignite-atomics-sys-cache, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=20 ms]
+[20:51:58,169][INFO][sys-#19%null%][GridDhtPartitionDemander] <default> Starting rebalancing [cache=null, mode=ASYNC, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, partitionsCount=76, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,169][INFO][sys-#19%null%][GridDhtPartitionDemander] <default> Starting rebalancing [cache=null, mode=ASYNC, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, partitionsCount=76, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,170][INFO][sys-#19%null%][GridDhtPartitionDemander] <default> Starting rebalancing [cache=null, mode=ASYNC, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, partitionsCount=87, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,171][INFO][sys-#19%null%][GridDhtPartitionDemander] <words> Starting rebalancing [cache=words, mode=ASYNC, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, partitionsCount=76, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,171][INFO][sys-#19%null%][GridDhtPartitionDemander] <words> Starting rebalancing [cache=words, mode=ASYNC, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, partitionsCount=76, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,171][INFO][sys-#19%null%][GridDhtPartitionDemander] <words> Starting rebalancing [cache=words, mode=ASYNC, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, partitionsCount=87, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], updateSeq=1]
+[20:51:58,179][INFO][sys-#25%null%][GridDhtPartitionDemander] <default> Completed rebalancing [cache=null, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=10 ms]
+[20:51:58,184][INFO][sys-#25%null%][GridDhtPartitionDemander] <words> Completed rebalancing [cache=words, fromNode=673863d9-1a2d-460a-a4c9-85eba8e573c8, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=10 ms]
+[20:51:58,187][INFO][sys-#23%null%][GridDhtPartitionDemander] <default> Completed rebalancing [cache=null, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=10 ms]
+[20:51:58,188][INFO][sys-#24%null%][GridDhtPartitionDemander] <default> Completed (final) rebalancing [cache=null, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=10 ms]
+[20:51:58,192][INFO][sys-#23%null%][GridDhtPartitionDemander] <words> Completed rebalancing [cache=words, fromNode=77bb1900-9704-4505-8ed4-2e818a96b33b, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=20 ms]
+[20:51:58,194][INFO][sys-#24%null%][GridDhtPartitionDemander] <words> Completed (final) rebalancing [cache=words, fromNode=999d73bc-b829-45db-87b7-512e15383ffc, topology=AffinityTopologyVersion [topVer=147, minorTopVer=0], time=20 ms]
+[20:51:58,233][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[20:51:58,233][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[20:51:58,234][INFO][main][IgniteKernal]   ^-- Disable peer class loading (set 'peerClassLoadingEnabled' to false)
+[20:51:58,234][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[20:51:58,234][INFO][main][IgniteKernal] 
+[20:51:58,234][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[20:51:58,234][INFO][main][IgniteKernal] 
+[20:51:58,235][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 1.7GB
+>>> VM name: 4308@parrot.inf.ed.ac.uk
+>>> Local node [ID=C846C09D-3292-47A0-A172-7FBB567244EE, order=147, clientMode=false]
+>>> Local node addresses: [parrot.inf.ed.ac.uk/0:0:0:0:0:0:0:1%1, /127.0.0.1, /129.215.3.62]
+>>> Local ports: TCP:11212 TCP:47101 UDP:47400 TCP:47501 TCP:48101 
+
+[20:51:58,236][INFO][main][GridDiscoveryManager] Topology snapshot [ver=147, servers=4, clients=1, CPUs=12, heap=7.8GB]
+[20:51:58,241][INFO][main][GridDeploymentLocalStore] Class locally deployed: class example.hello.HelloWorld$1
+[20:51:58,347][WARNING][main][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/127.0.0.1:47106, failureDetectionTimeout=10000]
+[20:51:58,347][WARNING][main][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/0:0:0:0:0:0:0:1%lo:47106, failureDetectionTimeout=10000]
+[20:51:58,347][WARNING][main][TcpCommunicationSpi] Failed to connect to a remote node (make sure that destination node is alive and operating system firewall is disabled on local and remote hosts) [addrs=[donners.inf.ed.ac.uk/129.215.2.234:47106, /127.0.0.1:47106, /0:0:0:0:0:0:0:1%lo:47106]]
+[20:51:58,358][SEVERE][main][GridTaskWorker] Failed to send job request: GridJobExecuteRequest [subjId=c846c09d-3292-47a0-a172-7fbb567244ee, sesId=569cf804851-c846c09d-3292-47a0-a172-7fbb567244ee, jobId=969cf804851-c846c09d-3292-47a0-a172-7fbb567244ee, startTaskTime=1478551918239, timeout=9223372036854775807, taskName=example.hello.HelloWorld$1, userVer=0, taskClsName=example.hello.HelloWorld$1, ldrParticipants=null, cpSpi=null, createTime=1478551918340, clsLdrId=b59cf804851-c846c09d-3292-47a0-a172-7fbb567244ee, depMode=SHARED, dynamicSiblings=false, forceLocDep=false, sesFullSup=false, internal=false]
+class org.apache.ignite.IgniteCheckedException: Failed to send message (node may have left the grid or TCP connection cannot be established due to firewall issues) [node=TcpDiscoveryNode [id=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=140, intOrder=72, lastExchangeTime=1478551917104, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true], topic=TOPIC_JOB, msg=GridJobExecuteRequest [subjId=c846c09d-3292-47a0-a172-7fbb567244ee, sesId=569cf804851-c846c09d-3292-47a0-a172-7fbb567244ee, jobId=969cf804851-c846c09d-3292-47a0-a172-7fbb567244ee, startTaskTime=1478551918239, timeout=9223372036854775807, taskName=example.hello.HelloWorld$1, userVer=0, taskClsName=example.hello.HelloWorld$1, ldrParticipants=null, cpSpi=null, createTime=1478551918340, clsLdrId=b59cf804851-c846c09d-3292-47a0-a172-7fbb567244ee, depMode=SHARED, dynamicSiblings=false, forceLocDep=false, sesFullSup=false, internal=false], policy=0]
+	at org.apache.ignite.internal.managers.communication.GridIoManager.send(GridIoManager.java:1309)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.send(GridIoManager.java:1373)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.sendRequest(GridTaskWorker.java:1281)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.processMappedJobs(GridTaskWorker.java:612)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.body(GridTaskWorker.java:504)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:110)
+	at org.apache.ignite.internal.processors.task.GridTaskProcessor.startTask(GridTaskProcessor.java:678)
+	at org.apache.ignite.internal.processors.task.GridTaskProcessor.execute(GridTaskProcessor.java:403)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor.runAsync(GridClosureProcessor.java:226)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor.runAsync(GridClosureProcessor.java:200)
+	at org.apache.ignite.internal.IgniteComputeImpl.broadcast(IgniteComputeImpl.java:250)
+	at example.hello.HelloWorld.main(HelloWorld.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Failed to send message to remote node: TcpDiscoveryNode [id=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=140, intOrder=72, lastExchangeTime=1478551917104, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage0(TcpCommunicationSpi.java:1996)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage(TcpCommunicationSpi.java:1936)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.send(GridIoManager.java:1304)
+	... 16 more
+Caused by: class org.apache.ignite.IgniteCheckedException: Failed to connect to node (is node still alive?). Make sure that each ComputeTask and cache Transaction has a timeout set in order to prevent parties from waiting forever in case of network issues [nodeId=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[donners.inf.ed.ac.uk/129.215.2.234:47106, /127.0.0.1:47106, /0:0:0:0:0:0:0:1%lo:47106]]
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2499)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createNioClient(TcpCommunicationSpi.java:2140)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.reserveClient(TcpCommunicationSpi.java:2034)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage0(TcpCommunicationSpi.java:1970)
+	... 18 more
+	Suppressed: class org.apache.ignite.IgniteCheckedException: Failed to connect to address: donners.inf.ed.ac.uk/129.215.2.234:47106
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2504)
+		... 21 more
+	Caused by: class org.apache.ignite.IgniteCheckedException: Failed to read remote node recovery handshake (connection closed).
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.safeHandshake(TcpCommunicationSpi.java:2709)
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2371)
+		... 21 more
+	Suppressed: class org.apache.ignite.IgniteCheckedException: Failed to connect to address: /127.0.0.1:47106
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2504)
+		... 21 more
+	Caused by: java.net.ConnectException: Connection refused
+		at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+		at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+		at sun.nio.ch.SocketAdaptor.connect(SocketAdaptor.java:117)
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2363)
+		... 21 more
+	Suppressed: class org.apache.ignite.IgniteCheckedException: Failed to connect to address: /0:0:0:0:0:0:0:1%lo:47106
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2504)
+		... 21 more
+	Caused by: java.net.ConnectException: Connection refused
+		at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+		at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+		at sun.nio.ch.SocketAdaptor.connect(SocketAdaptor.java:117)
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2363)
+		... 21 more
+[20:51:58,364][SEVERE][main][GridTaskWorker] Failed to obtain remote job result policy for result from ComputeTask.result(..) method (will fail the whole task): GridJobResultImpl [job=C4V2 [r=example.hello.HelloWorld$1@2cceef77], sib=GridJobSiblingImpl [sesId=569cf804851-c846c09d-3292-47a0-a172-7fbb567244ee, jobId=969cf804851-c846c09d-3292-47a0-a172-7fbb567244ee, nodeId=c6692c5f-fc2a-419b-93d9-007e687f9435, isJobDone=false], jobCtx=GridJobContextImpl [jobId=969cf804851-c846c09d-3292-47a0-a172-7fbb567244ee, timeoutObj=null, attrs={}], node=TcpDiscoveryNode [id=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=140, intOrder=72, lastExchangeTime=1478551917104, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true], ex=class o.a.i.spi.IgniteSpiException: Failed to send message to remote node: TcpDiscoveryNode [id=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=140, intOrder=72, lastExchangeTime=1478551917104, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true], hasRes=true, isCancelled=false, isOccupied=true]
+class org.apache.ignite.IgniteException: Remote job threw user exception (override or implement ComputeTask.result(..) method if you would like to have automatic failover for this exception).
+	at org.apache.ignite.compute.ComputeTaskAdapter.result(ComputeTaskAdapter.java:101)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker$4.apply(GridTaskWorker.java:946)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker$4.apply(GridTaskWorker.java:939)
+	at org.apache.ignite.internal.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6553)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.result(GridTaskWorker.java:939)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.onResponse(GridTaskWorker.java:810)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.processDelayedResponses(GridTaskWorker.java:659)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.body(GridTaskWorker.java:510)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:110)
+	at org.apache.ignite.internal.processors.task.GridTaskProcessor.startTask(GridTaskProcessor.java:678)
+	at org.apache.ignite.internal.processors.task.GridTaskProcessor.execute(GridTaskProcessor.java:403)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor.runAsync(GridClosureProcessor.java:226)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor.runAsync(GridClosureProcessor.java:200)
+	at org.apache.ignite.internal.IgniteComputeImpl.broadcast(IgniteComputeImpl.java:250)
+	at example.hello.HelloWorld.main(HelloWorld.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Failed to send message to remote node: TcpDiscoveryNode [id=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=140, intOrder=72, lastExchangeTime=1478551917104, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage0(TcpCommunicationSpi.java:1996)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage(TcpCommunicationSpi.java:1936)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.send(GridIoManager.java:1304)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.send(GridIoManager.java:1373)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.sendRequest(GridTaskWorker.java:1281)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.processMappedJobs(GridTaskWorker.java:612)
+	at org.apache.ignite.internal.processors.task.GridTaskWorker.body(GridTaskWorker.java:504)
+	... 12 more
+Caused by: class org.apache.ignite.IgniteCheckedException: Failed to connect to node (is node still alive?). Make sure that each ComputeTask and cache Transaction has a timeout set in order to prevent parties from waiting forever in case of network issues [nodeId=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[donners.inf.ed.ac.uk/129.215.2.234:47106, /127.0.0.1:47106, /0:0:0:0:0:0:0:1%lo:47106]]
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2499)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createNioClient(TcpCommunicationSpi.java:2140)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.reserveClient(TcpCommunicationSpi.java:2034)
+	at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage0(TcpCommunicationSpi.java:1970)
+	... 18 more
+	Suppressed: class org.apache.ignite.IgniteCheckedException: Failed to connect to address: donners.inf.ed.ac.uk/129.215.2.234:47106
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2504)
+		... 21 more
+	Caused by: class org.apache.ignite.IgniteCheckedException: Failed to read remote node recovery handshake (connection closed).
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.safeHandshake(TcpCommunicationSpi.java:2709)
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2371)
+		... 21 more
+	Suppressed: class org.apache.ignite.IgniteCheckedException: Failed to connect to address: /127.0.0.1:47106
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2504)
+		... 21 more
+	Caused by: java.net.ConnectException: Connection refused
+		at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+		at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+		at sun.nio.ch.SocketAdaptor.connect(SocketAdaptor.java:117)
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2363)
+		... 21 more
+	Suppressed: class org.apache.ignite.IgniteCheckedException: Failed to connect to address: /0:0:0:0:0:0:0:1%lo:47106
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2504)
+		... 21 more
+	Caused by: java.net.ConnectException: Connection refused
+		at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+		at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+		at sun.nio.ch.SocketAdaptor.connect(SocketAdaptor.java:117)
+		at org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.createTcpClient(TcpCommunicationSpi.java:2363)
+		... 21 more
+[20:51:59,750][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=147, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=77bb1900-9704-4505-8ed4-2e818a96b33b]
+[20:52:07,208][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[20:52:58,241][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:01:00:009]
+    ^-- H/N/C [hosts=3, nodes=5, CPUs=12]
+    ^-- CPU [cur=0.33%, avg=0.85%, GC=0%]
+    ^-- Heap [used=104MB, free=94.02%, comm=210MB]
+    ^-- Non heap [used=32MB, free=84.94%, comm=33MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[20:53:58,248][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:02:00:015]
+    ^-- H/N/C [hosts=3, nodes=5, CPUs=12]
+    ^-- CPU [cur=0.4%, avg=0.64%, GC=0%]
+    ^-- Heap [used=111MB, free=93.6%, comm=210MB]
+    ^-- Non heap [used=32MB, free=84.91%, comm=33MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[20:54:32,669][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[20:54:32,669][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=647ad6f6-8ac6-410d-b037-dc032488a37e, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[/127.0.0.1:47500, /0:0:0:0:0:0:0:1%lo:47500, donners.inf.ed.ac.uk/129.215.2.234:47500], discPort=47500, order=148, intOrder=77, lastExchangeTime=1478552072421, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[20:54:32,670][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=148, servers=5, clients=1, CPUs=12, heap=9.6GB]
+[20:54:33,138][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=148, minorTopVer=0], evt=NODE_JOINED, node=647ad6f6-8ac6-410d-b037-dc032488a37e]
+[20:54:34,774][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=148, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=77bb1900-9704-4505-8ed4-2e818a96b33b]
+[20:54:48,559][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[20:54:48,560][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=c40c7b1a-40df-49a6-b2e3-8ae2bcc96e73, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=149, intOrder=78, lastExchangeTime=1478552088514, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[20:54:48,561][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=149, servers=5, clients=2, CPUs=12, heap=11.0GB]
+[20:54:48,586][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=149, minorTopVer=0], evt=NODE_JOINED, node=c40c7b1a-40df-49a6-b2e3-8ae2bcc96e73]
+[20:54:49,175][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=149, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=c40c7b1a-40df-49a6-b2e3-8ae2bcc96e73]
+[20:54:49,603][INFO][pub-#7%null%][GridDeploymentLocalStore] Class locally deployed: class org.apache.ignite.stream.StreamTransformer$1
+[20:54:55,988][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[20:54:55,989][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=78d9883a-d909-483c-9fe2-a9b2e246f0cb, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=150, intOrder=79, lastExchangeTime=1478552095941, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[20:54:55,990][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=150, servers=5, clients=3, CPUs=12, heap=13.0GB]
+[20:54:55,999][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=150, minorTopVer=0], evt=NODE_JOINED, node=78d9883a-d909-483c-9fe2-a9b2e246f0cb]
+[20:54:56,740][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=150, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=78d9883a-d909-483c-9fe2-a9b2e246f0cb]
+[20:54:56,879][SEVERE][sys-#22%null%][GridMapQueryExecutor] Failed to execute local query.
+java.lang.AbstractMethodError: org.apache.ignite.internal.processors.query.h2.opt.GridH2Table$ScanIndex.getCost(Lorg/h2/engine/Session;[I[Lorg/h2/table/TableFilter;ILorg/h2/result/SortOrder;Ljava/util/HashSet;)D
+	at org.h2.table.TableFilter.getBestPlanItem(TableFilter.java:203)
+	at org.h2.table.Plan.calculateCost(Plan.java:123)
+	at org.h2.command.dml.Optimizer.testPlan(Optimizer.java:183)
+	at org.h2.command.dml.Optimizer.calculateBestPlan(Optimizer.java:79)
+	at org.h2.command.dml.Optimizer.optimize(Optimizer.java:242)
+	at org.h2.command.dml.Select.preparePlan(Select.java:1014)
+	at org.h2.command.dml.Select.prepare(Select.java:878)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:290)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.prepareStatement(IgniteH2Indexing.java:399)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQuery(IgniteH2Indexing.java:862)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQueryWithTimer(IgniteH2Indexing.java:907)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest0(GridMapQueryExecutor.java:561)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest(GridMapQueryExecutor.java:445)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onMessage(GridMapQueryExecutor.java:200)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor$2.onMessage(GridMapQueryExecutor.java:175)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$ArrayListener.onMessage(GridIoManager.java:2071)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[20:54:56,882][SEVERE][sys-#22%null%][GridMapQueryExecutor] Failed to process message: GridH2QueryRequest [reqId=1, caches=[113318569], topVer=AffinityTopologyVersion [topVer=150, minorTopVer=1], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_KEY __C0,
+_VAL __C1
+FROM "words".LONG
+ORDER BY 2 DESC LIMIT 10, params=[], paramIdxs=null, paramsSize=0, cols=null, alias=null]], flags=0, tbls=null]
+java.lang.AbstractMethodError: org.apache.ignite.internal.processors.query.h2.opt.GridH2Table$ScanIndex.getCost(Lorg/h2/engine/Session;[I[Lorg/h2/table/TableFilter;ILorg/h2/result/SortOrder;Ljava/util/HashSet;)D
+	at org.h2.table.TableFilter.getBestPlanItem(TableFilter.java:203)
+	at org.h2.table.Plan.calculateCost(Plan.java:123)
+	at org.h2.command.dml.Optimizer.testPlan(Optimizer.java:183)
+	at org.h2.command.dml.Optimizer.calculateBestPlan(Optimizer.java:79)
+	at org.h2.command.dml.Optimizer.optimize(Optimizer.java:242)
+	at org.h2.command.dml.Select.preparePlan(Select.java:1014)
+	at org.h2.command.dml.Select.prepare(Select.java:878)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:290)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.prepareStatement(IgniteH2Indexing.java:399)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQuery(IgniteH2Indexing.java:862)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQueryWithTimer(IgniteH2Indexing.java:907)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest0(GridMapQueryExecutor.java:561)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest(GridMapQueryExecutor.java:445)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onMessage(GridMapQueryExecutor.java:200)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor$2.onMessage(GridMapQueryExecutor.java:175)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$ArrayListener.onMessage(GridIoManager.java:2071)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[20:54:56,890][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/127.0.0.1:47109, failureDetectionTimeout=10000]
+[20:54:56,891][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/0:0:0:0:0:0:0:1%lo:47109, failureDetectionTimeout=10000]
+[20:54:56,891][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Failed to connect to a remote node (make sure that destination node is alive and operating system firewall is disabled on local and remote hosts) [addrs=[donners.inf.ed.ac.uk/129.215.2.234:47109, /127.0.0.1:47109, /0:0:0:0:0:0:0:1%lo:47109]]
+[20:54:56,900][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=78d9883a-d909-483c-9fe2-a9b2e246f0cb, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=150, intOrder=79, lastExchangeTime=1478552095941, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[20:54:56,900][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=151, servers=5, clients=2, CPUs=12, heap=11.0GB]
+[20:54:56,912][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=151, minorTopVer=0], evt=NODE_LEFT, node=78d9883a-d909-483c-9fe2-a9b2e246f0cb]
+[20:54:58,256][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:03:00:022]
+    ^-- H/N/C [hosts=3, nodes=7, CPUs=12]
+    ^-- CPU [cur=0.9%, avg=0.8%, GC=0%]
+    ^-- Heap [used=70MB, free=95.99%, comm=210MB]
+    ^-- Non heap [used=33MB, free=84.41%, comm=33MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[20:55:52,455][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=647ad6f6-8ac6-410d-b037-dc032488a37e, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[/127.0.0.1:47500, /0:0:0:0:0:0:0:1%lo:47500, donners.inf.ed.ac.uk/129.215.2.234:47500], discPort=47500, order=148, intOrder=77, lastExchangeTime=1478552072421, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[20:55:52,456][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=152, servers=4, clients=2, CPUs=12, heap=9.6GB]
+[20:55:52,599][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=152, minorTopVer=0], evt=NODE_LEFT, node=647ad6f6-8ac6-410d-b037-dc032488a37e]
+[20:55:58,262][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:04:00:032]
+    ^-- H/N/C [hosts=3, nodes=6, CPUs=12]
+    ^-- CPU [cur=0.9%, avg=0.75%, GC=0%]
+    ^-- Heap [used=96MB, free=94.5%, comm=210MB]
+    ^-- Non heap [used=33MB, free=84.35%, comm=33MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[20:56:03,830][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[20:56:03,830][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=d85a9073-f0b1-4365-b307-2787439d052d, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=153, intOrder=80, lastExchangeTime=1478552163807, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[20:56:03,831][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=153, servers=4, clients=3, CPUs=12, heap=11.0GB]
+[20:56:03,836][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=153, minorTopVer=0], evt=NODE_JOINED, node=d85a9073-f0b1-4365-b307-2787439d052d]
+[20:56:04,443][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=153, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=d85a9073-f0b1-4365-b307-2787439d052d]
+[20:56:04,525][SEVERE][sys-#29%null%][GridMapQueryExecutor] Failed to execute local query.
+java.lang.AbstractMethodError: org.apache.ignite.internal.processors.query.h2.opt.GridH2Table$ScanIndex.getCost(Lorg/h2/engine/Session;[I[Lorg/h2/table/TableFilter;ILorg/h2/result/SortOrder;Ljava/util/HashSet;)D
+	at org.h2.table.TableFilter.getBestPlanItem(TableFilter.java:203)
+	at org.h2.table.Plan.calculateCost(Plan.java:123)
+	at org.h2.command.dml.Optimizer.testPlan(Optimizer.java:183)
+	at org.h2.command.dml.Optimizer.calculateBestPlan(Optimizer.java:79)
+	at org.h2.command.dml.Optimizer.optimize(Optimizer.java:242)
+	at org.h2.command.dml.Select.preparePlan(Select.java:1014)
+	at org.h2.command.dml.Select.prepare(Select.java:878)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:290)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.prepareStatement(IgniteH2Indexing.java:399)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQuery(IgniteH2Indexing.java:862)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQueryWithTimer(IgniteH2Indexing.java:907)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest0(GridMapQueryExecutor.java:561)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest(GridMapQueryExecutor.java:445)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onMessage(GridMapQueryExecutor.java:200)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor$2.onMessage(GridMapQueryExecutor.java:175)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$ArrayListener.onMessage(GridIoManager.java:2071)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[20:56:04,526][SEVERE][sys-#29%null%][GridMapQueryExecutor] Failed to process message: GridH2QueryRequest [reqId=1, caches=[113318569], topVer=AffinityTopologyVersion [topVer=153, minorTopVer=1], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_KEY __C0,
+_VAL __C1
+FROM "words".LONG
+ORDER BY 2 DESC LIMIT 10, params=[], paramIdxs=null, paramsSize=0, cols=null, alias=null]], flags=0, tbls=null]
+java.lang.AbstractMethodError: org.apache.ignite.internal.processors.query.h2.opt.GridH2Table$ScanIndex.getCost(Lorg/h2/engine/Session;[I[Lorg/h2/table/TableFilter;ILorg/h2/result/SortOrder;Ljava/util/HashSet;)D
+	at org.h2.table.TableFilter.getBestPlanItem(TableFilter.java:203)
+	at org.h2.table.Plan.calculateCost(Plan.java:123)
+	at org.h2.command.dml.Optimizer.testPlan(Optimizer.java:183)
+	at org.h2.command.dml.Optimizer.calculateBestPlan(Optimizer.java:79)
+	at org.h2.command.dml.Optimizer.optimize(Optimizer.java:242)
+	at org.h2.command.dml.Select.preparePlan(Select.java:1014)
+	at org.h2.command.dml.Select.prepare(Select.java:878)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:290)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.prepareStatement(IgniteH2Indexing.java:399)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQuery(IgniteH2Indexing.java:862)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQueryWithTimer(IgniteH2Indexing.java:907)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest0(GridMapQueryExecutor.java:561)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest(GridMapQueryExecutor.java:445)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onMessage(GridMapQueryExecutor.java:200)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor$2.onMessage(GridMapQueryExecutor.java:175)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$ArrayListener.onMessage(GridIoManager.java:2071)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[20:56:04,534][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/127.0.0.1:47102, failureDetectionTimeout=10000]
+[20:56:04,534][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/0:0:0:0:0:0:0:1%lo:47102, failureDetectionTimeout=10000]
+[20:56:04,535][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Failed to connect to a remote node (make sure that destination node is alive and operating system firewall is disabled on local and remote hosts) [addrs=[donners.inf.ed.ac.uk/129.215.2.234:47102, /127.0.0.1:47102, /0:0:0:0:0:0:0:1%lo:47102]]
+[20:56:04,542][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=d85a9073-f0b1-4365-b307-2787439d052d, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=153, intOrder=80, lastExchangeTime=1478552163807, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[20:56:04,543][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=154, servers=4, clients=2, CPUs=12, heap=9.6GB]
+[20:56:04,548][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=154, minorTopVer=0], evt=NODE_LEFT, node=d85a9073-f0b1-4365-b307-2787439d052d]
+[20:56:37,630][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Node FAILED: TcpDiscoveryNode [id=673863d9-1a2d-460a-a4c9-85eba8e573c8, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.241], sockAddrs=[grantaire.inf.ed.ac.uk/129.215.2.241:47502, /127.0.0.1:47502, /0:0:0:0:0:0:0:1%lo:47502], discPort=47502, order=138, intOrder=70, lastExchangeTime=1478551917114, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[20:56:37,631][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=155, servers=3, clients=2, CPUs=12, heap=8.6GB]
+[20:56:37,681][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=155, minorTopVer=0], evt=NODE_FAILED, node=673863d9-1a2d-460a-a4c9-85eba8e573c8]
+[20:56:48,859][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[20:56:48,860][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=18d86e7c-86b7-473e-988e-9b1ab7db23aa, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[/127.0.0.1:47500, /0:0:0:0:0:0:0:1%lo:47500, donners.inf.ed.ac.uk/129.215.2.234:47500], discPort=47500, order=156, intOrder=81, lastExchangeTime=1478552208662, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[20:56:48,861][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=156, servers=4, clients=2, CPUs=12, heap=10.0GB]
+[20:56:49,295][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=156, minorTopVer=0], evt=NODE_JOINED, node=18d86e7c-86b7-473e-988e-9b1ab7db23aa]
+[20:56:50,922][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=156, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=77bb1900-9704-4505-8ed4-2e818a96b33b]
+[20:56:58,272][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:05:00:040]
+    ^-- H/N/C [hosts=3, nodes=6, CPUs=12]
+    ^-- CPU [cur=0.17%, avg=0.74%, GC=0%]
+    ^-- Heap [used=150MB, free=91.37%, comm=210MB]
+    ^-- Non heap [used=33MB, free=84.26%, comm=33MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[20:57:09,960][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[20:57:09,960][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=8e52d410-c099-400c-86bf-91c2444649c8, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=157, intOrder=82, lastExchangeTime=1478552229935, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[20:57:09,961][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=157, servers=4, clients=3, CPUs=12, heap=12.0GB]
+[20:57:09,966][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=157, minorTopVer=0], evt=NODE_JOINED, node=8e52d410-c099-400c-86bf-91c2444649c8]
+[20:57:10,557][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=157, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=8e52d410-c099-400c-86bf-91c2444649c8]
+[20:57:21,811][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[20:57:21,811][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=8af14b01-9c02-4428-bbba-51f18e144b57, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=158, intOrder=83, lastExchangeTime=1478552241786, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[20:57:21,812][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=158, servers=4, clients=4, CPUs=12, heap=14.0GB]
+[20:57:21,816][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=158, minorTopVer=0], evt=NODE_JOINED, node=8af14b01-9c02-4428-bbba-51f18e144b57]
+[20:57:22,441][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=158, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=8af14b01-9c02-4428-bbba-51f18e144b57]
+[20:57:22,541][SEVERE][sys-#20%null%][GridMapQueryExecutor] Failed to execute local query.
+java.lang.AbstractMethodError: org.apache.ignite.internal.processors.query.h2.opt.GridH2Table$ScanIndex.getCost(Lorg/h2/engine/Session;[I[Lorg/h2/table/TableFilter;ILorg/h2/result/SortOrder;Ljava/util/HashSet;)D
+	at org.h2.table.TableFilter.getBestPlanItem(TableFilter.java:203)
+	at org.h2.table.Plan.calculateCost(Plan.java:123)
+	at org.h2.command.dml.Optimizer.testPlan(Optimizer.java:183)
+	at org.h2.command.dml.Optimizer.calculateBestPlan(Optimizer.java:79)
+	at org.h2.command.dml.Optimizer.optimize(Optimizer.java:242)
+	at org.h2.command.dml.Select.preparePlan(Select.java:1014)
+	at org.h2.command.dml.Select.prepare(Select.java:878)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:290)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.prepareStatement(IgniteH2Indexing.java:399)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQuery(IgniteH2Indexing.java:862)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQueryWithTimer(IgniteH2Indexing.java:907)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest0(GridMapQueryExecutor.java:561)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest(GridMapQueryExecutor.java:445)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onMessage(GridMapQueryExecutor.java:200)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor$2.onMessage(GridMapQueryExecutor.java:175)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$ArrayListener.onMessage(GridIoManager.java:2071)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[20:57:22,542][SEVERE][sys-#20%null%][GridMapQueryExecutor] Failed to process message: GridH2QueryRequest [reqId=1, caches=[113318569], topVer=AffinityTopologyVersion [topVer=158, minorTopVer=1], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_KEY __C0,
+_VAL __C1
+FROM "words".LONG
+ORDER BY 2 DESC LIMIT 10, params=[], paramIdxs=null, paramsSize=0, cols=null, alias=null]], flags=0, tbls=null]
+java.lang.AbstractMethodError: org.apache.ignite.internal.processors.query.h2.opt.GridH2Table$ScanIndex.getCost(Lorg/h2/engine/Session;[I[Lorg/h2/table/TableFilter;ILorg/h2/result/SortOrder;Ljava/util/HashSet;)D
+	at org.h2.table.TableFilter.getBestPlanItem(TableFilter.java:203)
+	at org.h2.table.Plan.calculateCost(Plan.java:123)
+	at org.h2.command.dml.Optimizer.testPlan(Optimizer.java:183)
+	at org.h2.command.dml.Optimizer.calculateBestPlan(Optimizer.java:79)
+	at org.h2.command.dml.Optimizer.optimize(Optimizer.java:242)
+	at org.h2.command.dml.Select.preparePlan(Select.java:1014)
+	at org.h2.command.dml.Select.prepare(Select.java:878)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:290)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.prepareStatement(IgniteH2Indexing.java:399)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQuery(IgniteH2Indexing.java:862)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQueryWithTimer(IgniteH2Indexing.java:907)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest0(GridMapQueryExecutor.java:561)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest(GridMapQueryExecutor.java:445)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onMessage(GridMapQueryExecutor.java:200)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor$2.onMessage(GridMapQueryExecutor.java:175)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$ArrayListener.onMessage(GridIoManager.java:2071)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[20:57:22,557][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/127.0.0.1:47110, failureDetectionTimeout=10000]
+[20:57:22,557][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/0:0:0:0:0:0:0:1%lo:47110, failureDetectionTimeout=10000]
+[20:57:22,558][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Failed to connect to a remote node (make sure that destination node is alive and operating system firewall is disabled on local and remote hosts) [addrs=[donners.inf.ed.ac.uk/129.215.2.234:47110, /127.0.0.1:47110, /0:0:0:0:0:0:0:1%lo:47110]]
+[20:57:22,564][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=8af14b01-9c02-4428-bbba-51f18e144b57, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=158, intOrder=83, lastExchangeTime=1478552241786, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[20:57:22,564][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=159, servers=4, clients=3, CPUs=12, heap=12.0GB]
+[20:57:22,567][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=159, minorTopVer=0], evt=NODE_LEFT, node=8af14b01-9c02-4428-bbba-51f18e144b57]
+[20:57:58,274][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:06:00:042]
+    ^-- H/N/C [hosts=3, nodes=7, CPUs=12]
+    ^-- CPU [cur=0.27%, avg=0.7%, GC=0%]
+    ^-- Heap [used=72MB, free=95.87%, comm=354MB]
+    ^-- Non heap [used=33MB, free=84.2%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[20:58:58,282][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:07:00:048]
+    ^-- H/N/C [hosts=3, nodes=7, CPUs=12]
+    ^-- CPU [cur=0.27%, avg=0.63%, GC=0%]
+    ^-- Heap [used=80MB, free=95.39%, comm=354MB]
+    ^-- Non heap [used=33MB, free=84.18%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[20:59:58,287][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:08:00:054]
+    ^-- H/N/C [hosts=3, nodes=7, CPUs=12]
+    ^-- CPU [cur=0.33%, avg=0.59%, GC=0%]
+    ^-- Heap [used=87MB, free=94.98%, comm=354MB]
+    ^-- Non heap [used=33MB, free=84.17%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:00:58,287][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:09:00:055]
+    ^-- H/N/C [hosts=3, nodes=7, CPUs=12]
+    ^-- CPU [cur=0.27%, avg=0.55%, GC=0%]
+    ^-- Heap [used=96MB, free=94.48%, comm=354MB]
+    ^-- Non heap [used=33MB, free=84.16%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:01:58,286][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:10:00:055]
+    ^-- H/N/C [hosts=3, nodes=7, CPUs=12]
+    ^-- CPU [cur=0.5%, avg=0.52%, GC=0%]
+    ^-- Heap [used=104MB, free=93.99%, comm=354MB]
+    ^-- Non heap [used=33MB, free=84.14%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:02:58,291][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:11:00:057]
+    ^-- H/N/C [hosts=3, nodes=7, CPUs=12]
+    ^-- CPU [cur=0.23%, avg=0.5%, GC=0%]
+    ^-- Heap [used=113MB, free=93.5%, comm=354MB]
+    ^-- Non heap [used=33MB, free=84.13%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:03:46,550][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=18d86e7c-86b7-473e-988e-9b1ab7db23aa, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[/127.0.0.1:47500, /0:0:0:0:0:0:0:1%lo:47500, donners.inf.ed.ac.uk/129.215.2.234:47500], discPort=47500, order=156, intOrder=81, lastExchangeTime=1478552208662, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[21:03:46,551][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=160, servers=3, clients=3, CPUs=12, heap=10.0GB]
+[21:03:46,603][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=160, minorTopVer=0], evt=NODE_LEFT, node=18d86e7c-86b7-473e-988e-9b1ab7db23aa]
+[21:03:57,519][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:03:57,519][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=2351f0cc-69ad-48ca-8963-6f0aa9c7cd4a, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[/127.0.0.1:47500, /0:0:0:0:0:0:0:1%lo:47500, donners.inf.ed.ac.uk/129.215.2.234:47500], discPort=47500, order=161, intOrder=84, lastExchangeTime=1478552637303, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[21:03:57,520][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=161, servers=4, clients=3, CPUs=12, heap=12.0GB]
+[21:03:58,158][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=161, minorTopVer=0], evt=NODE_JOINED, node=2351f0cc-69ad-48ca-8963-6f0aa9c7cd4a]
+[21:03:58,295][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:12:00:064]
+    ^-- H/N/C [hosts=3, nodes=7, CPUs=12]
+    ^-- CPU [cur=0.73%, avg=0.49%, GC=0%]
+    ^-- Heap [used=154MB, free=91.17%, comm=354MB]
+    ^-- Non heap [used=34MB, free=84.11%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:03:59,827][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=161, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=77bb1900-9704-4505-8ed4-2e818a96b33b]
+[21:04:14,067][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:04:14,068][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=51b73bc7-9426-428b-9187-4a73fddaa45e, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=162, intOrder=85, lastExchangeTime=1478552654023, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:04:14,068][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=162, servers=4, clients=4, CPUs=12, heap=14.0GB]
+[21:04:14,071][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=162, minorTopVer=0], evt=NODE_JOINED, node=51b73bc7-9426-428b-9187-4a73fddaa45e]
+[21:04:14,638][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=162, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=51b73bc7-9426-428b-9187-4a73fddaa45e]
+[21:04:21,818][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:04:21,818][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=50a2c2d8-7582-40b4-be54-416b310ec9c0, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=163, intOrder=86, lastExchangeTime=1478552661796, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:04:21,819][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=163, servers=4, clients=5, CPUs=12, heap=15.0GB]
+[21:04:21,822][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=163, minorTopVer=0], evt=NODE_JOINED, node=50a2c2d8-7582-40b4-be54-416b310ec9c0]
+[21:04:22,413][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=163, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=50a2c2d8-7582-40b4-be54-416b310ec9c0]
+[21:04:22,497][SEVERE][sys-#29%null%][GridMapQueryExecutor] Failed to execute local query.
+java.lang.AbstractMethodError: org.apache.ignite.internal.processors.query.h2.opt.GridH2Table$ScanIndex.getCost(Lorg/h2/engine/Session;[I[Lorg/h2/table/TableFilter;ILorg/h2/result/SortOrder;Ljava/util/HashSet;)D
+	at org.h2.table.TableFilter.getBestPlanItem(TableFilter.java:203)
+	at org.h2.table.Plan.calculateCost(Plan.java:123)
+	at org.h2.command.dml.Optimizer.testPlan(Optimizer.java:183)
+	at org.h2.command.dml.Optimizer.calculateBestPlan(Optimizer.java:79)
+	at org.h2.command.dml.Optimizer.optimize(Optimizer.java:242)
+	at org.h2.command.dml.Select.preparePlan(Select.java:1014)
+	at org.h2.command.dml.Select.prepare(Select.java:878)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:290)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.prepareStatement(IgniteH2Indexing.java:399)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQuery(IgniteH2Indexing.java:862)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQueryWithTimer(IgniteH2Indexing.java:907)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest0(GridMapQueryExecutor.java:561)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest(GridMapQueryExecutor.java:445)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onMessage(GridMapQueryExecutor.java:200)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor$2.onMessage(GridMapQueryExecutor.java:175)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$ArrayListener.onMessage(GridIoManager.java:2071)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[21:04:22,497][SEVERE][sys-#29%null%][GridMapQueryExecutor] Failed to process message: GridH2QueryRequest [reqId=1, caches=[113318569], topVer=AffinityTopologyVersion [topVer=163, minorTopVer=1], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_KEY __C0,
+_VAL __C1
+FROM "words".LONG
+ORDER BY 2 DESC LIMIT 10, params=[], paramIdxs=null, paramsSize=0, cols=null, alias=null]], flags=0, tbls=null]
+java.lang.AbstractMethodError: org.apache.ignite.internal.processors.query.h2.opt.GridH2Table$ScanIndex.getCost(Lorg/h2/engine/Session;[I[Lorg/h2/table/TableFilter;ILorg/h2/result/SortOrder;Ljava/util/HashSet;)D
+	at org.h2.table.TableFilter.getBestPlanItem(TableFilter.java:203)
+	at org.h2.table.Plan.calculateCost(Plan.java:123)
+	at org.h2.command.dml.Optimizer.testPlan(Optimizer.java:183)
+	at org.h2.command.dml.Optimizer.calculateBestPlan(Optimizer.java:79)
+	at org.h2.command.dml.Optimizer.optimize(Optimizer.java:242)
+	at org.h2.command.dml.Select.preparePlan(Select.java:1014)
+	at org.h2.command.dml.Select.prepare(Select.java:878)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:290)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.prepareStatement(IgniteH2Indexing.java:399)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQuery(IgniteH2Indexing.java:862)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQueryWithTimer(IgniteH2Indexing.java:907)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest0(GridMapQueryExecutor.java:561)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest(GridMapQueryExecutor.java:445)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onMessage(GridMapQueryExecutor.java:200)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor$2.onMessage(GridMapQueryExecutor.java:175)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$ArrayListener.onMessage(GridIoManager.java:2071)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[21:04:22,601][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/127.0.0.1:47111, failureDetectionTimeout=10000]
+[21:04:22,601][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/0:0:0:0:0:0:0:1%lo:47111, failureDetectionTimeout=10000]
+[21:04:22,602][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Failed to connect to a remote node (make sure that destination node is alive and operating system firewall is disabled on local and remote hosts) [addrs=[donners.inf.ed.ac.uk/129.215.2.234:47111, /127.0.0.1:47111, /0:0:0:0:0:0:0:1%lo:47111]]
+[21:04:22,609][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=50a2c2d8-7582-40b4-be54-416b310ec9c0, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=163, intOrder=86, lastExchangeTime=1478552661796, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:04:22,610][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=164, servers=4, clients=4, CPUs=12, heap=14.0GB]
+[21:04:22,614][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=164, minorTopVer=0], evt=NODE_LEFT, node=50a2c2d8-7582-40b4-be54-416b310ec9c0]
+[21:04:58,304][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:13:00:073]
+    ^-- H/N/C [hosts=3, nodes=8, CPUs=12]
+    ^-- CPU [cur=0.23%, avg=0.48%, GC=0%]
+    ^-- Heap [used=185MB, free=89.38%, comm=354MB]
+    ^-- Non heap [used=34MB, free=84.1%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:05:58,311][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:14:00:079]
+    ^-- H/N/C [hosts=3, nodes=8, CPUs=12]
+    ^-- CPU [cur=0.27%, avg=0.46%, GC=0%]
+    ^-- Heap [used=194MB, free=88.86%, comm=354MB]
+    ^-- Non heap [used=34MB, free=84.09%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:06:58,310][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:15:00:079]
+    ^-- H/N/C [hosts=3, nodes=8, CPUs=12]
+    ^-- CPU [cur=0.33%, avg=0.45%, GC=0%]
+    ^-- Heap [used=203MB, free=88.33%, comm=354MB]
+    ^-- Non heap [used=34MB, free=84.09%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:07:58,318][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:16:00:088]
+    ^-- H/N/C [hosts=3, nodes=8, CPUs=12]
+    ^-- CPU [cur=0.23%, avg=0.44%, GC=0%]
+    ^-- Heap [used=212MB, free=87.86%, comm=354MB]
+    ^-- Non heap [used=34MB, free=84.08%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:08:58,327][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:17:00:096]
+    ^-- H/N/C [hosts=3, nodes=8, CPUs=12]
+    ^-- CPU [cur=0.33%, avg=0.43%, GC=0%]
+    ^-- Heap [used=222MB, free=87.29%, comm=354MB]
+    ^-- Non heap [used=34MB, free=84.07%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:09:55,543][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=2351f0cc-69ad-48ca-8963-6f0aa9c7cd4a, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[/127.0.0.1:47500, /0:0:0:0:0:0:0:1%lo:47500, donners.inf.ed.ac.uk/129.215.2.234:47500], discPort=47500, order=161, intOrder=84, lastExchangeTime=1478552637303, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[21:09:55,544][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=165, servers=3, clients=4, CPUs=12, heap=12.0GB]
+[21:09:55,608][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=165, minorTopVer=0], evt=NODE_LEFT, node=2351f0cc-69ad-48ca-8963-6f0aa9c7cd4a]
+[21:09:58,335][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:18:00:104]
+    ^-- H/N/C [hosts=3, nodes=7, CPUs=12]
+    ^-- CPU [cur=0.33%, avg=0.43%, GC=0%]
+    ^-- Heap [used=241MB, free=86.16%, comm=354MB]
+    ^-- Non heap [used=34MB, free=84.03%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:10:22,502][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:10:22,502][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=f9b704ba-9f95-4b88-9e10-dde54cbc5dea, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[/127.0.0.1:47500, /0:0:0:0:0:0:0:1%lo:47500, donners.inf.ed.ac.uk/129.215.2.234:47500], discPort=47500, order=166, intOrder=87, lastExchangeTime=1478553022272, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[21:10:22,503][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=166, servers=4, clients=4, CPUs=12, heap=14.0GB]
+[21:10:22,936][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=166, minorTopVer=0], evt=NODE_JOINED, node=f9b704ba-9f95-4b88-9e10-dde54cbc5dea]
+[21:10:24,570][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=166, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=77bb1900-9704-4505-8ed4-2e818a96b33b]
+[21:10:31,528][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:10:31,528][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=a19a15f2-be79-4e1a-aed4-0f86d74a083d, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=167, intOrder=88, lastExchangeTime=1478553031492, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:10:31,529][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=167, servers=4, clients=5, CPUs=12, heap=15.0GB]
+[21:10:31,534][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=167, minorTopVer=0], evt=NODE_JOINED, node=a19a15f2-be79-4e1a-aed4-0f86d74a083d]
+[21:10:32,204][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=167, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=a19a15f2-be79-4e1a-aed4-0f86d74a083d]
+[21:10:39,247][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:10:39,247][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=d6a1ab5b-964c-4b72-973a-2f61e9aca835, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=168, intOrder=89, lastExchangeTime=1478553039213, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:10:39,248][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=168, servers=4, clients=6, CPUs=12, heap=17.0GB]
+[21:10:39,253][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=168, minorTopVer=0], evt=NODE_JOINED, node=d6a1ab5b-964c-4b72-973a-2f61e9aca835]
+[21:10:39,855][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=168, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=d6a1ab5b-964c-4b72-973a-2f61e9aca835]
+[21:10:40,031][SEVERE][sys-#26%null%][GridMapQueryExecutor] Failed to execute local query.
+java.lang.AbstractMethodError: org.apache.ignite.internal.processors.query.h2.opt.GridH2Table$ScanIndex.getCost(Lorg/h2/engine/Session;[I[Lorg/h2/table/TableFilter;ILorg/h2/result/SortOrder;Ljava/util/HashSet;)D
+	at org.h2.table.TableFilter.getBestPlanItem(TableFilter.java:203)
+	at org.h2.table.Plan.calculateCost(Plan.java:123)
+	at org.h2.command.dml.Optimizer.testPlan(Optimizer.java:183)
+	at org.h2.command.dml.Optimizer.calculateBestPlan(Optimizer.java:79)
+	at org.h2.command.dml.Optimizer.optimize(Optimizer.java:242)
+	at org.h2.command.dml.Select.preparePlan(Select.java:1014)
+	at org.h2.command.dml.Select.prepare(Select.java:878)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:290)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.prepareStatement(IgniteH2Indexing.java:399)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQuery(IgniteH2Indexing.java:862)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQueryWithTimer(IgniteH2Indexing.java:907)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest0(GridMapQueryExecutor.java:561)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest(GridMapQueryExecutor.java:445)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onMessage(GridMapQueryExecutor.java:200)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor$2.onMessage(GridMapQueryExecutor.java:175)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$ArrayListener.onMessage(GridIoManager.java:2071)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[21:10:40,032][SEVERE][sys-#26%null%][GridMapQueryExecutor] Failed to process message: GridH2QueryRequest [reqId=1, caches=[113318569], topVer=AffinityTopologyVersion [topVer=168, minorTopVer=1], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_KEY __C0,
+_VAL __C1
+FROM "words".LONG
+ORDER BY 2 DESC LIMIT 10, params=[], paramIdxs=null, paramsSize=0, cols=null, alias=null]], flags=0, tbls=null]
+java.lang.AbstractMethodError: org.apache.ignite.internal.processors.query.h2.opt.GridH2Table$ScanIndex.getCost(Lorg/h2/engine/Session;[I[Lorg/h2/table/TableFilter;ILorg/h2/result/SortOrder;Ljava/util/HashSet;)D
+	at org.h2.table.TableFilter.getBestPlanItem(TableFilter.java:203)
+	at org.h2.table.Plan.calculateCost(Plan.java:123)
+	at org.h2.command.dml.Optimizer.testPlan(Optimizer.java:183)
+	at org.h2.command.dml.Optimizer.calculateBestPlan(Optimizer.java:79)
+	at org.h2.command.dml.Optimizer.optimize(Optimizer.java:242)
+	at org.h2.command.dml.Select.preparePlan(Select.java:1014)
+	at org.h2.command.dml.Select.prepare(Select.java:878)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:290)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.prepareStatement(IgniteH2Indexing.java:399)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQuery(IgniteH2Indexing.java:862)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQueryWithTimer(IgniteH2Indexing.java:907)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest0(GridMapQueryExecutor.java:561)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest(GridMapQueryExecutor.java:445)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onMessage(GridMapQueryExecutor.java:200)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor$2.onMessage(GridMapQueryExecutor.java:175)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$ArrayListener.onMessage(GridIoManager.java:2071)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[21:10:40,048][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/0:0:0:0:0:0:0:1%lo:47112, failureDetectionTimeout=10000]
+[21:10:40,048][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/127.0.0.1:47112, failureDetectionTimeout=10000]
+[21:10:40,049][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Failed to connect to a remote node (make sure that destination node is alive and operating system firewall is disabled on local and remote hosts) [addrs=[donners.inf.ed.ac.uk/129.215.2.234:47112, /0:0:0:0:0:0:0:1%lo:47112, /127.0.0.1:47112]]
+[21:10:40,075][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=d6a1ab5b-964c-4b72-973a-2f61e9aca835, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=168, intOrder=89, lastExchangeTime=1478553039213, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:10:40,075][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=169, servers=4, clients=5, CPUs=12, heap=15.0GB]
+[21:10:40,079][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=169, minorTopVer=0], evt=NODE_LEFT, node=d6a1ab5b-964c-4b72-973a-2f61e9aca835]
+[21:10:58,343][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:19:00:113]
+    ^-- H/N/C [hosts=3, nodes=9, CPUs=12]
+    ^-- CPU [cur=0.23%, avg=0.44%, GC=0%]
+    ^-- Heap [used=68MB, free=96.09%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.97%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:11:22,246][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=f9b704ba-9f95-4b88-9e10-dde54cbc5dea, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[/127.0.0.1:47500, /0:0:0:0:0:0:0:1%lo:47500, donners.inf.ed.ac.uk/129.215.2.234:47500], discPort=47500, order=166, intOrder=87, lastExchangeTime=1478553022272, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[21:11:22,247][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=170, servers=3, clients=5, CPUs=12, heap=14.0GB]
+[21:11:22,290][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=170, minorTopVer=0], evt=NODE_LEFT, node=f9b704ba-9f95-4b88-9e10-dde54cbc5dea]
+[21:11:58,349][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:20:00:118]
+    ^-- H/N/C [hosts=3, nodes=8, CPUs=12]
+    ^-- CPU [cur=0.23%, avg=0.43%, GC=0%]
+    ^-- Heap [used=92MB, free=94.71%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.97%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:12:58,357][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:21:00:124]
+    ^-- H/N/C [hosts=3, nodes=8, CPUs=12]
+    ^-- CPU [cur=0.27%, avg=0.42%, GC=0%]
+    ^-- Heap [used=101MB, free=94.21%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.96%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:13:58,362][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:22:00:127]
+    ^-- H/N/C [hosts=3, nodes=8, CPUs=12]
+    ^-- CPU [cur=0.27%, avg=0.41%, GC=0%]
+    ^-- Heap [used=110MB, free=93.69%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.95%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:14:58,358][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:23:00:127]
+    ^-- H/N/C [hosts=3, nodes=8, CPUs=12]
+    ^-- CPU [cur=0.33%, avg=0.41%, GC=0%]
+    ^-- Heap [used=118MB, free=93.19%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.95%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:15:58,360][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:24:00:128]
+    ^-- H/N/C [hosts=3, nodes=8, CPUs=12]
+    ^-- CPU [cur=0.33%, avg=0.4%, GC=0%]
+    ^-- Heap [used=128MB, free=92.65%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.94%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:16:36,508][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:16:36,508][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=10e06d9f-dffa-4788-ac8f-99c026afe5b8, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[/127.0.0.1:47500, /0:0:0:0:0:0:0:1%lo:47500, donners.inf.ed.ac.uk/129.215.2.234:47500], discPort=47500, order=171, intOrder=90, lastExchangeTime=1478553396279, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[21:16:36,509][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=171, servers=4, clients=5, CPUs=12, heap=15.0GB]
+[21:16:36,967][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=171, minorTopVer=0], evt=NODE_JOINED, node=10e06d9f-dffa-4788-ac8f-99c026afe5b8]
+[21:16:38,600][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=171, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=77bb1900-9704-4505-8ed4-2e818a96b33b]
+[21:16:42,654][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:16:42,655][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=f0726388-6142-4022-a4d6-855c2d8c13af, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=172, intOrder=91, lastExchangeTime=1478553402618, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:16:42,655][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=172, servers=4, clients=6, CPUs=12, heap=17.0GB]
+[21:16:42,660][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=172, minorTopVer=0], evt=NODE_JOINED, node=f0726388-6142-4022-a4d6-855c2d8c13af]
+[21:16:43,320][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=172, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=f0726388-6142-4022-a4d6-855c2d8c13af]
+[21:16:46,713][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:16:46,713][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=79735ddd-624b-47c0-bece-5e7ac777f83d, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=173, intOrder=92, lastExchangeTime=1478553406675, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:16:46,713][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=173, servers=4, clients=7, CPUs=12, heap=19.0GB]
+[21:16:46,717][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=173, minorTopVer=0], evt=NODE_JOINED, node=79735ddd-624b-47c0-bece-5e7ac777f83d]
+[21:16:47,535][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=173, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=79735ddd-624b-47c0-bece-5e7ac777f83d]
+[21:16:47,727][SEVERE][sys-#31%null%][GridMapQueryExecutor] Failed to execute local query.
+java.lang.AbstractMethodError: org.apache.ignite.internal.processors.query.h2.opt.GridH2Table$ScanIndex.getCost(Lorg/h2/engine/Session;[I[Lorg/h2/table/TableFilter;ILorg/h2/result/SortOrder;Ljava/util/HashSet;)D
+	at org.h2.table.TableFilter.getBestPlanItem(TableFilter.java:203)
+	at org.h2.table.Plan.calculateCost(Plan.java:123)
+	at org.h2.command.dml.Optimizer.testPlan(Optimizer.java:183)
+	at org.h2.command.dml.Optimizer.calculateBestPlan(Optimizer.java:79)
+	at org.h2.command.dml.Optimizer.optimize(Optimizer.java:242)
+	at org.h2.command.dml.Select.preparePlan(Select.java:1014)
+	at org.h2.command.dml.Select.prepare(Select.java:878)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:290)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.prepareStatement(IgniteH2Indexing.java:399)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQuery(IgniteH2Indexing.java:862)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQueryWithTimer(IgniteH2Indexing.java:907)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest0(GridMapQueryExecutor.java:561)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest(GridMapQueryExecutor.java:445)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onMessage(GridMapQueryExecutor.java:200)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor$2.onMessage(GridMapQueryExecutor.java:175)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$ArrayListener.onMessage(GridIoManager.java:2071)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[21:16:47,728][SEVERE][sys-#31%null%][GridMapQueryExecutor] Failed to process message: GridH2QueryRequest [reqId=1, caches=[113318569], topVer=AffinityTopologyVersion [topVer=173, minorTopVer=1], parts=null, pageSize=1024, qrys=[GridCacheSqlQuery [qry=SELECT
+_KEY __C0,
+_VAL __C1
+FROM "words".LONG
+ORDER BY 2 DESC LIMIT 10, params=[], paramIdxs=null, paramsSize=0, cols=null, alias=null]], flags=0, tbls=null]
+java.lang.AbstractMethodError: org.apache.ignite.internal.processors.query.h2.opt.GridH2Table$ScanIndex.getCost(Lorg/h2/engine/Session;[I[Lorg/h2/table/TableFilter;ILorg/h2/result/SortOrder;Ljava/util/HashSet;)D
+	at org.h2.table.TableFilter.getBestPlanItem(TableFilter.java:203)
+	at org.h2.table.Plan.calculateCost(Plan.java:123)
+	at org.h2.command.dml.Optimizer.testPlan(Optimizer.java:183)
+	at org.h2.command.dml.Optimizer.calculateBestPlan(Optimizer.java:79)
+	at org.h2.command.dml.Optimizer.optimize(Optimizer.java:242)
+	at org.h2.command.dml.Select.preparePlan(Select.java:1014)
+	at org.h2.command.dml.Select.prepare(Select.java:878)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:290)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.prepareStatement(IgniteH2Indexing.java:399)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQuery(IgniteH2Indexing.java:862)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeSqlQueryWithTimer(IgniteH2Indexing.java:907)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest0(GridMapQueryExecutor.java:561)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onQueryRequest(GridMapQueryExecutor.java:445)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor.onMessage(GridMapQueryExecutor.java:200)
+	at org.apache.ignite.internal.processors.query.h2.twostep.GridMapQueryExecutor$2.onMessage(GridMapQueryExecutor.java:175)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$ArrayListener.onMessage(GridIoManager.java:2071)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[21:16:47,738][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/127.0.0.1:47113, failureDetectionTimeout=10000]
+[21:16:47,738][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/0:0:0:0:0:0:0:1%lo:47113, failureDetectionTimeout=10000]
+[21:16:47,738][WARNING][tcp-comm-worker-#1%null%][TcpCommunicationSpi] Failed to connect to a remote node (make sure that destination node is alive and operating system firewall is disabled on local and remote hosts) [addrs=[donners.inf.ed.ac.uk/129.215.2.234:47113, /127.0.0.1:47113, /0:0:0:0:0:0:0:1%lo:47113]]
+[21:16:47,747][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=79735ddd-624b-47c0-bece-5e7ac777f83d, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=173, intOrder=92, lastExchangeTime=1478553406675, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:16:47,748][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=174, servers=4, clients=6, CPUs=12, heap=17.0GB]
+[21:16:47,753][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=174, minorTopVer=0], evt=NODE_LEFT, node=79735ddd-624b-47c0-bece-5e7ac777f83d]
+[21:16:58,361][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:25:00:129]
+    ^-- H/N/C [hosts=3, nodes=10, CPUs=12]
+    ^-- CPU [cur=0.27%, avg=0.41%, GC=0%]
+    ^-- Heap [used=184MB, free=89.42%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.91%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:17:58,362][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:26:00:129]
+    ^-- H/N/C [hosts=3, nodes=10, CPUs=12]
+    ^-- CPU [cur=0.27%, avg=0.4%, GC=0%]
+    ^-- Heap [used=195MB, free=88.8%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.91%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:18:58,362][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:27:00:130]
+    ^-- H/N/C [hosts=3, nodes=10, CPUs=12]
+    ^-- CPU [cur=0.27%, avg=0.4%, GC=0%]
+    ^-- Heap [used=207MB, free=88.14%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.86%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:19:31,165][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:19:31,165][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Remote node has peer class loading enabled flag different from local [locId8=c846c09d, locPeerClassLoading=true, rmtId8=00aac8fb, rmtPeerClassLoading=false, rmtAddrs=[stork.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.3.67]]
+[21:19:31,165][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=00aac8fb-f952-4da2-85c1-e9212eac8b34, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.3.67], sockAddrs=[stork.inf.ed.ac.uk/129.215.3.67:47500, /127.0.0.1:47500, /0:0:0:0:0:0:0:1%lo:47500], discPort=47500, order=175, intOrder=93, lastExchangeTime=1478553570931, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[21:19:31,166][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=175, servers=5, clients=6, CPUs=16, heap=18.0GB]
+[21:19:31,197][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=00aac8fb-f952-4da2-85c1-e9212eac8b34, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.3.67], sockAddrs=[stork.inf.ed.ac.uk/129.215.3.67:47500, /127.0.0.1:47500, /0:0:0:0:0:0:0:1%lo:47500], discPort=47500, order=175, intOrder=93, lastExchangeTime=1478553570931, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[21:19:31,197][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=176, servers=4, clients=6, CPUs=12, heap=17.0GB]
+[21:19:31,209][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=175, minorTopVer=0], evt=NODE_JOINED, node=00aac8fb-f952-4da2-85c1-e9212eac8b34]
+[21:19:31,270][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=176, minorTopVer=0], evt=NODE_LEFT, node=00aac8fb-f952-4da2-85c1-e9212eac8b34]
+[21:19:58,367][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:28:00:136]
+    ^-- H/N/C [hosts=3, nodes=10, CPUs=12]
+    ^-- CPU [cur=0.33%, avg=0.4%, GC=0%]
+    ^-- Heap [used=246MB, free=85.87%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.85%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:20:40,515][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=10e06d9f-dffa-4788-ac8f-99c026afe5b8, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[/127.0.0.1:47500, /0:0:0:0:0:0:0:1%lo:47500, donners.inf.ed.ac.uk/129.215.2.234:47500], discPort=47500, order=171, intOrder=90, lastExchangeTime=1478553396279, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[21:20:40,516][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=177, servers=3, clients=6, CPUs=12, heap=15.0GB]
+[21:20:40,564][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=177, minorTopVer=0], evt=NODE_LEFT, node=10e06d9f-dffa-4788-ac8f-99c026afe5b8]
+[21:20:58,367][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:29:00:137]
+    ^-- H/N/C [hosts=3, nodes=9, CPUs=12]
+    ^-- CPU [cur=0.33%, avg=0.4%, GC=0%]
+    ^-- Heap [used=270MB, free=84.53%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.86%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:21:58,376][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:30:00:146]
+    ^-- H/N/C [hosts=3, nodes=9, CPUs=12]
+    ^-- CPU [cur=0.27%, avg=0.39%, GC=0%]
+    ^-- Heap [used=280MB, free=83.96%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.86%, comm=34MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:22:37,258][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Node FAILED: TcpDiscoveryNode [id=c6692c5f-fc2a-419b-93d9-007e687f9435, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=140, intOrder=72, lastExchangeTime=1478551917104, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:22:37,258][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=178, servers=3, clients=5, CPUs=12, heap=14.0GB]
+[21:22:37,276][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Node FAILED: TcpDiscoveryNode [id=c40c7b1a-40df-49a6-b2e3-8ae2bcc96e73, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=149, intOrder=78, lastExchangeTime=1478552088514, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:22:37,276][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=179, servers=3, clients=4, CPUs=12, heap=12.0GB]
+[21:22:37,279][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=178, minorTopVer=0], evt=NODE_FAILED, node=c6692c5f-fc2a-419b-93d9-007e687f9435]
+[21:22:37,285][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=179, minorTopVer=0], evt=NODE_FAILED, node=c40c7b1a-40df-49a6-b2e3-8ae2bcc96e73]
+[21:22:37,286][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Node FAILED: TcpDiscoveryNode [id=8e52d410-c099-400c-86bf-91c2444649c8, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=157, intOrder=82, lastExchangeTime=1478552229935, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:22:37,286][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=180, servers=3, clients=3, CPUs=12, heap=10.0GB]
+[21:22:37,294][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Node FAILED: TcpDiscoveryNode [id=51b73bc7-9426-428b-9187-4a73fddaa45e, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=162, intOrder=85, lastExchangeTime=1478552654023, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:22:37,294][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=181, servers=3, clients=2, CPUs=12, heap=8.6GB]
+[21:22:37,299][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Node FAILED: TcpDiscoveryNode [id=a19a15f2-be79-4e1a-aed4-0f86d74a083d, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=167, intOrder=88, lastExchangeTime=1478553031492, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:22:37,300][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=180, minorTopVer=0], evt=NODE_FAILED, node=8e52d410-c099-400c-86bf-91c2444649c8]
+[21:22:37,300][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=182, servers=3, clients=1, CPUs=12, heap=6.8GB]
+[21:22:37,305][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Node FAILED: TcpDiscoveryNode [id=f0726388-6142-4022-a4d6-855c2d8c13af, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:0, /127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0], discPort=0, order=172, intOrder=91, lastExchangeTime=1478553402618, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:22:37,305][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=183, servers=3, clients=0, CPUs=8, heap=5.1GB]
+[21:22:37,310][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=181, minorTopVer=0], evt=NODE_FAILED, node=51b73bc7-9426-428b-9187-4a73fddaa45e]
+[21:22:37,316][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=182, minorTopVer=0], evt=NODE_FAILED, node=a19a15f2-be79-4e1a-aed4-0f86d74a083d]
+[21:22:37,320][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=183, minorTopVer=0], evt=NODE_FAILED, node=f0726388-6142-4022-a4d6-855c2d8c13af]
+[21:22:58,382][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:31:00:151]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.23%, avg=0.39%, GC=0%]
+    ^-- Heap [used=294MB, free=83.15%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.83%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:23:58,389][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:32:00:157]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.27%, avg=0.39%, GC=0%]
+    ^-- Heap [used=300MB, free=82.81%, comm=356MB]
+    ^-- Non heap [used=34MB, free=83.83%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:24:58,388][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:33:00:157]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.23%, avg=0.38%, GC=0%]
+    ^-- Heap [used=74MB, free=95.75%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.83%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:25:58,395][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:34:00:164]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.17%, avg=0.38%, GC=0%]
+    ^-- Heap [used=79MB, free=95.47%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.83%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:26:58,404][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:35:00:169]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.33%, avg=0.38%, GC=0%]
+    ^-- Heap [used=87MB, free=95%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.82%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:27:58,401][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:36:00:169]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.23%, avg=0.37%, GC=0%]
+    ^-- Heap [used=92MB, free=94.72%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.81%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:28:58,408][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:37:00:176]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.33%, avg=0.37%, GC=0%]
+    ^-- Heap [used=100MB, free=94.27%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.8%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:29:58,414][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:38:00:178]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.33%, avg=0.37%, GC=0%]
+    ^-- Heap [used=104MB, free=93.99%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.8%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:30:58,411][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:39:00:181]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.33%, avg=0.36%, GC=0%]
+    ^-- Heap [used=111MB, free=93.64%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.78%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:31:58,418][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:40:00:185]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.23%, avg=0.36%, GC=0%]
+    ^-- Heap [used=116MB, free=93.36%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.78%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:32:58,422][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:41:00:188]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.17%, avg=0.36%, GC=0%]
+    ^-- Heap [used=123MB, free=92.91%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.78%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:33:58,427][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:42:00:196]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.23%, avg=0.35%, GC=0%]
+    ^-- Heap [used=129MB, free=92.6%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.78%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:34:58,435][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:43:00:201]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.23%, avg=0.35%, GC=0%]
+    ^-- Heap [used=137MB, free=92.13%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.78%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:35:58,440][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:44:00:209]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.23%, avg=0.35%, GC=0%]
+    ^-- Heap [used=142MB, free=91.85%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.77%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:36:58,448][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:45:00:218]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.23%, avg=0.34%, GC=0%]
+    ^-- Heap [used=150MB, free=91.4%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.77%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:37:58,455][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:46:00:222]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.27%, avg=0.34%, GC=0%]
+    ^-- Heap [used=154MB, free=91.15%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.76%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:38:58,458][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:47:00:223]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.27%, avg=0.34%, GC=0%]
+    ^-- Heap [used=162MB, free=90.7%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.76%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:39:58,462][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:48:00:231]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.27%, avg=0.34%, GC=0%]
+    ^-- Heap [used=167MB, free=90.42%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.76%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:40:58,464][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:49:00:231]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.17%, avg=0.33%, GC=0%]
+    ^-- Heap [used=175MB, free=89.97%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.76%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:41:58,466][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:50:00:236]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.23%, avg=0.33%, GC=0%]
+    ^-- Heap [used=180MB, free=89.69%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.75%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:42:58,474][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:51:00:239]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.27%, avg=0.33%, GC=0%]
+    ^-- Heap [used=188MB, free=89.22%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.75%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:43:58,478][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:52:00:248]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.23%, avg=0.33%, GC=0%]
+    ^-- Heap [used=193MB, free=88.94%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.75%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:44:58,488][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:53:00:254]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.27%, avg=0.33%, GC=0%]
+    ^-- Heap [used=201MB, free=88.46%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.74%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:45:58,494][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:54:00:263]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.33%, avg=0.32%, GC=0%]
+    ^-- Heap [used=204MB, free=88.27%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.74%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:46:58,503][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:55:00:269]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.33%, avg=0.32%, GC=0%]
+    ^-- Heap [used=212MB, free=87.83%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.73%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:47:58,507][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:56:00:275]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.23%, avg=0.32%, GC=0%]
+    ^-- Heap [used=217MB, free=87.55%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.73%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:48:58,511][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:57:00:281]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.33%, avg=0.32%, GC=0%]
+    ^-- Heap [used=226MB, free=87.04%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.72%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:49:58,515][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:58:00:282]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.27%, avg=0.32%, GC=0%]
+    ^-- Heap [used=231MB, free=86.76%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.7%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:50:58,521][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=00:59:00:291]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.27%, avg=0.32%, GC=0%]
+    ^-- Heap [used=239MB, free=86.31%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.7%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:51:58,529][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=01:00:00:298]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.27%, avg=0.31%, GC=0%]
+    ^-- Heap [used=247MB, free=85.82%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.69%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:52:58,536][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=01:01:00:301]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.17%, avg=0.31%, GC=0%]
+    ^-- Heap [used=253MB, free=85.49%, comm=603MB]
+    ^-- Non heap [used=34MB, free=83.69%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:53:51,465][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:53:51,465][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=72c0d4af-444c-4857-92c8-c1cc4a6e4624, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.33], sockAddrs=[/127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0, wilander.inf.ed.ac.uk/129.215.2.33:0], discPort=0, order=184, intOrder=94, lastExchangeTime=1478555631445, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:53:51,466][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=184, servers=3, clients=1, CPUs=12, heap=8.6GB]
+[21:53:51,471][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=184, minorTopVer=0], evt=NODE_JOINED, node=72c0d4af-444c-4857-92c8-c1cc4a6e4624]
+[21:53:52,190][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=184, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=72c0d4af-444c-4857-92c8-c1cc4a6e4624]
+[21:53:58,540][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=01:02:00:308]
+    ^-- H/N/C [hosts=3, nodes=4, CPUs=12]
+    ^-- CPU [cur=7.77%, avg=0.34%, GC=0.13%]
+    ^-- Heap [used=119MB, free=93.14%, comm=603MB]
+    ^-- Non heap [used=35MB, free=83.47%, comm=35MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:54:00,723][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:54:00,724][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=51f755d3-c825-4c5a-91a7-b28958d63a91, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.33], sockAddrs=[/127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0, wilander.inf.ed.ac.uk/129.215.2.33:0], discPort=0, order=185, intOrder=95, lastExchangeTime=1478555640704, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:54:00,724][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=185, servers=3, clients=2, CPUs=12, heap=12.0GB]
+[21:54:00,728][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=185, minorTopVer=0], evt=NODE_JOINED, node=51f755d3-c825-4c5a-91a7-b28958d63a91]
+[21:54:01,656][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=185, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=51f755d3-c825-4c5a-91a7-b28958d63a91]
+[21:54:01,765][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=185, minorTopVer=2], evt=DISCOVERY_CUSTOM_EVT, node=51f755d3-c825-4c5a-91a7-b28958d63a91]
+[21:54:01,801][INFO][sys-#20%null%][GridCacheProcessor] Stopped cache: words
+[21:54:01,803][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=185, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, node=51f755d3-c825-4c5a-91a7-b28958d63a91]
+[21:54:01,828][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=51f755d3-c825-4c5a-91a7-b28958d63a91, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.33], sockAddrs=[/127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0, wilander.inf.ed.ac.uk/129.215.2.33:0], discPort=0, order=185, intOrder=95, lastExchangeTime=1478555640704, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:54:01,828][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=186, servers=3, clients=1, CPUs=12, heap=8.6GB]
+[21:54:01,832][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=186, minorTopVer=0], evt=NODE_LEFT, node=51f755d3-c825-4c5a-91a7-b28958d63a91]
+[21:54:53,842][WARNING][disco-event-worker-#52%null%][GridDiscoveryManager] Local java version is different from remote [loc=7, rmt=8]
+[21:54:53,842][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Added new node to topology: TcpDiscoveryNode [id=29742b4b-4fe7-4cce-aacb-a2ae5f28c4d4, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.33], sockAddrs=[/127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0, wilander.inf.ed.ac.uk/129.215.2.33:0], discPort=0, order=187, intOrder=96, lastExchangeTime=1478555693821, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:54:53,843][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=187, servers=3, clients=2, CPUs=12, heap=12.0GB]
+[21:54:53,847][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=187, minorTopVer=0], evt=NODE_JOINED, node=29742b4b-4fe7-4cce-aacb-a2ae5f28c4d4]
+[21:54:54,855][INFO][exchange-worker-#54%null%][GridCacheProcessor] Started cache [name=words, mode=PARTITIONED]
+[21:54:54,891][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=187, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=29742b4b-4fe7-4cce-aacb-a2ae5f28c4d4]
+[21:54:54,968][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=187, minorTopVer=2], evt=DISCOVERY_CUSTOM_EVT, node=29742b4b-4fe7-4cce-aacb-a2ae5f28c4d4]
+[21:54:55,013][INFO][sys-#27%null%][GridCacheProcessor] Stopped cache: words
+[21:54:55,014][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=187, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, node=29742b4b-4fe7-4cce-aacb-a2ae5f28c4d4]
+[21:54:55,032][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=29742b4b-4fe7-4cce-aacb-a2ae5f28c4d4, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.33], sockAddrs=[/127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0, wilander.inf.ed.ac.uk/129.215.2.33:0], discPort=0, order=187, intOrder=96, lastExchangeTime=1478555693821, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:54:55,033][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=188, servers=3, clients=1, CPUs=12, heap=8.6GB]
+[21:54:55,048][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=188, minorTopVer=0], evt=NODE_LEFT, node=29742b4b-4fe7-4cce-aacb-a2ae5f28c4d4]
+[21:54:56,302][SEVERE][mgmt-#151%null%][GridJobWorker] Failed to execute job [jobId=31378c04851-72c0d4af-444c-4857-92c8-c1cc4a6e4624, ses=GridJobSessionImpl [ses=GridTaskSessionImpl [taskName=o.a.i.i.processors.affinity.GridAffinityUtils$AffinityJob, dep=GridDeployment [ts=1478551917866, depMode=SHARED, clsLdr=sun.misc.Launcher$AppClassLoader@431d00cf, clsLdrId=b59cf804851-c846c09d-3292-47a0-a172-7fbb567244ee, userVer=0, loc=true, sampleClsName=o.a.i.i.processors.cache.distributed.dht.preloader.GridDhtPartitionFullMap, pendingUndeploy=false, undeployed=false, usage=1], taskClsName=o.a.i.i.processors.affinity.GridAffinityUtils$AffinityJob, sesId=21378c04851-72c0d4af-444c-4857-92c8-c1cc4a6e4624, startTime=1478555696289, endTime=9223372036854775807, taskNodeId=72c0d4af-444c-4857-92c8-c1cc4a6e4624, clsLdr=sun.misc.Launcher$AppClassLoader@431d00cf, closed=false, cpSpi=null, failSpi=null, loadSpi=null, usage=1, fullSup=false, subjId=72c0d4af-444c-4857-92c8-c1cc4a6e4624, mapFut=IgniteFuture [orig=GridFutureAdapter [resFlag=0, res=null, startTime=1478555696286, endTime=0, ignoreInterrupts=false, state=INIT]]], jobId=31378c04851-72c0d4af-444c-4857-92c8-c1cc4a6e4624]]
+class org.apache.ignite.IgniteException: null
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor$C2V2.execute(GridClosureProcessor.java:2009)
+	at org.apache.ignite.internal.processors.job.GridJobWorker$2.call(GridJobWorker.java:509)
+	at org.apache.ignite.internal.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6521)
+	at org.apache.ignite.internal.processors.job.GridJobWorker.execute0(GridJobWorker.java:503)
+	at org.apache.ignite.internal.processors.job.GridJobWorker.body(GridJobWorker.java:456)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:110)
+	at org.apache.ignite.internal.processors.job.GridJobProcessor.processJobExecuteRequest(GridJobProcessor.java:1095)
+	at org.apache.ignite.internal.processors.job.GridJobProcessor$JobExecutionListener.onMessage(GridJobProcessor.java:1766)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1238)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:866)
+	at org.apache.ignite.internal.managers.communication.GridIoManager.access$1700(GridIoManager.java:106)
+	at org.apache.ignite.internal.managers.communication.GridIoManager$5.run(GridIoManager.java:829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.apache.ignite.internal.processors.affinity.GridAffinityUtils$AffinityJob.call(GridAffinityUtils.java:175)
+	at org.apache.ignite.internal.processors.affinity.GridAffinityUtils$AffinityJob.call(GridAffinityUtils.java:130)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor$C2V2.execute(GridClosureProcessor.java:2006)
+	... 14 more
+[21:54:58,547][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=01:03:00:316]
+    ^-- H/N/C [hosts=3, nodes=4, CPUs=12]
+    ^-- CPU [cur=0.67%, avg=0.35%, GC=0%]
+    ^-- Heap [used=381MB, free=78.16%, comm=603MB]
+    ^-- Non heap [used=35MB, free=83.26%, comm=36MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:55:58,549][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=01:04:00:318]
+    ^-- H/N/C [hosts=3, nodes=4, CPUs=12]
+    ^-- CPU [cur=0.33%, avg=0.35%, GC=0%]
+    ^-- Heap [used=386MB, free=77.86%, comm=603MB]
+    ^-- Non heap [used=35MB, free=83.25%, comm=36MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:56:08,470][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=72c0d4af-444c-4857-92c8-c1cc4a6e4624, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.33], sockAddrs=[/127.0.0.1:0, /0:0:0:0:0:0:0:1%lo:0, wilander.inf.ed.ac.uk/129.215.2.33:0], discPort=0, order=184, intOrder=94, lastExchangeTime=1478555631445, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=true]
+[21:56:08,470][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=189, servers=3, clients=0, CPUs=8, heap=5.1GB]
+[21:56:08,475][INFO][exchange-worker-#54%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=189, minorTopVer=0], evt=NODE_LEFT, node=72c0d4af-444c-4857-92c8-c1cc4a6e4624]
+[21:56:58,557][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=01:05:00:326]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.23%, avg=0.35%, GC=0%]
+    ^-- Heap [used=396MB, free=77.31%, comm=603MB]
+    ^-- Non heap [used=35MB, free=83.24%, comm=36MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:57:58,565][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=01:06:00:329]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.27%, avg=0.35%, GC=0%]
+    ^-- Heap [used=403MB, free=76.88%, comm=603MB]
+    ^-- Non heap [used=35MB, free=83.24%, comm=36MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:58:58,567][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=01:07:00:333]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.93%, avg=0.35%, GC=0%]
+    ^-- Heap [used=408MB, free=76.63%, comm=603MB]
+    ^-- Non heap [used=35MB, free=83.23%, comm=36MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[21:59:58,567][INFO][grid-timeout-worker-#37%null%][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=c846c09d, name=null, uptime=01:08:00:334]
+    ^-- H/N/C [hosts=2, nodes=3, CPUs=8]
+    ^-- CPU [cur=0.17%, avg=0.34%, GC=0%]
+    ^-- Heap [used=415MB, free=76.23%, comm=603MB]
+    ^-- Non heap [used=35MB, free=83.23%, comm=36MB]
+    ^-- Public thread pool [active=0, idle=16, qSize=0]
+    ^-- System thread pool [active=0, idle=16, qSize=0]
+    ^-- Outbound messages queue [size=0]
+[22:00:29,228][INFO][Thread-3][G] Invoking shutdown hook...

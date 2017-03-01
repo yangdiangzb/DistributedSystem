@@ -1,0 +1,91 @@
+[18:33:46,334][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[18:33:46,337][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[18:33:46,337][INFO][main][IgniteKernal] Daemon mode: off
+[18:33:46,337][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[18:33:46,337][INFO][main][IgniteKernal] OS user: s1626297
+[18:33:46,338][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[18:33:46,338][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[18:33:46,340][INFO][main][IgniteKernal] VM total memory: 3.5GB
+[18:33:46,340][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[18:33:46,340][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[18:33:46,340][INFO][main][IgniteKernal] VM arguments: [-DIGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin, -Didea.launcher.port=7533, -Didea.launcher.bin.path=/opt/idea-ce/bin, -Dfile.encoding=UTF-8]
+[18:33:46,341][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[18:33:46,341][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[18:33:46,353][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[18:33:46,370][WARNING][pub-#26%null%][GridDiagnostic] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[18:33:46,471][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.2.16, fe80:0:0:0:4a0f:cfff:fe5c:a96f%em1
+[18:33:46,472][INFO][main][IgniteKernal] Enabled local MACs: 480FCF5CA96F
+[18:33:46,504][INFO][main][IgnitePluginProcessor] Configured plugins:
+[18:33:46,504][INFO][main][IgnitePluginProcessor]   ^-- None
+[18:33:46,504][INFO][main][IgnitePluginProcessor] 
+[18:33:46,726][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48100, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/faf4f720-3159-48e8-acbe-3d4976560836-10162]
+[18:33:46,727][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48100, locHost=0.0.0.0/0.0.0.0]
+[18:33:46,766][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0]
+[18:33:46,856][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[18:33:46,896][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[18:33:46,904][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[18:33:46,906][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[18:33:47,249][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[18:33:47,355][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11211]
+[18:33:49,803][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[18:33:49,817][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[18:33:49,840][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[18:33:50,054][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[18:33:50,055][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[18:33:50,055][INFO][main][IgniteKernal]   ^-- Disable peer class loading (set 'peerClassLoadingEnabled' to false)
+[18:33:50,055][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[18:33:50,055][INFO][main][IgniteKernal] 
+[18:33:50,056][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[18:33:50,058][INFO][main][IgniteKernal] 
+[18:33:50,060][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 3.5GB
+>>> VM name: 10162@lloyd.inf.ed.ac.uk
+>>> Local node [ID=FAF4F720-3159-48E8-ACBE-3D4976560836, order=8, clientMode=true]
+>>> Local node addresses: [lloyd.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.2.16]
+>>> Local ports: TCP:11211 TCP:47100 TCP:48100 
+
+[18:33:50,062][INFO][main][GridDiscoveryManager] Topology snapshot [ver=8, servers=1, clients=1, CPUs=4, heap=4.5GB]
+[18:33:50,129][INFO][exchange-worker-#45%null%][GridCacheProcessor] Started cache [name=partB, mode=PARTITIONED]
+[18:33:59,434][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[18:34:00,133][WARNING][exchange-worker-#45%null%][GridCachePartitionExchangeManager] Failed to wait for partition map exchange [topVer=AffinityTopologyVersion [topVer=8, minorTopVer=1], node=faf4f720-3159-48e8-acbe-3d4976560836]. Dumping pending objects that might be the cause: 
+[18:34:00,133][WARNING][exchange-worker-#45%null%][GridCachePartitionExchangeManager] Ready affinity version: AffinityTopologyVersion [topVer=8, minorTopVer=0]
+[18:34:00,156][WARNING][exchange-worker-#45%null%][GridCachePartitionExchangeManager] Last exchange future: GridDhtPartitionsExchangeFuture [dummy=false, forcePreload=false, reassign=false, discoEvt=DiscoveryCustomEvent [customMsg=DynamicCacheChangeBatch [reqs=[DynamicCacheChangeRequest [deploymentId=a9277fe5851-4230ace1-a1b4-4cbb-b688-d6cf537a5001, startCfg=CacheConfiguration [name=partB, storeConcurrentLoadAllThreshold=5, rebalancePoolSize=2, rebalanceTimeout=10000, evictPlc=null, evictSync=false, evictKeyBufSize=1024, evictSyncConcurrencyLvl=4, evictSyncTimeout=10000, evictFilter=null, evictMaxOverflowRatio=10.0, eagerTtl=true, dfltLockTimeout=0, startSize=1500000, nearCfg=null, writeSync=PRIMARY_SYNC, storeFactory=null, storeKeepBinary=false, loadPrevVal=false, aff=o.a.i.cache.affinity.rendezvous.RendezvousAffinityFunction@62f0f734, cacheMode=PARTITIONED, atomicityMode=ATOMIC, atomicWriteOrderMode=PRIMARY, backups=0, invalidate=false, tmLookupClsName=null, rebalanceMode=ASYNC, rebalanceOrder=0, rebalanceBatchSize=524288, rebalanceBatchesPrefetchCount=2, offHeapMaxMem=-1, swapEnabled=false, maxConcurrentAsyncOps=500, writeBehindEnabled=false, writeBehindFlushSize=10240, writeBehindFlushFreq=5000, writeBehindFlushThreadCnt=1, writeBehindBatchSize=512, memMode=ONHEAP_TIERED, affMapper=o.a.i.i.processors.cache.CacheDefaultBinaryAffinityKeyMapper@13ee68b4, rebalanceDelay=0, rebalanceThrottle=0, interceptor=null, longQryWarnTimeout=3000, readFromBackup=true, nodeFilter=o.a.i.configuration.CacheConfiguration$IgniteAllNodesPredicate@b8a5214, sqlSchema=null, sqlEscapeAll=false, sqlOnheapRowCacheSize=10240, snapshotableIdx=false, cpOnRead=true, topValidator=null], cacheType=USER, initiatingNodeId=faf4f720-3159-48e8-acbe-3d4976560836, nearCacheCfg=null, clientStartOnly=false, stop=false, close=false, failIfExists=false, template=false, rcvdFrom=null, exchangeNeeded=true, cacheFutTopVer=null, cacheName=partB]], clientNodes=null, id=b9277fe5851-4230ace1-a1b4-4cbb-b688-d6cf537a5001, clientReconnect=false], affTopVer=AffinityTopologyVersion [topVer=8, minorTopVer=1], super=DiscoveryEvent [evtNode=TcpDiscoveryNode [id=faf4f720-3159-48e8-acbe-3d4976560836, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lloyd.inf.ed.ac.uk/129.215.2.16:0], discPort=0, order=8, intOrder=0, lastExchangeTime=1479062027454, loc=true, ver=1.7.0#20160801-sha1:383273e3, isClient=true], topVer=8, nodeId8=faf4f720, msg=null, type=DISCOVERY_CUSTOM_EVT, tstamp=1479062030092]], crd=TcpDiscoveryNode [id=1f44652c-1e74-4c39-b0f8-d55a239a5255, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500, lloyd.inf.ed.ac.uk/129.215.2.16:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479062029322, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], exchId=GridDhtPartitionExchangeId [topVer=AffinityTopologyVersion [topVer=8, minorTopVer=1], nodeId=faf4f720, evt=DISCOVERY_CUSTOM_EVT], added=true, initFut=GridFutureAdapter [resFlag=2, res=true, startTime=1479062030092, endTime=1479062030123, ignoreInterrupts=false, state=DONE], init=true, topSnapshot=null, lastVer=null, partReleaseFut=null, affChangeMsg=null, skipPreload=true, clientOnlyExchange=true, initTs=1479062030092, centralizedAff=false, evtLatch=0, remaining=[1f44652c-1e74-4c39-b0f8-d55a239a5255], srvNodes=[TcpDiscoveryNode [id=1f44652c-1e74-4c39-b0f8-d55a239a5255, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500, lloyd.inf.ed.ac.uk/129.215.2.16:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479062029322, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]], super=GridFutureAdapter [resFlag=0, res=null, startTime=1479062030092, endTime=0, ignoreInterrupts=false, state=INIT]]
+[18:34:00,156][WARNING][exchange-worker-#45%null%][GridCachePartitionExchangeManager] Pending exchange futures:
+[18:34:00,157][WARNING][exchange-worker-#45%null%][GridCachePartitionExchangeManager] Last 10 exchange futures (total: 2):
+[18:34:00,160][WARNING][exchange-worker-#45%null%][GridCachePartitionExchangeManager] >>> GridDhtPartitionsExchangeFuture [dummy=false, forcePreload=false, reassign=false, discoEvt=DiscoveryCustomEvent [customMsg=DynamicCacheChangeBatch [reqs=[DynamicCacheChangeRequest [deploymentId=a9277fe5851-4230ace1-a1b4-4cbb-b688-d6cf537a5001, startCfg=CacheConfiguration [name=partB, storeConcurrentLoadAllThreshold=5, rebalancePoolSize=2, rebalanceTimeout=10000, evictPlc=null, evictSync=false, evictKeyBufSize=1024, evictSyncConcurrencyLvl=4, evictSyncTimeout=10000, evictFilter=null, evictMaxOverflowRatio=10.0, eagerTtl=true, dfltLockTimeout=0, startSize=1500000, nearCfg=null, writeSync=PRIMARY_SYNC, storeFactory=null, storeKeepBinary=false, loadPrevVal=false, aff=o.a.i.cache.affinity.rendezvous.RendezvousAffinityFunction@62f0f734, cacheMode=PARTITIONED, atomicityMode=ATOMIC, atomicWriteOrderMode=PRIMARY, backups=0, invalidate=false, tmLookupClsName=null, rebalanceMode=ASYNC, rebalanceOrder=0, rebalanceBatchSize=524288, rebalanceBatchesPrefetchCount=2, offHeapMaxMem=-1, swapEnabled=false, maxConcurrentAsyncOps=500, writeBehindEnabled=false, writeBehindFlushSize=10240, writeBehindFlushFreq=5000, writeBehindFlushThreadCnt=1, writeBehindBatchSize=512, memMode=ONHEAP_TIERED, affMapper=o.a.i.i.processors.cache.CacheDefaultBinaryAffinityKeyMapper@13ee68b4, rebalanceDelay=0, rebalanceThrottle=0, interceptor=null, longQryWarnTimeout=3000, readFromBackup=true, nodeFilter=o.a.i.configuration.CacheConfiguration$IgniteAllNodesPredicate@b8a5214, sqlSchema=null, sqlEscapeAll=false, sqlOnheapRowCacheSize=10240, snapshotableIdx=false, cpOnRead=true, topValidator=null], cacheType=USER, initiatingNodeId=faf4f720-3159-48e8-acbe-3d4976560836, nearCacheCfg=null, clientStartOnly=false, stop=false, close=false, failIfExists=false, template=false, rcvdFrom=null, exchangeNeeded=true, cacheFutTopVer=null, cacheName=partB]], clientNodes=null, id=b9277fe5851-4230ace1-a1b4-4cbb-b688-d6cf537a5001, clientReconnect=false], affTopVer=AffinityTopologyVersion [topVer=8, minorTopVer=1], super=DiscoveryEvent [evtNode=TcpDiscoveryNode [id=faf4f720-3159-48e8-acbe-3d4976560836, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lloyd.inf.ed.ac.uk/129.215.2.16:0], discPort=0, order=8, intOrder=0, lastExchangeTime=1479062027454, loc=true, ver=1.7.0#20160801-sha1:383273e3, isClient=true], topVer=8, nodeId8=faf4f720, msg=null, type=DISCOVERY_CUSTOM_EVT, tstamp=1479062030092]], crd=TcpDiscoveryNode [id=1f44652c-1e74-4c39-b0f8-d55a239a5255, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500, lloyd.inf.ed.ac.uk/129.215.2.16:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479062029322, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], exchId=GridDhtPartitionExchangeId [topVer=AffinityTopologyVersion [topVer=8, minorTopVer=1], nodeId=faf4f720, evt=DISCOVERY_CUSTOM_EVT], added=true, initFut=GridFutureAdapter [resFlag=2, res=true, startTime=1479062030092, endTime=1479062030123, ignoreInterrupts=false, state=DONE], init=true, topSnapshot=null, lastVer=null, partReleaseFut=null, affChangeMsg=null, skipPreload=true, clientOnlyExchange=true, initTs=1479062030092, centralizedAff=false, evtLatch=0, remaining=[1f44652c-1e74-4c39-b0f8-d55a239a5255], srvNodes=[TcpDiscoveryNode [id=1f44652c-1e74-4c39-b0f8-d55a239a5255, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500, lloyd.inf.ed.ac.uk/129.215.2.16:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479062029322, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]], super=GridFutureAdapter [resFlag=0, res=null, startTime=1479062030092, endTime=0, ignoreInterrupts=false, state=INIT]]
+[18:34:00,162][WARNING][exchange-worker-#45%null%][GridCachePartitionExchangeManager] >>> GridDhtPartitionsExchangeFuture [dummy=false, forcePreload=false, reassign=false, discoEvt=DiscoveryEvent [evtNode=TcpDiscoveryNode [id=faf4f720-3159-48e8-acbe-3d4976560836, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:0, /127.0.0.1:0, lloyd.inf.ed.ac.uk/129.215.2.16:0], discPort=0, order=8, intOrder=0, lastExchangeTime=1479062027454, loc=true, ver=1.7.0#20160801-sha1:383273e3, isClient=true], topVer=8, nodeId8=faf4f720, msg=null, type=NODE_JOINED, tstamp=1479062029414], crd=TcpDiscoveryNode [id=1f44652c-1e74-4c39-b0f8-d55a239a5255, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500, lloyd.inf.ed.ac.uk/129.215.2.16:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479062029322, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false], exchId=GridDhtPartitionExchangeId [topVer=AffinityTopologyVersion [topVer=8, minorTopVer=0], nodeId=faf4f720, evt=NODE_JOINED], added=false, initFut=GridFutureAdapter [resFlag=2, res=true, startTime=1479062029846, endTime=1479062029928, ignoreInterrupts=false, state=DONE], init=true, topSnapshot=null, lastVer=null, partReleaseFut=null, affChangeMsg=null, skipPreload=true, clientOnlyExchange=true, initTs=1479062029846, centralizedAff=false, evtLatch=0, remaining=[1f44652c-1e74-4c39-b0f8-d55a239a5255], srvNodes=[TcpDiscoveryNode [id=1f44652c-1e74-4c39-b0f8-d55a239a5255, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.16], sockAddrs=[/0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500, lloyd.inf.ed.ac.uk/129.215.2.16:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479062029322, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]], super=GridFutureAdapter [resFlag=2, res=AffinityTopologyVersion [topVer=8, minorTopVer=0], startTime=1479062029846, endTime=1479062029948, ignoreInterrupts=false, state=DONE]]
+[18:34:00,163][WARNING][exchange-worker-#45%null%][GridCachePartitionExchangeManager] Pending transactions:
+[18:34:00,163][WARNING][exchange-worker-#45%null%][GridCachePartitionExchangeManager] Pending explicit locks:
+[18:34:00,163][WARNING][exchange-worker-#45%null%][GridCachePartitionExchangeManager] Pending cache futures:
+[18:34:00,163][WARNING][exchange-worker-#45%null%][GridCachePartitionExchangeManager] Pending atomic cache futures:
+[18:34:00,164][WARNING][exchange-worker-#45%null%][TcpCommunicationSpi] Communication SPI recovery descriptors: 
+
+[18:34:00,169][WARNING][grid-nio-worker-3-#33%null%][TcpCommunicationSpi] 
+>> Selector info [idx=3, keysCnt=0]
+
+[18:34:00,170][WARNING][grid-nio-worker-1-#31%null%][TcpCommunicationSpi] 
+>> Selector info [idx=1, keysCnt=0]
+
+[18:34:00,170][WARNING][grid-nio-worker-2-#32%null%][TcpCommunicationSpi] 
+>> Selector info [idx=2, keysCnt=0]
+
+[18:34:00,170][WARNING][grid-nio-worker-0-#30%null%][TcpCommunicationSpi] 
+>> Selector info [idx=0, keysCnt=0]
+

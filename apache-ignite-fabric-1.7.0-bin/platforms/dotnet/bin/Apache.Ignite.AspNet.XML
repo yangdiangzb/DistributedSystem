@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Apache.Ignite.AspNet</name>
+    </assembly>
+    <members>
+        <member name="T:Apache.Ignite.AspNet.IgniteOutputCacheProvider">
+            <summary>
+            ASP.NET output cache provider that uses Ignite cache as a storage.
+            <para/>
+            You can either start Ignite yourself, and provide <c>gridName</c> attribute, 
+            or provide <c>igniteConfigurationSectionName</c> attribute to start Ignite automatically from specified
+            configuration section (see <see cref="T:Apache.Ignite.Core.IgniteConfigurationSection"/>).
+            <para/>
+            <c>cacheName</c> attribute specifies Ignite cache name to use for data storage. This attribute can be omitted 
+            if cache name is null.
+            </summary>
+        </member>
+        <member name="F:Apache.Ignite.AspNet.IgniteOutputCacheProvider.GridName">
+            
+        </member>
+        <member name="F:Apache.Ignite.AspNet.IgniteOutputCacheProvider.CacheName">
+            
+        </member>
+        <member name="F:Apache.Ignite.AspNet.IgniteOutputCacheProvider.IgniteConfigurationSectionName">
+            
+        </member>
+        <member name="F:Apache.Ignite.AspNet.IgniteOutputCacheProvider.MaxExpiryCaches">
+            Max number of cached expiry caches. 
+        </member>
+        <member name="F:Apache.Ignite.AspNet.IgniteOutputCacheProvider._cache">
+            
+        </member>
+        <member name="F:Apache.Ignite.AspNet.IgniteOutputCacheProvider._expiryCaches">
+            Cached caches per expiry seconds. 
+        </member>
+        <member name="F:Apache.Ignite.AspNet.IgniteOutputCacheProvider._syncRoot">
+            Sync object. 
+        </member>
+        <member name="M:Apache.Ignite.AspNet.IgniteOutputCacheProvider.Get(System.String)">
+            <summary>
+            Returns a reference to the specified entry in the output cache.
+            </summary>
+            <param name="key">A unique identifier for a cached entry in the output cache.</param>
+            <returns>
+            The <paramref name="key" /> value that identifies the specified entry in the cache, or null if the specified entry is not in the cache.
+            </returns>
+        </member>
+        <member name="M:Apache.Ignite.AspNet.IgniteOutputCacheProvider.Add(System.String,System.Object,System.DateTime)">
+            <summary>
+            Inserts the specified entry into the output cache.
+            </summary>
+            <param name="key">A unique identifier for <paramref name="entry" />.</param>
+            <param name="entry">The content to add to the output cache.</param>
+            <param name="utcExpiry">The time and date on which the cached entry expires.</param>
+            <returns>
+            A reference to the specified provider.
+            </returns>
+        </member>
+        <member name="M:Apache.Ignite.AspNet.IgniteOutputCacheProvider.Set(System.String,System.Object,System.DateTime)">
+            <summary>
+            Inserts the specified entry into the output cache, overwriting the entry if it is already cached.
+            </summary>
+            <param name="key">A unique identifier for <paramref name="entry" />.</param>
+            <param name="entry">The content to add to the output cache.</param>
+            <param name="utcExpiry">The time and date on which the cached <paramref name="entry" /> expires.</param>
+        </member>
+        <member name="M:Apache.Ignite.AspNet.IgniteOutputCacheProvider.Remove(System.String)">
+            <summary>
+            Removes the specified entry from the output cache.
+            </summary>
+            <param name="key">The unique identifier for the entry to remove from the output cache.</param>
+        </member>
+        <member name="M:Apache.Ignite.AspNet.IgniteOutputCacheProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Initializes the provider.
+            </summary>
+            <param name="name">The friendly name of the provider.</param>
+            <param name="config">A collection of the name/value pairs representing the provider-specific attributes specified in the configuration for this provider.</param>
+        </member>
+        <member name="M:Apache.Ignite.AspNet.IgniteOutputCacheProvider.StartFromApplicationConfiguration(System.String)">
+            <summary>
+            Starts Ignite from application configuration.
+            </summary>
+        </member>
+        <member name="M:Apache.Ignite.AspNet.IgniteOutputCacheProvider.GetCacheWithExpiry(System.DateTime)">
+            <summary>
+            Gets the cache with expiry policy according to provided expiration date.
+            </summary>
+            <param name="utcExpiry">The UTC expiry.</param>
+            <returns>Cache with expiry policy.</returns>
+        </member>
+        <member name="P:Apache.Ignite.AspNet.IgniteOutputCacheProvider.Cache">
+            <summary>
+            Gets the cache.
+            </summary>
+        </member>
+        <member name="T:Apache.Ignite.AspNet.IgniteWebUtils">
+            <summary>
+            Ignite web utilities.
+            </summary>
+        </member>
+        <member name="M:Apache.Ignite.AspNet.IgniteWebUtils.GetWebIgniteHome">
+            <summary>
+            Gets the Ignite home directory from default location in web deployment (application_root\bin).
+            Ignite can not detect home directory in a standard way because IIS uses temporary folders for dlls.
+            </summary>
+        </member>
+    </members>
+</doc>

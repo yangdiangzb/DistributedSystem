@@ -1,0 +1,83 @@
+[22:49:13,577][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 1.7.0#20160801-sha1:383273e3
+>>> 2016 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[22:49:13,580][INFO][main][IgniteKernal] Config URL: file:/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/examples/config/example-ignite-no-discovery.xml
+[22:49:13,580][INFO][main][IgniteKernal] Daemon mode: off
+[22:49:13,580][INFO][main][IgniteKernal] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[22:49:13,580][INFO][main][IgniteKernal] OS user: s1626297
+[22:49:13,581][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[22:49:13,581][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[22:49:13,582][INFO][main][IgniteKernal] VM total memory: 0.96GB
+[22:49:13,583][INFO][main][IgniteKernal] Remote Management [restart: on, REST: on, JMX (remote: on, port: 49140, auth: off, ssl: off)]
+[22:49:13,583][INFO][main][IgniteKernal] IGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin
+[22:49:13,583][INFO][main][IgniteKernal] VM arguments: [-Xms1g, -Xmx1g, -XX:+AggressiveOpts, -XX:MaxMetaspaceSize=256m, -DIGNITE_QUIET=true, -DIGNITE_SUCCESS_FILE=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ignite_success_228ddaea-a3de-49a6-a552-dcfade6447f2, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.port=49140, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -DIGNITE_HOME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin, -DIGNITE_PROG_NAME=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/bin/ignite.sh]
+[22:49:13,583][INFO][main][IgniteKernal] Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache']
+[22:49:13,583][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[22:49:13,588][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/libs/licenses
+[22:49:13,656][INFO][main][IgniteKernal] Non-loopback local IPs: 129.215.2.234, fe80:0:0:0:8edc:d4ff:fe57:28d5%em1
+[22:49:13,657][INFO][main][IgniteKernal] Enabled local MACs: 8CDCD45728D5
+[22:49:13,681][INFO][main][IgnitePluginProcessor] Configured plugins:
+[22:49:13,682][INFO][main][IgnitePluginProcessor]   ^-- None
+[22:49:13,682][INFO][main][IgnitePluginProcessor] 
+[22:49:13,940][INFO][main][TcpCommunicationSpi] IPC shared memory server endpoint started [port=48102, tokDir=/afs/inf.ed.ac.uk/user/s16/s1626297/Desktop/ds/apache-ignite-fabric-1.7.0-bin/work/ipc/shmem/2c8efd7f-cc86-4685-b122-8c7921115086-21351]
+[22:49:13,940][INFO][main][TcpCommunicationSpi] Successfully bound shared memory communication to TCP port [port=48102, locHost=0.0.0.0/0.0.0.0]
+[22:49:13,959][INFO][main][TcpCommunicationSpi] Successfully bound to TCP port [port=47102, locHost=0.0.0.0/0.0.0.0]
+[22:49:14,028][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[22:49:14,058][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[22:49:14,061][WARNING][main][NoopSwapSpaceSpi] Swap space is disabled. To enable use FileSwapSpaceSpi.
+[22:49:14,067][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[22:49:14,312][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[22:49:14,381][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11213]
+[22:49:14,465][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47502, localHost=0.0.0.0/0.0.0.0]
+[22:49:14,929][INFO][main][GridCacheProcessor] Started cache [name=ignite-sys-cache, mode=REPLICATED]
+[22:49:14,939][INFO][main][GridCacheProcessor] Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+[22:49:14,954][INFO][main][GridCacheProcessor] Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+[22:49:15,245][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=ignite-sys-cache, waitList=[]]
+[22:49:15,247][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=ignite-marshaller-sys-cache, waitList=[]]
+[22:49:15,247][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Cache rebalancing scheduled: [cache=ignite-atomics-sys-cache, waitList=[ignite-sys-cache, ignite-marshaller-sys-cache]]
+[22:49:15,251][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Rebalancing required [top=AffinityTopologyVersion [topVer=3, minorTopVer=0], evt=NODE_JOINED, node=2c8efd7f-cc86-4685-b122-8c7921115086]
+[22:49:15,251][INFO][exchange-worker-#55%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Starting rebalancing [cache=ignite-marshaller-sys-cache, mode=SYNC, fromNode=7f3f7987-f2b8-4335-963e-77794efc2412, partitionsCount=20, topology=AffinityTopologyVersion [topVer=3, minorTopVer=0], updateSeq=1]
+[22:49:15,261][INFO][sys-#20%null%][GridDhtPartitionDemander] <ignite-sys-cache> Starting rebalancing [cache=ignite-sys-cache, mode=SYNC, fromNode=7f3f7987-f2b8-4335-963e-77794efc2412, partitionsCount=100, topology=AffinityTopologyVersion [topVer=3, minorTopVer=0], updateSeq=1]
+[22:49:15,283][INFO][marshaller-cache-#57%null%][GridDhtPartitionDemander] <ignite-marshaller-sys-cache> Completed (final) rebalancing [cache=ignite-marshaller-sys-cache, fromNode=7f3f7987-f2b8-4335-963e-77794efc2412, topology=AffinityTopologyVersion [topVer=3, minorTopVer=0], time=34 ms]
+[22:49:15,286][INFO][marshaller-cache-#57%null%][GridDhtPartitionDemander] <ignite-sys-cache> Completed (final) rebalancing [cache=ignite-sys-cache, fromNode=7f3f7987-f2b8-4335-963e-77794efc2412, topology=AffinityTopologyVersion [topVer=3, minorTopVer=0], time=22 ms]
+[22:49:15,287][INFO][sys-#20%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Starting rebalancing [cache=ignite-atomics-sys-cache, mode=SYNC, fromNode=7f3f7987-f2b8-4335-963e-77794efc2412, partitionsCount=351, topology=AffinityTopologyVersion [topVer=3, minorTopVer=0], updateSeq=1]
+[22:49:15,297][INFO][sys-#21%null%][GridDhtPartitionDemander] <ignite-atomics-sys-cache> Completed (final) rebalancing [cache=ignite-atomics-sys-cache, fromNode=7f3f7987-f2b8-4335-963e-77794efc2412, topology=AffinityTopologyVersion [topVer=3, minorTopVer=0], time=10 ms]
+[22:49:15,351][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[22:49:15,351][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[22:49:15,352][INFO][main][IgniteKernal]   ^-- Disable peer class loading (set 'peerClassLoadingEnabled' to false)
+[22:49:15,352][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[22:49:15,352][INFO][main][IgniteKernal] 
+[22:49:15,352][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[22:49:15,352][INFO][main][IgniteKernal] 
+[22:49:15,353][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.7.0#20160801-sha1:383273e3f66f702de2482466dce954d570a8ccf2
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+>>> CPU(s): 4
+>>> Heap: 1.0GB
+>>> VM name: 21351@donners.inf.ed.ac.uk
+>>> Local node [ID=2C8EFD7F-CC86-4685-B122-8C7921115086, order=3, clientMode=false]
+>>> Local node addresses: [donners.inf.ed.ac.uk/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /129.215.2.234]
+>>> Local ports: TCP:11213 TCP:47102 TCP:47502 TCP:48102 
+
+[22:49:15,354][INFO][main][GridDiscoveryManager] Topology snapshot [ver=3, servers=3, clients=0, CPUs=4, heap=3.0GB]
+[22:49:16,854][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=3, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=7f3f7987-f2b8-4335-963e-77794efc2412]
+[22:49:24,696][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[22:49:26,410][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=7f3f7987-f2b8-4335-963e-77794efc2412, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1479250154565, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[22:49:26,420][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=4, servers=2, clients=0, CPUs=4, heap=2.0GB]
+[22:49:26,566][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=4, minorTopVer=0], evt=NODE_LEFT, node=7f3f7987-f2b8-4335-963e-77794efc2412]
+[22:49:28,288][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Node left topology: TcpDiscoveryNode [id=28da5686-06ed-4862-867a-30bf1544fc7b, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 129.215.2.234], sockAddrs=[donners.inf.ed.ac.uk/129.215.2.234:47501, /0:0:0:0:0:0:0:1%lo:47501, /127.0.0.1:47501], discPort=47501, order=2, intOrder=2, lastExchangeTime=1479250154577, loc=false, ver=1.7.0#20160801-sha1:383273e3, isClient=false]
+[22:49:28,289][INFO][disco-event-worker-#52%null%][GridDiscoveryManager] Topology snapshot [ver=5, servers=1, clients=0, CPUs=4, heap=1.0GB]
+[22:49:28,314][INFO][exchange-worker-#55%null%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=5, minorTopVer=0], evt=NODE_LEFT, node=28da5686-06ed-4862-867a-30bf1544fc7b]
+[22:49:30,932][INFO][Thread-3][G] Invoking shutdown hook...

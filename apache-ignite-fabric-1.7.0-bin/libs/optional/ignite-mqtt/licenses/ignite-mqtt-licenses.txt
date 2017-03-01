@@ -1,0 +1,13 @@
+// ------------------------------------------------------------------
+// List of ignite-mqtt module's dependencies provided as a part of this distribution
+// which licenses differ from Apache Software License.
+// ------------------------------------------------------------------
+
+==============================================================================
+For org.eclipse.paho.client.mqttv3 (http://www.eclipse.org/paho/org.eclipse.paho.client.mqttv3) org.eclipse.paho:org.eclipse.paho.client.mqttv3:eclipse-plugin:1.0.2
+==============================================================================
+This product bundles org.eclipse.paho.client.mqttv3 which is available under a:
+Eclipse Public License - Version 1.0. For details, see http://www.eclipse.org/org/documents/epl-v10.php.
+
+
+

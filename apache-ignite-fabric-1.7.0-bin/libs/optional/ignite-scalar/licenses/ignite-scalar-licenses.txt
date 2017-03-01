@@ -1,0 +1,13 @@
+// ------------------------------------------------------------------
+// List of ignite-scalar module's dependencies provided as a part of this distribution
+// which licenses differ from Apache Software License.
+// ------------------------------------------------------------------
+
+==============================================================================
+For Scala Library (http://www.scala-lang.org/) org.scala-lang:scala-library:jar:2.11.7
+==============================================================================
+This product bundles Scala Library which is available under a:
+BSD 3-Clause. For details, see http://www.scala-lang.org/license.html.
+
+
+
